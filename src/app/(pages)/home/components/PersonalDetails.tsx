@@ -38,7 +38,7 @@ const PersonalDetails = () => {
               <p className="mb-2">
                 <span className="personal-detail-title">Spoken Languages</span>
                 <span className="personal-detail-info">
-                  English (TOEFL ITP 560), French (B1)
+                  English (B2++), Spanish (C2)
                 </span>
               </p>
               <p className="mb-2">
