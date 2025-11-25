@@ -14,20 +14,17 @@ const PersonalDetails = () => {
               <mark>Personal Details</mark>
             </h5>
             <h4 className="fw-normal lh-base text-gray-700 mb-4 fs-20">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
+              Mobile software engineer with 5+ years of experience in React
+              Native and technical leadership. Specialized in TypeScript and
+              mobile security for fintech applications.
             </h4>
             <div className="social">
-              <Link to="" className="icon github me-1">
-                <IconifyIcon icon="la:github" />
-              </Link>
-              <Link to="" className="icon twitter me-1">
-                <IconifyIcon icon="la:twitter" />
-              </Link>
-              <Link to="" className="icon google me-1">
-                <IconifyIcon icon="la:google" />
-              </Link>
-              <Link to="" className="icon linkedin me-1">
+              <Link
+                to="https://www.linkedin.com/in/albertoigm/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="icon linkedin me-1"
+              >
                 <IconifyIcon icon="la:linkedin-in" />
               </Link>
             </div>
@@ -36,23 +33,21 @@ const PersonalDetails = () => {
             <div className="mb-5 mb-lg-0">
               <p className="mb-2">
                 <span className="personal-detail-title">Date of birth</span>
-                <span className="personal-detail-info">06 june 1989</span>
+                <span className="personal-detail-info">28 April 1992</span>
               </p>
               <p className="mb-2">
-                <span className="personal-detail-title">Spoken Langages</span>
+                <span className="personal-detail-title">Spoken Languages</span>
                 <span className="personal-detail-info">
-                  English - French - German
+                  English (TOEFL ITP 560), French (B1)
                 </span>
               </p>
               <p className="mb-2">
                 <span className="personal-detail-title">Nationality</span>
-                <span className="personal-detail-info">USA</span>
+                <span className="personal-detail-info">México</span>
               </p>
               <p className="mb-2">
                 <span className="personal-detail-title">Interest</span>
-                <span className="personal-detail-info">
-                  Music, Reading, journey
-                </span>
+                <span className="personal-detail-info">Padel</span>
               </p>
             </div>
           </Col>

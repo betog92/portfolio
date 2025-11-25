@@ -25,15 +25,15 @@ const Hero = () => {
             className="text-center px-0 px-xl-4 mt-5 mt-lg-0 pt-5 pt-lg-0"
           >
             <h5 className="d-inline-block py-1 px-3 rounded text-muted font-secondary">
-              Hi, I'm David Williamson
+              Hi, I'm Alberto Iván García Montemayor
             </h5>
             <h1 className="hero-title mb-4 font-secondary fo">
-              I'm a freelance{" "}
+              I'm a Senior{" "}
               <mark>
                 {" "}
                 <Typist
                   className="fw-medium typewrite"
-                  sentences={["React", "Flutter", "Python"]}
+                  sentences={["React Native", "TypeScript", "Mobile"]}
                   typingSpeed={1500}
                   deletingSpeed={700}
                   showCursor={false}
@@ -42,7 +42,7 @@ const Hero = () => {
                   pauseTime={2500}
                 />
               </mark>{" "}
-              Developer
+              Engineer
             </h1>
             <span className="wrap" />
             <div className="mb-5 mb-lg-0">
