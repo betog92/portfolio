@@ -1,16 +1,7 @@
-import android from "@/assets/images/logos/android.svg";
 import angular from "@/assets/images/logos/Angular.svg";
-import bootstrap from "@/assets/images/logos/bootstrap.svg";
-import vue from "@/assets/images/logos/vue.svg";
 import react from "@/assets/images/logos/react.svg";
-import mongodb from "@/assets/images/logos/mongodb.svg";
 import laravel from "@/assets/images/logos/laravel.svg";
 import nodejs from "@/assets/images/logos/nodejs-icon.svg";
-import personalImg1 from "@/assets/images/personal/1.jpg";
-import userImg1 from "@/assets/images/users/user-7.jpg";
-import personalImg3 from "@/assets/images/personal/3.jpg";
-import userImg2 from "@/assets/images/users/user-2.jpg";
-import personalImg2 from "@/assets/images/personal/2.jpg";
 
 type PersonalDataType = {
   name: string;
