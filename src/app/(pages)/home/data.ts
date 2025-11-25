@@ -44,133 +44,97 @@ export type BlogsType = {
 
 export const personalData: PersonalDataType[] = [
   {
-    name: "Android",
-    experience: "2 Year",
-    image: android,
-  },
-  {
-    name: "Angular",
-    experience: "1 Year",
-    image: angular,
-  },
-  {
-    name: "Bootstrap",
-    experience: "3 Year",
-    image: bootstrap,
-  },
-  {
-    name: "Vue",
-    experience: "2 Year",
-    image: vue,
-  },
-  {
-    name: "React",
-    experience: "8 Months",
+    name: "React Native",
+    experience: "5+ Years",
     image: react,
   },
   {
-    name: "Mongodb",
-    experience: "3 Months",
-    image: mongodb,
+    name: "TypeScript",
+    experience: "5+ Years",
+    image: react, // Puedes cambiar por un logo de TypeScript si tienes
   },
   {
-    name: "Laravel",
-    experience: "2 Year",
-    image: laravel,
+    name: "Angular",
+    experience: "1 Years",
+    image: angular,
+  },
+  {
+    name: "GraphQL",
+    experience: "2 Years",
+    image: react, // Puedes cambiar por un logo de GraphQL si tienes
+  },
+  {
+    name: "Firebase",
+    experience: "3 Years",
+    image: react, // Puedes cambiar por un logo de Firebase si tienes
+  },
+  {
+    name: "Redux Toolkit",
+    experience: "5 Years",
+    image: react, // Puedes cambiar por un logo de Redux si tienes
   },
   {
     name: "Node.js",
-    experience: "10 Months",
+    experience: "3 Years",
     image: nodejs,
+  },
+  {
+    name: "Laravel",
+    experience: "1 Year",
+    image: laravel,
   },
 ];
 
 export const servicesData: ServicesType[] = [
   {
-    icon: "feather:layers",
-    variant: "soft-alt-orange",
-    title: "Awesome Support",
+    icon: "feather:smartphone",
+    variant: "soft-alt-primary",
+    title: "Mobile Development",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content platform.",
+      "Expert in React Native development with 5+ years of experience building scalable, secure mobile applications for fintech and enterprise solutions.",
   },
   {
-    icon: "feather:dollar-sign",
+    icon: "feather:users",
     variant: "soft-alt-info",
-    title: "Dynamic Growth",
+    title: "Technical Leadership",
     description:
-      "Credibly brand standards compliant users without extensible services. Anibh euismod tincidunt.",
+      "Led teams of 6+ developers, managing code reviews, PR processes, and ensuring quality delivery through agile methodologies and best practices.",
   },
   {
-    icon: "feather:check-square",
+    icon: "feather:shield",
     variant: "soft-alt-success",
-    title: "Branding Identity",
+    title: "Mobile Security",
     description:
-      "Separated they live in Bookmarksgrove right at the coast of the Semantics, and large.",
+      "Specialized in implementing biometric authentication, MFA, encryption, and security measures for fintech applications.",
+  },
+  {
+    icon: "feather:zap",
+    variant: "soft-alt-orange",
+    title: "Performance Optimization",
+    description:
+      "Optimized application flows and reduced operation times by 20%, improving user experience and application efficiency.",
   },
 ];
 
 export const workData: WorkDataType[] = [
   {
-    image: angular,
-    variant: "soft-alt-orange",
-    title: "Auto Drive Project",
-    link: "htpps://abcd-Example.com ",
-    language: ["Angular", "React", "Jquery"],
-    category: ["angular", "bootstrap"],
-  },
-  {
-    image: bootstrap,
-    variant: "soft-alt-info",
-    title: "Auto Drive Project",
-    link: "htpps://abcd-Example.com",
-    language: ["Bootstrap", "Css", "Javascript"],
-    category: ["bootstrap"],
-  },
-  {
-    image: mongodb,
-    variant: "soft-alt-success",
-    title: "Auto Drive Project",
-    link: "htpps://abcd-Example.com",
-    language: ["Mongodb", "Javascript"],
-    category: ["angular", "mongodb"],
-  },
-  {
-    image: vue,
-    variant: "soft-alt-success",
-    title: "Auto Drive Project",
-    link: "htpps://abcd-Example.com",
-    language: ["Vue", "Javascript"],
+    image: react,
+    variant: "soft-alt-primary",
+    title: "Vit by Vector",
+    link: "https://vit.vector.com.mx",
+    language: ["React Native", "TypeScript", "GraphQL", "Firebase"],
+    category: ["react-native", "fintech"],
   },
   {
     image: react,
-    variant: "soft-alt-primary",
-    title: "Auto Drive Project",
-    link: "htpps://abcd-Example.com",
-    language: ["React", "Javascript"],
-    category: ["angular"],
+    variant: "soft-alt-info",
+    title: "VectorApp",
+    link: "https://vector.com.mx",
+    language: ["React Native", "TypeScript", "Redux Toolkit", "REST APIs"],
+    category: ["react-native", "fintech"],
   },
 ];
 
 export const blogsData: BlogsType[] = [
-  {
-    image: personalImg1,
-    title: "Change the world with small things",
-    name: "Charles Woodall",
-    date: "14 Feb 2022",
-    userImg: userImg1,
-  },
-  {
-    image: personalImg3,
-    title: "With a clean, minimal and professional look",
-    name: "Jarvis Owen",
-    date: "12 Jan 2022",
-    userImg: userImg2,
-  },
-  {
-    image: personalImg2,
-    title: "With a clean, minimal and professional look",
-    name: "Jarvis Owen",
-    date: "12 Jan 2022",
-    userImg: userImg2,
-  },
+  // Puedes agregar blogs aquí cuando los tengas
 ];
