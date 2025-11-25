@@ -1,16 +1,23 @@
-import { useEffect, useState } from 'react';
-import IconifyIcon from './wrappers/IconifyIcon';
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from "react";
+import IconifyIcon from "./wrappers/IconifyIcon";
+import { Link } from "react-router-dom";
 
 const Switcher = () => {
-  const colorClasses = ['color1', 'color2', 'color3', 'color4', 'color5', 'color6'];
-  const colors = ['primary', 'info','warning','orange', 'purple', 'success'];
+  const colorClasses = [
+    "color1",
+    "color2",
+    "color3",
+    "color4",
+    "color5",
+    "color6",
+  ];
+  const colors = ["primary", "info", "warning", "orange", "purple", "success"];
 
   const [open, setOpen] = useState(false);
-  const [color, setColor] = useState('primary');
+  const [color, setColor] = useState("primary");
 
   useEffect(() => {
-    document.body.setAttribute('data-color', color);
+    document.body.setAttribute("data-color", color);
   }, [color]);
 
   const handleColorChange = (selectedColor: string) => {
@@ -18,7 +25,7 @@ const Switcher = () => {
   };
 
   return (
-    <div id="style-switcher" style={open ? { left: '0' } : {}}>
+    <div id="style-switcher" style={open ? { left: "0" } : {}}>
       <div>
         <h3 className="fw-medium mb-0">Select Your Choice</h3>
         <hr className="hr-dashed my-3" />
@@ -27,12 +34,12 @@ const Switcher = () => {
             <li key={idx}>
               <Link
                 to=""
-                className={`color-block ${colorClasses[idx]}`} 
+                className={`color-block ${colorClasses[idx]}`}
                 onClick={(e) => {
-                  e.preventDefault(); 
+                  e.preventDefault();
                   handleColorChange(color);
                 }}
-             />
+              />
             </li>
           ))}
         </ul>

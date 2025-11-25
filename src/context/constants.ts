@@ -1,17 +1,17 @@
-type CurrencyType = '₹' | '$' | '€'
+type CurrencyType = "₹" | "$" | "€";
 
-export const currency: CurrencyType = '$'
+export const currency: CurrencyType = "$";
 
-export const currentYear = new Date().getFullYear()
+export const currentYear = new Date().getFullYear();
 
-export const developedByLink = ''
+export const developedByLink = "";
 
-export const developedBy = ''
+export const developedBy = "";
 
-export const contactUs = ''
+export const contactUs = "";
 
-export const buyLink = ''
+export const buyLink = "";
 
-export const basePath = ''
+export const basePath = "";
 
-export const DEFAULT_PAGE_TITLE = 'Selfown-NextJs | Responsive Personal page'
+export const DEFAULT_PAGE_TITLE = "Selfown-NextJs | Responsive Personal page";

@@ -1,3 +1,3 @@
-import type { ReactNode } from 'react'
+import type { ReactNode } from "react";
 
-export type ChildrenType = Readonly<{ children: ReactNode }>
+export type ChildrenType = Readonly<{ children: ReactNode }>;

@@ -1,0 +1,17 @@
+# Dependencies
+node_modules
+dist
+build
+
+# Lock files
+package-lock.json
+yarn.lock
+bun.lockb
+
+# Build outputs
+*.min.js
+*.min.css
+
+# Logs
+*.log
+

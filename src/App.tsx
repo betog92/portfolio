@@ -1,7 +1,7 @@
-import AppRouter from './routes/router'
-import AppProviders from './components/wrappers/AppProviders'
+import AppRouter from "./routes/router";
+import AppProviders from "./components/wrappers/AppProviders";
 
-import '@/assets/scss/style.scss'
+import "@/assets/scss/style.scss";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <AppRouter />
       </AppProviders>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
