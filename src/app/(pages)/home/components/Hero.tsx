@@ -2,7 +2,7 @@ import personal1 from "@/assets/images/personal/1.png";
 import mainBg from "@/assets/images/personal/main-bg.png";
 
 import { Button, Col, Container, Row } from "react-bootstrap";
-import Typist from "react-text-typist";
+import { TypeAnimation } from "react-type-animation";
 
 const Hero = () => {
   return (
@@ -25,24 +25,36 @@ const Hero = () => {
             className="text-center px-0 px-xl-4 mt-5 mt-lg-0 pt-5 pt-lg-0"
           >
             <h5 className="d-inline-block py-1 px-3 rounded text-muted font-secondary">
-              Hi, I'm David Williamson
+              Hi, I'm Alberto García
             </h5>
             <h1 className="hero-title mb-4 font-secondary fo">
-              I'm a freelance{" "}
-              <mark>
-                {" "}
-                <Typist
+              I'm a Senior{" "}
+              <mark
+                style={{
+                  display: "inline-block",
+                  minWidth: "200px",
+                  textAlign: "left",
+                  backgroundColor: "rgba(241, 10, 10, 0.1)",
+                }}
+              >
+                <TypeAnimation
                   className="fw-medium typewrite"
-                  sentences={["React", "Flutter", "Python"]}
-                  typingSpeed={1500}
-                  deletingSpeed={700}
-                  showCursor={false}
-                  startDelay={100}
-                  cursorSmooth
-                  pauseTime={2500}
+                  sequence={[
+                    "React Native",
+                    3000,
+                    "TypeScript",
+                    3000,
+                    "Mobile",
+                    3000,
+                  ]}
+                  wrapper="span"
+                  speed={{ type: "keyStrokeDelayInMs", value: 100 }}
+                  deletionSpeed={{ type: "keyStrokeDelayInMs", value: 100 }}
+                  repeat={Infinity}
+                  cursor={false}
                 />
               </mark>{" "}
-              Developer
+              Engineer
             </h1>
             <span className="wrap" />
             <div className="mb-5 mb-lg-0">

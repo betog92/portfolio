@@ -1634,11 +1634,6 @@ react-router@6.28.0:
   dependencies:
     "@remix-run/router" "1.21.0"
 
-react-text-typist@^1.1.8:
-  version "1.1.8"
-  resolved "https://registry.yarnpkg.com/react-text-typist/-/react-text-typist-1.1.8.tgz#e7040a49bb1f14a813e94cd242790e9e51e39b29"
-  integrity sha512-cF5TIWjPV2ErRSM8DRloI4w+1Op5RhUWY6UT29D6wW50zKd4gK1xLzVPOD+4i5h3RlB/2td4z6VQ3ZcgWeFJvA==
-
 react-transition-group@^4.4.5:
   version "4.4.5"
   resolved "https://registry.yarnpkg.com/react-transition-group/-/react-transition-group-4.4.5.tgz#e53d4e3f3344da8521489fbef8f2581d42becdd1"
@@ -1648,6 +1643,11 @@ react-transition-group@^4.4.5:
     dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
+
+react-type-animation@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-type-animation/-/react-type-animation-3.2.0.tgz#6863d5d60e3beb237f2bd690cceb585402c47e6a"
+  integrity sha512-WXTe0i3rRNKjmggPvT5ntye1QBt0ATGbijeW6V3cQe2W0jaMABXXlPPEdtofnS9tM7wSRHchEvI9SUw+0kUohw==
 
 react@^18.3.1:
   version "18.3.1"
