@@ -30,11 +30,11 @@ const Hero = () => {
               Hi, I'm Alberto García
             </h5>
             <h1 className="hero-title mb-4 font-secondary fo">
-              I'm a Senior{" "}
+              I'm a{" "}
               <mark>
                 <TypeAnimation
                   className="fw-medium typewrite"
-                  sequence={["Web", 5000, "Mobile", 5000]}
+                  sequence={["Senior Mobile", 5000, "Mid Web", 5000]}
                   wrapper="span"
                   speed={{ type: "keyStrokeDelayInMs", value: 150 }}
                   deletionSpeed={{ type: "keyStrokeDelayInMs", value: 150 }}
