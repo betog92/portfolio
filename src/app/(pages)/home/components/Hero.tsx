@@ -4,6 +4,8 @@ import mainBg from "@/assets/images/personal/main-bg.png";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { TypeAnimation } from "react-type-animation";
 
+const basePath = import.meta.env.PROD ? "/portfolio" : "";
+
 const Hero = () => {
   return (
     <section
@@ -45,7 +47,16 @@ const Hero = () => {
             <span className="wrap" />
             <div className="mb-5 mb-lg-0">
               <div className="d-inline-block">
-                <Button variant="primary">Download CV</Button>
+                <Button
+                  variant="primary"
+                  as="a"
+                  href={`${basePath}/Alberto_Garcia_CV.pdf`}
+                  download="Alberto_Garcia_CV.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download CV
+                </Button>
               </div>
             </div>
           </Col>
