@@ -30,10 +30,9 @@ const Hero = () => {
             <h1 className="hero-title mb-4 font-secondary fo">
               I'm a Senior{" "}
               <mark>
-                {" "}
                 <Typist
                   className="fw-medium typewrite"
-                  sentences={["React Native", "TypeScript", "Mobile"]}
+                  sentences={["React Native"]}
                   typingSpeed={1500}
                   deletingSpeed={700}
                   showCursor={false}
@@ -41,7 +40,7 @@ const Hero = () => {
                   cursorSmooth
                   pauseTime={2500}
                 />
-              </mark>{" "}
+              </mark>
               Engineer
             </h1>
             <span className="wrap" />
