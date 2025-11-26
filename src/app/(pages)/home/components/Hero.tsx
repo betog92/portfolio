@@ -25,14 +25,14 @@ const Hero = () => {
             className="text-center px-0 px-xl-4 mt-5 mt-lg-0 pt-5 pt-lg-0"
           >
             <h5 className="d-inline-block py-1 px-3 rounded text-muted font-secondary">
-              Hi, I'm Alberto Iván García Montemayor
+              Hi, I'm Alberto García
             </h5>
             <h1 className="hero-title mb-4 font-secondary fo">
               I'm a Senior{" "}
               <mark>
                 <Typist
                   className="fw-medium typewrite"
-                  sentences={["React Native"]}
+                  sentences={["Mobile", "Web"]}
                   typingSpeed={1500}
                   deletingSpeed={700}
                   showCursor={false}
