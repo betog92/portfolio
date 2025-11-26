@@ -39,7 +39,7 @@ const Hero = () => {
                   speed={{ type: "keyStrokeDelayInMs", value: 150 }}
                   deletionSpeed={{ type: "keyStrokeDelayInMs", value: 150 }}
                   repeat={Infinity}
-                  cursor={false}
+                  cursor={true}
                 />
               </mark>{" "}
               Engineer
