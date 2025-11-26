@@ -29,14 +29,7 @@ const Hero = () => {
             </h5>
             <h1 className="hero-title mb-4 font-secondary fo">
               I'm a Senior{" "}
-              <mark
-                style={{
-                  display: "inline-block",
-                  minWidth: "200px",
-                  textAlign: "left",
-                  backgroundColor: "rgba(241, 10, 10, 0.1)",
-                }}
-              >
+              <mark>
                 <TypeAnimation
                   className="fw-medium typewrite"
                   sequence={[

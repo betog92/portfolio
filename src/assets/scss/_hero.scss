@@ -18,6 +18,12 @@
     line-height: 70px;
     font-weight: 700;
     color: $dark;
+
+    mark {
+      display: inline-block;
+      min-width: 200px;
+      text-align: left;
+    }
   }
 }
 
