@@ -41,7 +41,8 @@ const Hero = () => {
                   repeat={Infinity}
                   cursor={true}
                 />
-              </mark>{" "}
+              </mark>
+              <br />
               Engineer
             </h1>
             <span className="wrap" />
