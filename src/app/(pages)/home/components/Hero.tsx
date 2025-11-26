@@ -32,14 +32,7 @@ const Hero = () => {
               <mark>
                 <TypeAnimation
                   className="fw-medium typewrite"
-                  sequence={[
-                    "React Native",
-                    3000,
-                    "TypeScript",
-                    3000,
-                    "Mobile",
-                    3000,
-                  ]}
+                  sequence={["React Native", 3000, "React", 3000]}
                   wrapper="span"
                   speed={{ type: "keyStrokeDelayInMs", value: 100 }}
                   deletionSpeed={{ type: "keyStrokeDelayInMs", value: 100 }}
