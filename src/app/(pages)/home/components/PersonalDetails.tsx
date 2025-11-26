@@ -27,6 +27,14 @@ const PersonalDetails = () => {
               >
                 <IconifyIcon icon="la:linkedin-in" />
               </Link>
+              <Link
+                to="https://github.com/betog92"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="icon github me-1"
+              >
+                <IconifyIcon icon="la:github" />
+              </Link>
             </div>
           </Col>
           <Col lg={5} className="ms-auto align-self-center">
