@@ -18,6 +18,22 @@
     line-height: 70px;
     font-weight: 700;
     color: $dark;
+
+    mark {
+      display: inline-block;
+      max-width: 100%;
+      word-break: break-word;
+      white-space: normal;
+      vertical-align: top;
+    }
+
+    // En móviles, ajustar el comportamiento del mark
+    @media (max-width: 768px) {
+      mark {
+        max-width: calc(100% - 60px); // Dejar espacio para "I'm a"
+        word-break: break-word;
+      }
+    }
   }
 }
 
