@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import personal1 from "@/assets/images/personal/1.png";
 import mainBg from "@/assets/images/personal/main-bg.png";
 
@@ -6,7 +8,27 @@ import { TypeAnimation } from "react-type-animation";
 
 const basePath = import.meta.env.PROD ? "/portfolio" : "";
 
+const roles = ["React Native", 2000, "Next.js", 2000] as const;
+
+// Respeta la preferencia del sistema de reducir animaciones (accesibilidad).
+const useReducedMotion = () => {
+  const [reduced, setReduced] = useState(false);
+
+  useEffect(() => {
+    const query = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReduced(query.matches);
+
+    const onChange = (event: MediaQueryListEvent) => setReduced(event.matches);
+    query.addEventListener("change", onChange);
+    return () => query.removeEventListener("change", onChange);
+  }, []);
+
+  return reduced;
+};
+
 const Hero = () => {
+  const reducedMotion = useReducedMotion();
+
   return (
     <section
       className="hero-one position-relative main-bg"
@@ -29,23 +51,32 @@ const Hero = () => {
             <h5 className="d-inline-block py-1 px-3 rounded text-muted font-secondary">
               Hi, I'm Alberto García
             </h5>
-            <h1 className="hero-title mb-4 font-secondary fo">
-              I'm a{" "}
-              <mark>
-                <TypeAnimation
-                  className="fw-medium typewrite"
-                  sequence={["Senior Mobile", 5000, "Mid Web", 5000]}
-                  wrapper="span"
-                  speed={{ type: "keyStrokeDelayInMs", value: 150 }}
-                  deletionSpeed={{ type: "keyStrokeDelayInMs", value: 150 }}
-                  repeat={Infinity}
-                  cursor={true}
-                />
-              </mark>
-              <br />
-              Engineer
+            <h1 className="hero-title mb-4 font-secondary">
+              <span className="visually-hidden">
+                I'm a Senior React Native &amp; Next.js Engineer
+              </span>
+              <span aria-hidden="true">
+                <span className="hero-title-line">
+                  I'm a{" "}
+                  <mark>
+                    {reducedMotion ? (
+                      <span className="fw-medium typewrite">React Native</span>
+                    ) : (
+                      <TypeAnimation
+                        className="fw-medium typewrite"
+                        sequence={[...roles]}
+                        wrapper="span"
+                        speed={{ type: "keyStrokeDelayInMs", value: 150 }}
+                        deletionSpeed={{ type: "keyStrokeDelayInMs", value: 75 }}
+                        repeat={Infinity}
+                        cursor={true}
+                      />
+                    )}
+                  </mark>
+                </span>
+                Engineer
+              </span>
             </h1>
-            <span className="wrap" />
             <div className="mb-5 mb-lg-0">
               <div className="d-inline-block">
                 <Button

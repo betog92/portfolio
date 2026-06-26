@@ -22,16 +22,29 @@
     mark {
       display: inline-block;
       max-width: 100%;
-      word-break: break-word;
+      overflow-wrap: break-word;
       white-space: normal;
       vertical-align: top;
     }
 
-    // En móviles, ajustar el comportamiento del mark
+    .hero-title-line {
+      display: block;
+    }
+
+    // En el rango lg la columna se angosta y la frase más larga podría
+    // pasar a 2 líneas; reducimos el tamaño para que quepa en una sola.
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+      font-size: 46px;
+    }
+
+    // En móvil el mark fluye como texto (no como caja) para que, si llegara
+    // a no caber, reparta en renglones en vez de desbordarse a la derecha.
     @media (max-width: 768px) {
+      font-size: 30px;
+      line-height: 1.3;
+
       mark {
-        max-width: calc(100% - 60px); // Dejar espacio para "I'm a"
-        word-break: break-word;
+        display: inline;
       }
     }
   }
