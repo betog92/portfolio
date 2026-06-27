@@ -1,25 +1,31 @@
 import IconifyIcon from "@/components/wrappers/IconifyIcon";
 import { Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
+type TimelineItem = { title: string; year: string; description: string };
+
 const LifeTime = () => {
+  const { t } = useTranslation();
+  const timeline = t("about.lifetime.timeline", {
+    returnObjects: true,
+  }) as TimelineItem[];
   return (
     <section className="section">
       <Container>
         <Row className="justify-content-center mb-4">
           <Col xs={12} md={10} lg={7} className="text-center">
             <span className="badge badge-lg rounded bg-soft-alt-success fw-normal fs-13 text-uppercase">
-              Life Time
+              {t("about.lifetime.badge")}
             </span>
             <h2 className="fs-2 fw-medium lh-1 text-dark my-3 position-relative z-i-2">
-              Education &amp; Experience
+              {t("about.lifetime.title")}
             </h2>
             <div className="bg-text">
-              <h1 className="fw-bold p-0">Resume</h1>
+              <h1 className="fw-bold p-0">{t("about.lifetime.bgText")}</h1>
             </div>
             <p className="text-gray-700 fs-18 fs-lg mb-4 mb-md-5 lh-lg">
-              We craft digital, graphic and dimensional thinking, to create
-              category leading brand experiences that have meaning .
+              {t("common.craftCopy")}
             </p>
           </Col>
         </Row>
@@ -34,17 +40,11 @@ const LifeTime = () => {
                         <IconifyIcon icon="tabler:trophy" />
                       </div>
                       <div className="inner-content">
-                        <h3 className="title">
-                          GHI Themes - Web &amp; App IT Company
-                        </h3>
-                        <p className="description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Integer malesuada tellus lorem, et condimentum
-                          neque commodo
-                        </p>
+                        <h3 className="title">{timeline[0]?.title}</h3>
+                        <p className="description">{timeline[0]?.description}</p>
                       </div>
                       <div className="timeline-year">
-                        <span>2019-22</span>
+                        <span>{timeline[0]?.year}</span>
                       </div>
                     </Link>
                   </div>
@@ -54,17 +54,11 @@ const LifeTime = () => {
                         <IconifyIcon icon="tabler:users" />
                       </div>
                       <div className="inner-content">
-                        <h3 className="title">
-                          ABC themes - Web Design IT Company
-                        </h3>
-                        <p className="description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Integer malesuada tellus lorem, et condimentum
-                          neque commodo
-                        </p>
+                        <h3 className="title">{timeline[1]?.title}</h3>
+                        <p className="description">{timeline[1]?.description}</p>
                       </div>
                       <div className="timeline-year">
-                        <span>2014-18</span>
+                        <span>{timeline[1]?.year}</span>
                       </div>
                     </Link>
                   </div>
@@ -74,15 +68,11 @@ const LifeTime = () => {
                         <IconifyIcon icon="tabler:school" />
                       </div>
                       <div className="inner-content">
-                        <h3 className="title">MSc IT Master Degree</h3>
-                        <p className="description">
-                          Harvard University is an educational institution that
-                          offers graduate, professional, and research programs
-                          in the fields of and public health.
-                        </p>
+                        <h3 className="title">{timeline[2]?.title}</h3>
+                        <p className="description">{timeline[2]?.description}</p>
                       </div>
                       <div className="timeline-year">
-                        <span>2012-13</span>
+                        <span>{timeline[2]?.year}</span>
                       </div>
                     </Link>
                   </div>
@@ -92,17 +82,11 @@ const LifeTime = () => {
                         <IconifyIcon icon="tabler:building" />
                       </div>
                       <div className="inner-content">
-                        <h3 className="title">
-                          High / Higher secondary school
-                        </h3>
-                        <p className="description">
-                          Princeton University is an educational institution
-                          that offers graduate, professional, and research
-                          programs in the fields of and public health.
-                        </p>
+                        <h3 className="title">{timeline[3]?.title}</h3>
+                        <p className="description">{timeline[3]?.description}</p>
                       </div>
                       <div className="timeline-year">
-                        <span>2007-08</span>
+                        <span>{timeline[3]?.year}</span>
                       </div>
                     </Link>
                   </div>

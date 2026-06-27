@@ -3,9 +3,11 @@ import { blogsData, BlogsType } from "../data";
 
 import IconifyIcon from "@/components/wrappers/IconifyIcon";
 import { Card, CardBody, Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const BlogCard = ({ date, image, name, title, userImg }: BlogsType) => {
+  const { t } = useTranslation();
   return (
     <Card className="shadow  mb-4 mb-4">
       <img src={image} alt="personal" className="img-fluid rounded-top" />
@@ -30,7 +32,7 @@ const BlogCard = ({ date, image, name, title, userImg }: BlogsType) => {
           </div>
           <div className="align-self-center">
             <Link to="/blog-detail" className="fs-14">
-              Read more{" "}
+              {t("common.readMore")}{" "}
               <IconifyIcon
                 icon="tabler:arrow-right"
                 className="align-self-center"
@@ -44,7 +46,17 @@ const BlogCard = ({ date, image, name, title, userImg }: BlogsType) => {
 };
 
 const Blogs = () => {
-  const blogs = splitArray(blogsData, 3);
+  const { t } = useTranslation();
+  const translated = t("blogsData", {
+    returnObjects: true,
+  }) as { title: string; name: string; date: string }[];
+  const mergedBlogs = blogsData.map((item, idx) => ({
+    ...item,
+    title: translated[idx]?.title ?? item.title,
+    name: translated[idx]?.name ?? item.name,
+    date: translated[idx]?.date ?? item.date,
+  }));
+  const blogs = splitArray(mergedBlogs, 3);
   return (
     <section className="section">
       <Container>

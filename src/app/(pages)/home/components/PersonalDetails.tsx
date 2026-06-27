@@ -2,21 +2,25 @@ import { personalData } from "../data";
 
 import IconifyIcon from "@/components/wrappers/IconifyIcon";
 import { Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const PersonalDetails = () => {
+  const { t } = useTranslation();
+  const skills = t("home.personal.skills", {
+    returnObjects: true,
+  }) as string[];
+
   return (
     <section className="section" id="about">
       <Container>
         <Row className="align-items-center">
           <Col lg={6} className="align-self-center">
             <h5 className="fs-24 text-dark fw-medium">
-              <mark>Personal Details</mark>
+              <mark>{t("home.personal.badge")}</mark>
             </h5>
             <h4 className="fw-normal lh-base text-gray-700 mb-4 fs-20">
-              Mobile software engineer with 5+ years of experience in React
-              Native and technical leadership. Specialized in TypeScript and
-              mobile security for fintech applications.
+              {t("home.personal.intro")}
             </h4>
             <div className="social">
               <Link
@@ -39,23 +43,37 @@ const PersonalDetails = () => {
           </Col>
           <Col lg={5} className="ms-auto align-self-center">
             <div className="mb-5 mb-lg-0">
-              <p className="mb-2">
-                <span className="personal-detail-title">Date of birth</span>
-                <span className="personal-detail-info">28 April 1992</span>
-              </p>
-              <p className="mb-2">
-                <span className="personal-detail-title">Spoken Languages</span>
+              <p className="mb-2 personal-detail-row">
+                <span className="personal-detail-title">
+                  {t("home.personal.labels.dob")}
+                </span>
                 <span className="personal-detail-info">
-                  English (B2++), Spanish (C2)
+                  {t("home.personal.values.dob")}
                 </span>
               </p>
-              <p className="mb-2">
-                <span className="personal-detail-title">Nationality</span>
-                <span className="personal-detail-info">México</span>
+              <p className="mb-2 personal-detail-row">
+                <span className="personal-detail-title">
+                  {t("home.personal.labels.languages")}
+                </span>
+                <span className="personal-detail-info">
+                  {t("home.personal.values.languages")}
+                </span>
               </p>
-              <p className="mb-2">
-                <span className="personal-detail-title">Interest</span>
-                <span className="personal-detail-info">Padel</span>
+              <p className="mb-2 personal-detail-row">
+                <span className="personal-detail-title">
+                  {t("home.personal.labels.nationality")}
+                </span>
+                <span className="personal-detail-info">
+                  {t("home.personal.values.nationality")}
+                </span>
+              </p>
+              <p className="mb-2 personal-detail-row">
+                <span className="personal-detail-title">
+                  {t("home.personal.labels.interest")}
+                </span>
+                <span className="personal-detail-info">
+                  {t("home.personal.values.interest")}
+                </span>
               </p>
             </div>
           </Col>
@@ -76,7 +94,8 @@ const PersonalDetails = () => {
                           {item.name}
                         </h6>
                         <p className="text-muted mb-0 fs-12">
-                          {item.experience} Experience
+                          {skills[idx] ?? item.experience}{" "}
+                          {t("common.experience")}
                         </p>
                       </div>
                     </div>

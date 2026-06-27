@@ -2,6 +2,7 @@ import IconifyIcon from "@/components/wrappers/IconifyIcon";
 import clsx from "clsx";
 import { useState } from "react";
 import { Card, CardBody, Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { ProjectData, ProjectType } from "../data";
 const ProjectsCard = ({ image, link, title, variant }: ProjectType) => {
@@ -27,18 +28,24 @@ const ProjectsCard = ({ image, link, title, variant }: ProjectType) => {
 };
 
 const Projects = () => {
-  const [gallery, setGallery] = useState(ProjectData);
+  const { t } = useTranslation();
+  const titles = t("projectsPage.items", {
+    returnObjects: true,
+  }) as { title: string }[];
+  const localizedProjects = ProjectData.map((item, idx) => ({
+    ...item,
+    title: titles[idx]?.title ?? item.title,
+  }));
+
   const [category, setCategory] = useState("all");
+
+  const gallery =
+    category === "all"
+      ? localizedProjects
+      : localizedProjects.filter((album) => album.category?.includes(category));
 
   const filterImages = (category: string) => {
     setCategory(category);
-    setTimeout(() => {
-      const galleryAlbums =
-        category === "all"
-          ? ProjectData
-          : ProjectData.filter((album) => album.category?.includes(category));
-      setGallery(galleryAlbums);
-    }, 300);
   };
   return (
     <section className="section">
@@ -55,7 +62,7 @@ const Projects = () => {
                   onClick={() => filterImages("all")}
                   data-group="all"
                 >
-                  All
+                  {t("common.filters.all")}
                 </li>
                 <li
                   className={clsx(
@@ -65,7 +72,7 @@ const Projects = () => {
                   onClick={() => filterImages("angular")}
                   data-group="angular"
                 >
-                  Angular
+                  {t("common.filters.angular")}
                 </li>
                 <li
                   className={clsx(
@@ -75,7 +82,7 @@ const Projects = () => {
                   onClick={() => filterImages("mongodb")}
                   data-group="mongodb"
                 >
-                  Mongodb
+                  {t("common.filters.mongodb")}
                 </li>
                 <li
                   className={clsx(
@@ -85,7 +92,7 @@ const Projects = () => {
                   onClick={() => filterImages("bootstrap")}
                   data-group="bootstrap"
                 >
-                  Bootstrap
+                  {t("common.filters.bootstrap")}
                 </li>
               </ul>
             </div>

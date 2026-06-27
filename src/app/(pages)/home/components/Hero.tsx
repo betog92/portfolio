@@ -4,6 +4,7 @@ import personal1 from "@/assets/images/personal/1.png";
 import mainBg from "@/assets/images/personal/main-bg.png";
 
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { TypeAnimation } from "react-type-animation";
 
 const basePath = import.meta.env.PROD ? "/portfolio" : "";
@@ -28,6 +29,27 @@ const useReducedMotion = () => {
 
 const Hero = () => {
   const reducedMotion = useReducedMotion();
+  const { t, i18n } = useTranslation();
+
+  const isSpanish = (i18n.resolvedLanguage ?? "en").startsWith("es");
+
+  const animatedRole = (
+    <mark>
+      {reducedMotion ? (
+        <span className="fw-medium typewrite">React Native</span>
+      ) : (
+        <TypeAnimation
+          className="fw-medium typewrite"
+          sequence={[...roles]}
+          wrapper="span"
+          speed={{ type: "keyStrokeDelayInMs", value: 220 }}
+          deletionSpeed={{ type: "keyStrokeDelayInMs", value: 110 }}
+          repeat={Infinity}
+          cursor={true}
+        />
+      )}
+    </mark>
+  );
 
   return (
     <section
@@ -49,32 +71,26 @@ const Hero = () => {
             className="text-center px-0 px-xl-4 mt-5 mt-lg-0 pt-5 pt-lg-0"
           >
             <h5 className="d-inline-block py-1 px-3 rounded text-muted font-secondary">
-              Hi, I'm Alberto García
+              {t("hero.greeting")}
             </h5>
             <h1 className="hero-title mb-4 font-secondary">
-              <span className="visually-hidden">
-                I'm a Senior React Native &amp; Next.js Engineer
-              </span>
+              <span className="visually-hidden">{t("hero.seoTitle")}</span>
               <span aria-hidden="true">
-                <span className="hero-title-line">
-                  I'm a{" "}
-                  <mark>
-                    {reducedMotion ? (
-                      <span className="fw-medium typewrite">React Native</span>
-                    ) : (
-                      <TypeAnimation
-                        className="fw-medium typewrite"
-                        sequence={[...roles]}
-                        wrapper="span"
-                        speed={{ type: "keyStrokeDelayInMs", value: 150 }}
-                        deletionSpeed={{ type: "keyStrokeDelayInMs", value: 75 }}
-                        repeat={Infinity}
-                        cursor={true}
-                      />
-                    )}
-                  </mark>
-                </span>
-                Engineer
+                {isSpanish ? (
+                  <>
+                    <span className="hero-title-line">
+                      {t("hero.prefix")} {t("hero.suffix")}
+                    </span>
+                    {animatedRole}
+                  </>
+                ) : (
+                  <>
+                    <span className="hero-title-line">
+                      {t("hero.prefix")} {animatedRole}
+                    </span>
+                    {t("hero.suffix")}
+                  </>
+                )}
               </span>
             </h1>
             <div className="mb-5 mb-lg-0">
@@ -87,7 +103,7 @@ const Hero = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Download CV
+                  {t("hero.downloadCv")}
                 </Button>
               </div>
             </div>

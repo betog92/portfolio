@@ -1,5 +1,6 @@
 import IconifyIcon from "@/components/wrappers/IconifyIcon";
 import { Card, CardBody, Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { servicesData, ServicesType } from "../data";
 
 const ServicesCard = ({ icon, description, title, variant }: ServicesType) => {
@@ -22,23 +23,27 @@ const ServicesCard = ({ icon, description, title, variant }: ServicesType) => {
 };
 
 const Services = () => {
+  const { t } = useTranslation();
+  const items = t("home.services.items", {
+    returnObjects: true,
+  }) as { title: string; description: string }[];
+
   return (
     <section className="section bg-gradient-light-white" id="services">
       <Container>
         <Row className="justify-content-center mb-4">
           <Col xs={12} md={10} lg={7} className="text-center position-relative">
             <span className="badge badge-lg rounded bg-soft-alt-success fw-normal fs-13 text-uppercase">
-              Services
+              {t("home.services.badge")}
             </span>
             <h2 className="fs-2 fw-medium lh-1 text-dark my-3 position-relative z-i-2">
-              Our Services
+              {t("home.services.title")}
             </h2>
             <div className="bg-text">
-              <h1 className="fw-bold p-0">Services</h1>
+              <h1 className="fw-bold p-0">{t("home.services.bgText")}</h1>
             </div>
             <p className="text-gray-700 fs-18 fs-lg mb-4 mb-md-5 lh-lg">
-              We craft digital, graphic and dimensional thinking, to create
-              category leading brand experiences that have meaning .
+              {t("common.craftCopy")}
             </p>
           </Col>
         </Row>
@@ -46,7 +51,11 @@ const Services = () => {
           {servicesData.map((item, idx) => {
             return (
               <Col lg={4} md={6} key={idx} className="mt-4 pt-2">
-                <ServicesCard {...item} />
+                <ServicesCard
+                  {...item}
+                  title={items[idx]?.title ?? item.title}
+                  description={items[idx]?.description ?? item.description}
+                />
               </Col>
             );
           })}

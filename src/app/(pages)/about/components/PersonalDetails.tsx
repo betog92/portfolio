@@ -1,10 +1,15 @@
 import personal2 from "@/assets/images/personal/2.png";
 import IconifyIcon from "@/components/wrappers/IconifyIcon";
 import { Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { personalData } from "../data";
 
 const PersonalDetails = () => {
+  const { t } = useTranslation();
+  const skills = t("about.personal.skills", {
+    returnObjects: true,
+  }) as string[];
   return (
     <section className="section">
       <Container>
@@ -18,31 +23,42 @@ const PersonalDetails = () => {
           </Col>
           <Col lg={6} className="ms-auto align-self-center">
             <h5 className="fs-24 text-dark fw-medium mb-3">
-              <mark>Personal Details</mark>
+              <mark>{t("about.personal.badge")}</mark>
             </h5>
             <h4 className="fw-normal lh-base text-gray-700 mb-5 fs-20">
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout.
+              {t("about.personal.intro")}
             </h4>
             <div className="mb-5 mb-lg-0">
-              <p className="mb-2">
-                <span className="personal-detail-title">Date of birth</span>
-                <span className="personal-detail-info">06 june 1989</span>
-              </p>
-              <p className="mb-2">
-                <span className="personal-detail-title">Spoken Langages</span>
+              <p className="mb-2 personal-detail-row">
+                <span className="personal-detail-title">
+                  {t("about.personal.labels.dob")}
+                </span>
                 <span className="personal-detail-info">
-                  English - French - German
+                  {t("about.personal.values.dob")}
                 </span>
               </p>
-              <p className="mb-2">
-                <span className="personal-detail-title">Nationality</span>
-                <span className="personal-detail-info">USA</span>
-              </p>
-              <p className="mb-2">
-                <span className="personal-detail-title">Interest</span>
+              <p className="mb-2 personal-detail-row">
+                <span className="personal-detail-title">
+                  {t("about.personal.labels.languages")}
+                </span>
                 <span className="personal-detail-info">
-                  Music, Reading, journey
+                  {t("about.personal.values.languages")}
+                </span>
+              </p>
+              <p className="mb-2 personal-detail-row">
+                <span className="personal-detail-title">
+                  {t("about.personal.labels.nationality")}
+                </span>
+                <span className="personal-detail-info">
+                  {t("about.personal.values.nationality")}
+                </span>
+              </p>
+              <p className="mb-2 personal-detail-row">
+                <span className="personal-detail-title">
+                  {t("about.personal.labels.interest")}
+                </span>
+                <span className="personal-detail-info">
+                  {t("about.personal.values.interest")}
                 </span>
               </p>
             </div>
@@ -77,7 +93,7 @@ const PersonalDetails = () => {
                         {item.name}
                       </h6>
                       <p className="text-muted mb-0 fs-12">
-                        {item.experience} Experience
+                        {skills[idx] ?? item.experience} {t("common.experience")}
                       </p>
                     </div>
                   </div>

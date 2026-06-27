@@ -1,9 +1,11 @@
 import { blogsData, BlogsType } from "../data";
 
 import { Card, CardBody, Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const BlogsCard = ({ date, image, name, title, userImg }: BlogsType) => {
+  const { t } = useTranslation();
   return (
     <Card className="shadow">
       <img src={image} alt="img" className="img-fluid rounded-top" />
@@ -28,7 +30,8 @@ const BlogsCard = ({ date, image, name, title, userImg }: BlogsType) => {
           </div>
           <div className="align-self-center">
             <Link to="/blog-detail" className="fs-14">
-              Read more <i className="ti ti-arrow-right align-self-center" />
+              {t("common.readMore")}{" "}
+              <i className="ti ti-arrow-right align-self-center" />
             </Link>
           </div>
         </div>
@@ -38,20 +41,20 @@ const BlogsCard = ({ date, image, name, title, userImg }: BlogsType) => {
 };
 
 const Blogs = () => {
+  const { t } = useTranslation();
   return (
     <section className="section " id="blogs">
       <Container className="pb-5">
         <Row className="justify-content-center mb-4">
           <Col xs={12} md={10} lg={7} className="text-center">
             <span className="badge badge-lg rounded bg-soft-alt-success fw-normal fs-13 text-uppercase">
-              Blogs
+              {t("home.blogs.badge")}
             </span>
             <h2 className="fs-2 fw-normal lh-1 text-dark my-3">
-              Latest news &amp; insights
+              {t("home.blogs.title")}
             </h2>
             <p className="text-gray-700 fs-18 fs-lg mb-4 mb-md-5 lh-lg">
-              We craft digital, graphic and dimensional thinking, to create
-              category leading brand experiences that have meaning .
+              {t("common.craftCopy")}
             </p>
           </Col>
         </Row>

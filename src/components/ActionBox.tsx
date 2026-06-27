@@ -1,7 +1,9 @@
 import imageP1 from "@/assets/images/p-1.svg";
 import { Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 const ActionBox = () => {
+  const { t } = useTranslation();
   return (
     <section className="section bg-light cta-pettern">
       <Container>
@@ -14,18 +16,20 @@ const ActionBox = () => {
               className="text-dark"
               style={{ lineHeight: "1.5", position: "relative" }}
             >
-              I Am Available For Freelancer.
+              {t("about.actionBox.title")}
             </h2>
-            <p className="text-muted mb-0">
-              Browse hundreds of job offers and find the bestsuitable position.
-            </p>
+            <p className="text-muted mb-0">{t("about.actionBox.subtitle")}</p>
           </Col>
           <Col lg={6} className="ml-auto">
             <div className="cta-search">
               <form className="position-relative">
-                <input type="email" placeholder="Email Address" required />
+                <input
+                  type="email"
+                  placeholder={t("about.actionBox.emailPlaceholder")}
+                  required
+                />
                 <button type="submit" className="btn btn-dark">
-                  Send Massage
+                  {t("about.actionBox.sendButton")}
                 </button>
               </form>
             </div>

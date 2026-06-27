@@ -1,6 +1,7 @@
 import IconifyIcon from "@/components/wrappers/IconifyIcon";
 import { splitArray } from "@/utils/array";
 import { Card, CardBody, Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { servicesData, ServicesType } from "../data";
 
 const ServicesCard = ({ description, icon, title, variant }: ServicesType) => {
@@ -23,7 +24,16 @@ const ServicesCard = ({ description, icon, title, variant }: ServicesType) => {
 };
 
 const Services = () => {
-  const services = splitArray(servicesData, 3);
+  const { t } = useTranslation();
+  const translated = t("servicesPage.items", {
+    returnObjects: true,
+  }) as { title: string; description: string }[];
+  const mergedData = servicesData.map((item, idx) => ({
+    ...item,
+    title: translated[idx]?.title ?? item.title,
+    description: translated[idx]?.description ?? item.description,
+  }));
+  const services = splitArray(mergedData, 3);
   return (
     <section className="section bg-gradient-light-white">
       <Container>

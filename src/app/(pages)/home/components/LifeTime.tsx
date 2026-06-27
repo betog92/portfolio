@@ -14,22 +14,37 @@ import {
   Container,
   Row,
 } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
+
+type TimelineEntry = {
+  title: string;
+  years: string;
+  description: string;
+  place: string;
+};
 
 const LifeTime = () => {
+  const { t } = useTranslation();
+  const edu = t("home.lifetime.edu", {
+    returnObjects: true,
+  }) as TimelineEntry[];
+  const exp = t("home.lifetime.exp", {
+    returnObjects: true,
+  }) as TimelineEntry[];
+
   return (
     <section className="section" id="resume">
       <Container>
         <Row className="justify-content-center mb-4">
           <Col xs={12} md={10} lg={7} className="text-center">
             <span className="badge badge-lg rounded bg-soft-alt-success fw-normal fs-13 text-uppercase">
-              Life Time
+              {t("home.lifetime.badge")}
             </span>
             <h2 className="fs-2 fw-medium lh-1 text-dark my-3">
-              Education &amp; Experience
+              {t("home.lifetime.title")}
             </h2>
             <p className="text-gray-700 fs-18 fs-lg mb-4 mb-md-5 lh-lg">
-              We craft digital, graphic and dimensional thinking, to create
-              category leading brand experiences that have meaning .
+              {t("common.craftCopy")}
             </p>
           </Col>
         </Row>
@@ -53,7 +68,7 @@ const LifeTime = () => {
                         height={150}
                       />
                       <h5 className="text-dark fs-22 fw-medium my-2">
-                        Education
+                        {t("home.lifetime.education")}
                       </h5>
                     </div>
                   </CardBody>
@@ -69,56 +84,38 @@ const LifeTime = () => {
                     >
                       <AccordionItem eventKey="1">
                         <AccordionHeader as={"h2"} id="prime">
-                          MSc IT Master Degree
+                          {edu[0]?.title}
                           <span className="fw-medium text-primary ms-auto fs-14">
-                            2010 - 2012
+                            {edu[0]?.years}
                           </span>
                         </AccordionHeader>
                         <AccordionBody className="accordion-body">
-                          <p className="text-muted mb-3">
-                            Harvard University is an educational institution
-                            that offers graduate, professional, and research
-                            programs in the fields of and public health.
-                          </p>
-                          <p className="fw-medium">
-                            Harvard University, Cambridge, MA, United States
-                          </p>
+                          <p className="text-muted mb-3">{edu[0]?.description}</p>
+                          <p className="fw-medium">{edu[0]?.place}</p>
                         </AccordionBody>
                       </AccordionItem>
                       <AccordionItem eventKey="2">
                         <AccordionHeader as={"h2"} id="second">
-                          BCA college complete course
+                          {edu[1]?.title}
                           <span className="fw-medium text-primary ms-auto fs-14">
-                            2007 - 2010
+                            {edu[1]?.years}
                           </span>
                         </AccordionHeader>
                         <AccordionBody className="accordion-body">
-                          <p className="text-muted mb-3">
-                            Columbia University is an educational institution
-                            that offers graduate, professional, and research
-                            programs in the fields of and public health.
-                          </p>
-                          <p className="fw-medium">
-                            Columbia University, New York, NY, United States
-                          </p>
+                          <p className="text-muted mb-3">{edu[1]?.description}</p>
+                          <p className="fw-medium">{edu[1]?.place}</p>
                         </AccordionBody>
                       </AccordionItem>
                       <AccordionItem eventKey="3">
                         <AccordionHeader as={"h2"} id="higher">
-                          High / Higher secondary school
+                          {edu[2]?.title}
                           <span className="fw-medium text-primary ms-auto fs-14">
-                            1999 - 2007
+                            {edu[2]?.years}
                           </span>
                         </AccordionHeader>
                         <AccordionBody className="accordion-body">
-                          <p className="text-muted mb-3">
-                            Princeton University is an educational institution
-                            that offers graduate, professional, and research
-                            programs in the fields of and public health.
-                          </p>
-                          <p className="fw-medium">
-                            Princeton University, Princeton, NJ, United States
-                          </p>
+                          <p className="text-muted mb-3">{edu[2]?.description}</p>
+                          <p className="fw-medium">{edu[2]?.place}</p>
                         </AccordionBody>
                       </AccordionItem>
                     </Accordion>
@@ -145,7 +142,7 @@ const LifeTime = () => {
                         height={150}
                       />
                       <h5 className="text-dark fs-22 fw-medium my-2">
-                        Experience
+                        {t("home.lifetime.experience")}
                       </h5>
                     </div>
                   </CardBody>
@@ -161,20 +158,14 @@ const LifeTime = () => {
                     >
                       <AccordionItem eventKey="1">
                         <AccordionHeader id="first-co">
-                          ABC themes - Web Design IT Company
+                          {exp[0]?.title}
                           <span className="fw-medium text-primary ms-auto fs-14">
-                            2020 - 2021
+                            {exp[0]?.years}
                           </span>
                         </AccordionHeader>
                         <AccordionBody>
-                          <p className="text-muted mb-1">
-                            - Delivered quality code by applying the best
-                            development practices
-                          </p>
-                          <p className="fw-medium">
-                            A-000 Chambers Street, Suite z-701 New York, NY
-                            10007, United States
-                          </p>
+                          <p className="text-muted mb-1">{exp[0]?.description}</p>
+                          <p className="fw-medium">{exp[0]?.place}</p>
                           <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
                             Angular
                           </span>
@@ -190,21 +181,14 @@ const LifeTime = () => {
                       </AccordionItem>
                       <AccordionItem eventKey="2">
                         <AccordionHeader id="second-co">
-                          DEF Themes - Creative full stack web design &amp;
-                          development
+                          {exp[1]?.title}
                           <span className="fw-medium text-primary ms-auto fs-14">
-                            2016 - 2019
+                            {exp[1]?.years}
                           </span>
                         </AccordionHeader>
                         <AccordionBody>
-                          <p className="text-muted mb-1">
-                            - Delivered quality code by applying the best
-                            development practices
-                          </p>
-                          <p className="fw-medium">
-                            A-000 Chambers Street, Suite z-701 New York, NY
-                            10007, United States
-                          </p>
+                          <p className="text-muted mb-1">{exp[1]?.description}</p>
+                          <p className="fw-medium">{exp[1]?.place}</p>
                           <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
                             Laravel
                           </span>
@@ -220,20 +204,14 @@ const LifeTime = () => {
                       </AccordionItem>
                       <AccordionItem eventKey="3">
                         <AccordionHeader id="third-co">
-                          GHI Themes - Web &amp; App IT Company
+                          {exp[2]?.title}
                           <span className="fw-medium text-primary ms-auto fs-14">
-                            2013 - 2015
+                            {exp[2]?.years}
                           </span>
                         </AccordionHeader>
                         <AccordionBody>
-                          <p className="text-muted mb-1">
-                            - Delivered quality code by applying the best
-                            development practices
-                          </p>
-                          <p className="fw-medium">
-                            A-000 Chambers Street, Suite z-701 New York, NY
-                            10007, United States
-                          </p>
+                          <p className="text-muted mb-1">{exp[2]?.description}</p>
+                          <p className="fw-medium">{exp[2]?.place}</p>
                           <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
                             Node.js
                           </span>

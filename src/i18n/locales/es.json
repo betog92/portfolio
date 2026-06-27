@@ -1,0 +1,347 @@
+{
+  "meta": {
+    "title": "Alberto García | Desarrollador Senior React Native & Next.js"
+  },
+  "language": {
+    "label": "Idioma",
+    "en": "EN",
+    "es": "ES",
+    "english": "Inglés",
+    "spanish": "Español"
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "services": "Servicios",
+    "resume": "Currículum",
+    "projects": "Proyectos",
+    "blogs": "Blog",
+    "contact": "Contacto",
+    "hireMe": "¡Contrátame!"
+  },
+  "common": {
+    "craftCopy": "Creamos pensamiento digital, gráfico y dimensional para construir experiencias de marca líderes en su categoría y con significado.",
+    "readMore": "Leer más",
+    "experience": "de experiencia",
+    "filters": {
+      "all": "Todos",
+      "angular": "Angular",
+      "mongodb": "Mongodb",
+      "bootstrap": "Bootstrap"
+    }
+  },
+  "hero": {
+    "greeting": "Hola, soy Alberto García",
+    "prefix": "Soy",
+    "suffix": "Desarrollador Senior en",
+    "seoTitle": "Soy Desarrollador Senior en React Native y Next.js",
+    "downloadCv": "Descargar CV"
+  },
+  "banner": {
+    "about": "Sobre mí",
+    "services": "Servicios",
+    "resume": "Currículum",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "blogs": "Blog",
+    "blogDetail": "Detalle del blog"
+  },
+  "home": {
+    "personal": {
+      "badge": "Datos personales",
+      "intro": "Ingeniero de software móvil con más de 5 años de experiencia en React Native y liderazgo técnico. Especializado en TypeScript y seguridad móvil para aplicaciones fintech.",
+      "labels": {
+        "dob": "Fecha de nacimiento",
+        "languages": "Idiomas",
+        "nationality": "Nacionalidad",
+        "interest": "Intereses"
+      },
+      "values": {
+        "dob": "28 de abril de 1992",
+        "languages": "Inglés (B2++), Español (C2)",
+        "nationality": "México",
+        "interest": "Pádel"
+      },
+      "skills": [
+        "5+ años",
+        "5+ años",
+        "1 año",
+        "2 años",
+        "3 años",
+        "5 años",
+        "3 años",
+        "1 año"
+      ]
+    },
+    "services": {
+      "badge": "Servicios",
+      "title": "Mis servicios",
+      "bgText": "Servicios",
+      "items": [
+        {
+          "title": "Desarrollo móvil",
+          "description": "Experto en desarrollo con React Native con más de 5 años de experiencia creando aplicaciones móviles escalables y seguras para soluciones fintech y empresariales."
+        },
+        {
+          "title": "Liderazgo técnico",
+          "description": "Lideré equipos de más de 6 desarrolladores, gestionando revisiones de código, procesos de PR y asegurando entregas de calidad con metodologías ágiles y buenas prácticas."
+        },
+        {
+          "title": "Seguridad móvil",
+          "description": "Especializado en autenticación biométrica, MFA, cifrado y medidas de seguridad para aplicaciones fintech."
+        },
+        {
+          "title": "Optimización de rendimiento",
+          "description": "Optimicé flujos de la aplicación y reduje los tiempos de operación en un 20%, mejorando la experiencia de usuario y la eficiencia de la app."
+        }
+      ]
+    },
+    "lifetime": {
+      "badge": "Trayectoria",
+      "title": "Educación y experiencia",
+      "education": "Educación",
+      "experience": "Experiencia",
+      "edu": [
+        {
+          "title": "Maestría en TI (MSc)",
+          "years": "2010 - 2012",
+          "description": "Harvard University es una institución educativa que ofrece programas de posgrado, profesionales y de investigación en distintos campos y en salud pública.",
+          "place": "Harvard University, Cambridge, MA, Estados Unidos"
+        },
+        {
+          "title": "Licenciatura BCA (curso completo)",
+          "years": "2007 - 2010",
+          "description": "Columbia University es una institución educativa que ofrece programas de posgrado, profesionales y de investigación en distintos campos y en salud pública.",
+          "place": "Columbia University, Nueva York, NY, Estados Unidos"
+        },
+        {
+          "title": "Educación media / preparatoria",
+          "years": "1999 - 2007",
+          "description": "Princeton University es una institución educativa que ofrece programas de posgrado, profesionales y de investigación en distintos campos y en salud pública.",
+          "place": "Princeton University, Princeton, NJ, Estados Unidos"
+        }
+      ],
+      "exp": [
+        {
+          "title": "ABC themes - Empresa de TI y diseño web",
+          "years": "2020 - 2021",
+          "description": "- Entregué código de calidad aplicando las mejores prácticas de desarrollo",
+          "place": "A-000 Chambers Street, Suite z-701 Nueva York, NY 10007, Estados Unidos"
+        },
+        {
+          "title": "DEF Themes - Diseño y desarrollo web full stack creativo",
+          "years": "2016 - 2019",
+          "description": "- Entregué código de calidad aplicando las mejores prácticas de desarrollo",
+          "place": "A-000 Chambers Street, Suite z-701 Nueva York, NY 10007, Estados Unidos"
+        },
+        {
+          "title": "GHI Themes - Empresa de TI web y apps",
+          "years": "2013 - 2015",
+          "description": "- Entregué código de calidad aplicando las mejores prácticas de desarrollo",
+          "place": "A-000 Chambers Street, Suite z-701 Nueva York, NY 10007, Estados Unidos"
+        }
+      ]
+    },
+    "work": {
+      "badge": "Trabajo",
+      "title": "Mis proyectos"
+    },
+    "slider": {
+      "quote": "Me siento seguro al imponerme cambios. Es mucho más divertido avanzar que mirar atrás. Por eso scelerisque pretium dolor, sit amet vehicula erat pelleque need throw curve balls."
+    },
+    "blogs": {
+      "badge": "Blog",
+      "title": "Últimas noticias e ideas"
+    }
+  },
+  "footer": {
+    "intro": "En un mundo ideal este texto no existiría: el cliente reconocería la importancia de tener el contenido web antes de empezar el diseño.",
+    "company": "Compañía",
+    "information": "Información",
+    "moreInfo": "Más información",
+    "clientSay": "Testimonios",
+    "terms": "Términos y condiciones",
+    "createdWith": "Creado con",
+    "by": "por"
+  },
+  "about": {
+    "personal": {
+      "badge": "Datos personales",
+      "intro": "Es un hecho conocido que el contenido legible de una página distrae al lector cuando observa su composición.",
+      "labels": {
+        "dob": "Fecha de nacimiento",
+        "languages": "Idiomas",
+        "nationality": "Nacionalidad",
+        "interest": "Intereses"
+      },
+      "values": {
+        "dob": "28 de abril de 1992",
+        "languages": "Inglés (B2++), Español (C2)",
+        "nationality": "México",
+        "interest": "Pádel"
+      },
+      "skills": [
+        "2 años",
+        "1 año",
+        "3 años",
+        "2 años",
+        "8 meses",
+        "3 meses",
+        "2 años",
+        "10 meses"
+      ]
+    },
+    "lifetime": {
+      "badge": "Trayectoria",
+      "title": "Educación y experiencia",
+      "bgText": "Currículum",
+      "timeline": [
+        {
+          "title": "GHI Themes - Empresa de TI web y apps",
+          "year": "2019-22",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo"
+        },
+        {
+          "title": "ABC themes - Empresa de TI y diseño web",
+          "year": "2014-18",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo"
+        },
+        {
+          "title": "Maestría en TI (MSc)",
+          "year": "2012-13",
+          "description": "Harvard University es una institución educativa que ofrece programas de posgrado, profesionales y de investigación en distintos campos y en salud pública."
+        },
+        {
+          "title": "Educación media / preparatoria",
+          "year": "2007-08",
+          "description": "Princeton University es una institución educativa que ofrece programas de posgrado, profesionales y de investigación en distintos campos y en salud pública."
+        }
+      ]
+    },
+    "actionBox": {
+      "title": "Estoy disponible para trabajar como freelancer.",
+      "subtitle": "Explora cientos de ofertas de trabajo y encuentra la posición más adecuada.",
+      "emailPlaceholder": "Correo electrónico",
+      "sendButton": "Enviar mensaje"
+    }
+  },
+  "servicesPage": {
+    "items": [
+      {
+        "title": "Soporte excelente",
+        "description": "Un texto de ejemplo para complementar el título de la tarjeta y formar el grueso del contenido de la plataforma."
+      },
+      {
+        "title": "Crecimiento dinámico",
+        "description": "Usuarios que cumplen de forma creíble con los estándares de marca sin servicios extensibles. Anibh euismod tincidunt."
+      },
+      {
+        "title": "Identidad de marca",
+        "description": "Separados viven en Bookmarksgrove, justo en la costa de la Semántica, y grande."
+      },
+      {
+        "title": "Desarrollo de apps",
+        "description": "Un texto de ejemplo para complementar el título de la tarjeta y formar el grueso del contenido de la plataforma."
+      },
+      {
+        "title": "Estrategia de negocio",
+        "description": "Usuarios que cumplen de forma creíble con los estándares de marca sin servicios extensibles. Anibh euismod tincidunt."
+      },
+      {
+        "title": "Diseño web",
+        "description": "Separados viven en Bookmarksgrove, justo en la costa de la Semántica, y grande."
+      }
+    ]
+  },
+  "resumePage": {
+    "timeline": [
+      {
+        "title": "GHI Themes - Empresa de TI web y apps",
+        "year": "2019-22",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo"
+      },
+      {
+        "title": "ABC themes - Empresa de TI y diseño web",
+        "year": "2014-18",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo"
+      },
+      {
+        "title": "Maestría en TI (MSc)",
+        "year": "2012-13",
+        "description": "Harvard University es una institución educativa que ofrece programas de posgrado, profesionales y de investigación en distintos campos y en salud pública."
+      },
+      {
+        "title": "Educación media / preparatoria",
+        "year": "2007-08",
+        "description": "Princeton University es una institución educativa que ofrece programas de posgrado, profesionales y de investigación en distintos campos y en salud pública."
+      }
+    ]
+  },
+  "projectsPage": {
+    "items": [
+      { "title": "Proyecto Farmer" },
+      { "title": "Proyecto ID Scan" },
+      { "title": "Proyecto Auto Drive" },
+      { "title": "Aplicación de salud" },
+      { "title": "Proyecto eCommerce" }
+    ]
+  },
+  "blogsData": [
+    { "title": "Cambia el mundo con pequeñas cosas", "name": "Charles Woodall", "date": "14 feb 2022" },
+    { "title": "Con un look limpio, minimalista y profesional", "name": "Jarvis Owen", "date": "12 ene 2022" },
+    { "title": "Con un look limpio, minimalista y profesional", "name": "Jarvis Owen", "date": "12 ene 2022" },
+    { "title": "Cambia el mundo con pequeñas cosas", "name": "Charles Woodall", "date": "14 feb 2022" },
+    { "title": "Con un look limpio, minimalista y profesional", "name": "Jarvis Owen", "date": "12 ene 2022" },
+    { "title": "Con un look limpio, minimalista y profesional", "name": "Jarvis Owen", "date": "12 ene 2022" }
+  ],
+  "contact": {
+    "title": "¡Ponte en contacto!",
+    "subtitle": "Siempre disponible para proyectos freelance si surge el adecuado. No dudes en contactarme.",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo",
+      "subject": "Asunto",
+      "contact": "Contacto",
+      "message": "Mensaje",
+      "namePlaceholder": "Tu nombre",
+      "emailPlaceholder": "Tu correo",
+      "subjectPlaceholder": "Tu asunto",
+      "contactPlaceholder": "Tu contacto",
+      "messagePlaceholder": "Tu mensaje",
+      "send": "Enviar mensaje"
+    },
+    "errors": {
+      "name": "Por favor ingresa tu nombre",
+      "email": "Por favor ingresa tu correo",
+      "emailInvalid": "Por favor ingresa un correo válido",
+      "subject": "Por favor ingresa el asunto",
+      "contact": "Por favor ingresa tu contacto",
+      "message": "Por favor ingresa tu mensaje"
+    },
+    "phone": "+1 234 567 89",
+    "phoneHours": "9:00 a 19:00",
+    "email": "example@example.com",
+    "emailDays": "De lunes a sábado"
+  },
+  "blogDetail": {
+    "date": "26 de marzo de 2022",
+    "title": "Las mejores wallets NFT para guardar y comerciar NFTs",
+    "subtitle": "Contrario a la creencia popular, Lorem Ipsum no es simplemente texto aleatorio.",
+    "tags": { "minting": "Minteo", "nfts": "NFTs", "art": "Arte", "music": "Música" },
+    "body1": "Es un hecho conocido que el contenido legible de una página distrae al lector cuando observa su composición. El propósito de usar Lorem Ipsum es que tiene una distribución de letras más o menos normal, en lugar de usar 'contenido aquí, contenido aquí', haciendo que parezca texto legible. Es un hecho conocido que el contenido legible de una página distrae al lector cuando observa su composición. El propósito de usar Lorem Ipsum es que tiene una distribución de letras más o menos normal, en lugar de usar 'contenido aquí, contenido aquí', haciendo que parezca texto legible.",
+    "quote": "Existen muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría ha sufrido alguna alteración.",
+    "quoteAuthor": "Alguien famoso en",
+    "quoteSource": "Título de la fuente",
+    "body2": "Usa un diccionario de más de 200 palabras en latín, combinadas con un puñado de estructuras de oraciones modelo, para generar un Lorem Ipsum que luce razonable.",
+    "latestPosts": "Últimas entradas del blog",
+    "related": [
+      "Es un hecho conocido...",
+      "Existen muchas variaciones...",
+      "Contrario a la creencia popular...",
+      "Finibus Bonorum et Malorum..."
+    ],
+    "authorName": "Donald Gardner",
+    "authorRole": "Analista de criptomonedas",
+    "blogsButton": "Blog"
+  }
+}

@@ -2,9 +2,11 @@ import logoDark from "@/assets/images/logo-dark.png";
 import logoLight from "@/assets/images/logo-light.png";
 import logoSm from "@/assets/images/logo-sm.png";
 import IconifyIcon from "@/components/wrappers/IconifyIcon";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import useScrollEvent from "@/hooks/useScrollEvent";
 import { useState } from "react";
 import { Container } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { Link, useLocation } from "react-router-dom";
 
 const TopNavbar = ({ isDark }: { isDark?: boolean }) => {
@@ -13,6 +15,8 @@ const TopNavbar = ({ isDark }: { isDark?: boolean }) => {
   const { scrollY } = useScrollEvent();
 
   const { pathname } = useLocation();
+
+  const { t } = useTranslation();
 
   const toggleMenu = () => {
     setOpen(!open);
@@ -67,7 +71,7 @@ const TopNavbar = ({ isDark }: { isDark?: boolean }) => {
                 to="/"
                 className={`nav-link ${pathname === "/" ? "active" : ""}`}
               >
-                Home
+                {t("nav.home")}
               </Link>
             </li>
             <li className="nav-item">
@@ -75,7 +79,7 @@ const TopNavbar = ({ isDark }: { isDark?: boolean }) => {
                 to="/about"
                 className={`nav-link ${pathname === "/about" ? "active" : ""}`}
               >
-                About
+                {t("nav.about")}
               </Link>
             </li>
             <li className="nav-item">
@@ -85,7 +89,7 @@ const TopNavbar = ({ isDark }: { isDark?: boolean }) => {
                   pathname === "/services" ? "active" : ""
                 }`}
               >
-                Services
+                {t("nav.services")}
               </Link>
             </li>
             <li className="nav-item">
@@ -93,7 +97,7 @@ const TopNavbar = ({ isDark }: { isDark?: boolean }) => {
                 to="/resume"
                 className={`nav-link ${pathname === "/resume" ? "active" : ""}`}
               >
-                Resume
+                {t("nav.resume")}
               </Link>
             </li>
             <li className="nav-item">
@@ -103,7 +107,7 @@ const TopNavbar = ({ isDark }: { isDark?: boolean }) => {
                   pathname === "/projects" ? "active" : ""
                 }`}
               >
-                Projects
+                {t("nav.projects")}
               </Link>
             </li>
             <li className="nav-item">
@@ -111,7 +115,7 @@ const TopNavbar = ({ isDark }: { isDark?: boolean }) => {
                 to="/blogs"
                 className={`nav-link ${pathname === "/blogs" ? "active" : ""}`}
               >
-                Blogs
+                {t("nav.blogs")}
               </Link>
             </li>
             <li className="nav-item">
@@ -121,17 +125,11 @@ const TopNavbar = ({ isDark }: { isDark?: boolean }) => {
                   pathname === "/contact" ? "active" : ""
                 }`}
               >
-                Contact
+                {t("nav.contact")}
               </Link>
             </li>
           </div>
-          <Link to="" className="btn btn-sm nav-btn text-primary mb-4 mb-lg-0">
-            Hire Me!{" "}
-            <IconifyIcon
-              icon="feather:chevrons-right"
-              className="icon-xxs ms-1"
-            />
-          </Link>
+          <LanguageSwitcher />
         </div>
       </Container>
     </nav>

@@ -11,8 +11,10 @@ import {
   Container,
   Row,
 } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 
 const Slider = () => {
+  const { t } = useTranslation();
   return (
     <section className="section bg-gradient-light-white" id="review">
       <Container>
@@ -54,10 +56,7 @@ const Slider = () => {
                             height={70}
                           />
                           <p className="font-secondary fs-22 fst-italic mb-4 px-4">
-                            I feel confident imposing change on myself. It's a
-                            lot more fun progressing than looking back. That's
-                            why scelerisque pretium dolor, sit amet vehicula
-                            erat pelleque need throw curve balls.
+                            {t("home.slider.quote")}
                           </p>
                           <img
                             src={user3}
@@ -96,10 +95,7 @@ const Slider = () => {
                             height={70}
                           />
                           <p className="font-secondary fs-22 fst-italic mb-4 px-4">
-                            I feel confident imposing change on myself. It's a
-                            lot more fun progressing than looking back. That's
-                            why scelerisque pretium dolor, sit amet vehicula
-                            erat pelleque need throw curve balls.
+                            {t("home.slider.quote")}
                           </p>
                           <img
                             src={user5}

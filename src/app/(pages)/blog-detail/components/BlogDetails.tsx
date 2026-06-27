@@ -5,9 +5,14 @@ import personal5 from "@/assets/images/personal/5.jpg";
 import personal6 from "@/assets/images/personal/6.jpg";
 import userImg1 from "@/assets/images/users/user-1.jpg";
 import { Card, CardBody, Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const BlogDetails = () => {
+  const { t } = useTranslation();
+  const related = t("blogDetail.related", {
+    returnObjects: true,
+  }) as string[];
   return (
     <section className="section">
       <Container>
@@ -16,28 +21,29 @@ const BlogDetails = () => {
             <Card className="border-0 shadow-none">
               <CardBody>
                 <div className="mb-5 text-center">
-                  <p className="text-muted fw-semibold fs-18">26 march 2022</p>
+                  <p className="text-muted fw-semibold fs-18">
+                    {t("blogDetail.date")}
+                  </p>
                   <h3 className="my-3 fs-28 d-block fw-medium text-dark">
-                    Best NFT wallets for storing and trading NFTs
+                    {t("blogDetail.title")}
                   </h3>
                   <p className="text-muted fw-semibold fs-16">
-                    Contrary to popular belief, Lorem Ipsum is not simply random
-                    text.
+                    {t("blogDetail.subtitle")}
                   </p>
                   <span className="badge px-3 py-2 bg-light text-dark fw-semibold mt-3 fs-13">
-                    Minting
+                    {t("blogDetail.tags.minting")}
                   </span>
                   &nbsp;
                   <span className="badge px-3 py-2 bg-light text-dark fw-semibold mt-3 fs-13">
-                    NFTs
+                    {t("blogDetail.tags.nfts")}
                   </span>
                   &nbsp;
                   <span className="badge px-3 py-2 bg-light text-dark fw-semibold mt-3 fs-13">
-                    Art
+                    {t("blogDetail.tags.art")}
                   </span>
                   &nbsp;
                   <span className="badge px-3 py-2 bg-light text-dark fw-semibold mt-3 fs-13">
-                    Music
+                    {t("blogDetail.tags.music")}
                   </span>
                   &nbsp;
                 </div>
@@ -47,45 +53,29 @@ const BlogDetails = () => {
                   className="img-fluid rounded d-flex mx-auto"
                 />
                 <div className="my-5">
-                  <p className="text-muted fs-16 mb-4">
-                    It is a long established fact that a reader will be
-                    distracted by the readable content of a page when looking at
-                    its layout. The point of using Lorem Ipsum is that it has a
-                    more-or-less normal distribution of letters, as opposed to
-                    using 'Content here, content here', making it look like
-                    readable English. It is a long established fact that a
-                    reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum
-                    is that it has a more-or-less normal distribution of
-                    letters, as opposed to using 'Content here, content here',
-                    making it look like readable English.
-                  </p>
+                  <p className="text-muted fs-16 mb-4">{t("blogDetail.body1")}</p>
                   <figure>
                     <blockquote className="blockquote">
                       <p>
-                        <i>
-                          There are many variations of passages of Lorem Ipsum
-                          available, but the majority have suffered alteration
-                          in some form.{" "}
-                        </i>
+                        <i>{t("blogDetail.quote")} </i>
                       </p>
                     </blockquote>
                     <figcaption className="blockquote-footer">
-                      Someone famous in{" "}
-                      <cite title="Source Title">Source Title</cite>
+                      {t("blogDetail.quoteAuthor")}{" "}
+                      <cite title={t("blogDetail.quoteSource")}>
+                        {t("blogDetail.quoteSource")}
+                      </cite>
                     </figcaption>
                   </figure>
-                  <p className="text-muted fs-16">
-                    It uses a dictionary of over 200 Latin words, combined with
-                    a handful of model sentence structures, to generate Lorem
-                    Ipsum which looks reasonable.
-                  </p>
+                  <p className="text-muted fs-16">{t("blogDetail.body2")}</p>
                 </div>
                 <div className="mb-5">
                   <h3 className="mt-3 fs-24 d-block fw-medium text-dark">
-                    Latest Blog Posts
+                    {t("blogDetail.latestPosts")}
                   </h3>
-                  <p className="text-muted fw-semibold fs-14">26 march 2022</p>
+                  <p className="text-muted fw-semibold fs-14">
+                    {t("blogDetail.date")}
+                  </p>
                   <Row>
                     <Col xs={12}>
                       <Row className="row-cols-xl-4 row-cols-lg-4 row-cols-md-2 g-3 justify-content-center">
@@ -100,7 +90,7 @@ const BlogDetails = () => {
                               className="img-fluid rounded mb-2"
                             />
                             <h3 className="fs-15 m-0 fw-medium">
-                              It is a long established...
+                              {related[0]}
                             </h3>
                           </Link>
                         </Col>
@@ -115,7 +105,7 @@ const BlogDetails = () => {
                               className="img-fluid rounded mb-2"
                             />
                             <h3 className="fs-15 m-0 fw-medium">
-                              There are many variations...
+                              {related[1]}
                             </h3>
                           </Link>
                         </Col>
@@ -130,7 +120,7 @@ const BlogDetails = () => {
                               className="img-fluid rounded mb-2"
                             />
                             <h3 className="fs-15 m-0 fw-medium">
-                              Contrary to popular belief...
+                              {related[2]}
                             </h3>
                           </Link>
                         </Col>
@@ -145,7 +135,7 @@ const BlogDetails = () => {
                               className="img-fluid rounded mb-2"
                             />
                             <h3 className="fs-15 m-0 fw-medium">
-                              Finibus Bonorum et Malorum...
+                              {related[3]}
                             </h3>
                           </Link>
                         </Col>
@@ -163,10 +153,10 @@ const BlogDetails = () => {
                         />
                         <div className="media-body align-self-center text-truncate">
                           <h6 className="m-0 text-dark fw-medium">
-                            Donald Gardner
+                            {t("blogDetail.authorName")}
                           </h6>
                           <p className="mb-0 fs-12 text-muted fw-medium">
-                            Cryptocurrency Analyst
+                            {t("blogDetail.authorRole")}
                           </p>
                         </div>
                       </div>
@@ -176,7 +166,7 @@ const BlogDetails = () => {
                         type="button"
                         className="btn btn-sm btn-outline-primary px-4"
                       >
-                        Blogs
+                        {t("blogDetail.blogsButton")}
                       </button>
                     </Col>
                   </Row>

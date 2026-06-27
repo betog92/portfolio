@@ -3,6 +3,7 @@ import { workData, WorkDataType } from "../data";
 
 import clsx from "clsx";
 import { Card, CardBody, Col, Container, Row } from "react-bootstrap";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const WorkCard = ({ image, language, link, title, variant }: WorkDataType) => {
@@ -42,6 +43,7 @@ const WorkCard = ({ image, language, link, title, variant }: WorkDataType) => {
 };
 
 const Work = () => {
+  const { t } = useTranslation();
   const [gallery, setGallery] = useState(workData);
   const [category, setCategory] = useState("all");
 
@@ -62,12 +64,13 @@ const Work = () => {
         <Row className=" justify-content-center mb-4">
           <Col xs={12} md={10} lg={7} className="text-center">
             <span className="badge badge-lg rounded bg-soft-alt-success fw-normal fs-13 text-uppercase">
-              Work
+              {t("home.work.badge")}
             </span>
-            <h2 className="fs-2 fw-medium lh-1 text-dark my-3">My Projects</h2>
+            <h2 className="fs-2 fw-medium lh-1 text-dark my-3">
+              {t("home.work.title")}
+            </h2>
             <p className="text-gray-700 fs-18 fs-lg mb-4 mb-md-5 lh-lg">
-              We craft digital, graphic and dimensional thinking, to create
-              category leading brand experiences that have meaning .
+              {t("common.craftCopy")}
             </p>
           </Col>
         </Row>
@@ -83,7 +86,7 @@ const Work = () => {
                   onClick={() => filterImages("all")}
                   data-group="all"
                 >
-                  All
+                  {t("common.filters.all")}
                 </li>
                 <li
                   className={clsx(
@@ -93,7 +96,7 @@ const Work = () => {
                   onClick={() => filterImages("angular")}
                   data-group="angular"
                 >
-                  Angular
+                  {t("common.filters.angular")}
                 </li>
                 <li
                   className={clsx(
@@ -103,7 +106,7 @@ const Work = () => {
                   onClick={() => filterImages("mongodb")}
                   data-group="mongodb"
                 >
-                  Mongodb
+                  {t("common.filters.mongodb")}
                 </li>
                 <li
                   className={clsx(
@@ -113,7 +116,7 @@ const Work = () => {
                   onClick={() => filterImages("bootstrap")}
                   data-group="bootstrap"
                 >
-                  Bootstrap
+                  {t("common.filters.bootstrap")}
                 </li>
               </ul>
             </div>

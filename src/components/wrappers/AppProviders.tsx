@@ -1,7 +1,16 @@
 import { ChildrenType } from "@/types/other";
 import { Fragment, Suspense, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const AppProviders = ({ children }: ChildrenType) => {
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const lang = i18n.resolvedLanguage ?? "en";
+    document.documentElement.lang = lang;
+    document.title = t("meta.title");
+  }, [i18n.resolvedLanguage, t]);
+
   useEffect(() => {
     const splashElement =
       document.querySelector<HTMLDivElement>("#__next_splash");

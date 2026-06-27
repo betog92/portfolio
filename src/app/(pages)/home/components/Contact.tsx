@@ -7,15 +7,21 @@ import IconifyIcon from "@/components/wrappers/IconifyIcon";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { Button, Card, CardBody, Col, Container, Row } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { useTranslation } from "react-i18next";
 import * as yup from "yup";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   const messageSchema = yup.object({
-    name: yup.string().required("Please enter name"),
-    email: yup.string().email().required("Please enter email"),
-    subject: yup.string().required("Please enter subject"),
-    contact: yup.string().required("Please enter contact"),
-    message: yup.string().required("Please enter message"),
+    name: yup.string().required(t("contact.errors.name")),
+    email: yup
+      .string()
+      .email(t("contact.errors.emailInvalid"))
+      .required(t("contact.errors.email")),
+    subject: yup.string().required(t("contact.errors.subject")),
+    contact: yup.string().required(t("contact.errors.contact")),
+    message: yup.string().required(t("contact.errors.message")),
   });
 
   const { handleSubmit, control } = useForm({
@@ -39,11 +45,10 @@ const Contact = () => {
                 <Row>
                   <Col md={8}>
                     <h2 className="fs-2 fw-normal lh-1 text-dark mb-3">
-                      Get in touch !
+                      {t("contact.title")}
                     </h2>
                     <p className="text-gray-700 fs-18 fs-lg mb-4 mb-md-5 ">
-                      Always available for freelancing if the right project{" "}
-                      <br /> comes along, Feel free to contact me.
+                      {t("contact.subtitle")}
                     </p>
                     <form
                       method="post"
@@ -56,40 +61,40 @@ const Contact = () => {
                           <TextFormInput
                             control={control}
                             name="name"
-                            placeholder="Your name"
-                            label="Name"
+                            placeholder={t("contact.form.namePlaceholder")}
+                            label={t("contact.form.name")}
                           />
                         </Col>
                         <Col md={6} className="mb-3">
                           <TextFormInput
                             control={control}
                             name="email"
-                            placeholder="Your email"
-                            label="Email"
+                            placeholder={t("contact.form.emailPlaceholder")}
+                            label={t("contact.form.email")}
                           />
                         </Col>
                         <Col md={6} className="mb-3">
                           <TextFormInput
                             control={control}
                             name="subject"
-                            placeholder="Your subject"
-                            label="Subject"
+                            placeholder={t("contact.form.subjectPlaceholder")}
+                            label={t("contact.form.subject")}
                           />
                         </Col>
                         <Col md={6} className="mb-3">
                           <TextFormInput
                             control={control}
                             name="contact"
-                            placeholder="Your contact"
-                            label="Contact"
+                            placeholder={t("contact.form.contactPlaceholder")}
+                            label={t("contact.form.contact")}
                           />
                         </Col>
                         <Col xs={12} className="mb-3">
                           <TextAreaFormInput
                             control={control}
                             name="message"
-                            placeholder="Your message"
-                            label="Message"
+                            placeholder={t("contact.form.messagePlaceholder")}
+                            label={t("contact.form.message")}
                           />
                         </Col>
                         <Col xs={12}>
@@ -98,7 +103,7 @@ const Contact = () => {
                             id="submit"
                             className="btn btn-primary mt-2"
                           >
-                            Send message
+                            {t("contact.form.send")}
                           </Button>
                         </Col>
                       </Row>
@@ -116,9 +121,9 @@ const Contact = () => {
                         <IconifyIcon icon="tabler:phone" className="fs-22" />
                       </div>
                       <div className="align-self-center ms-3">
-                        <span className="d-block lh-1">+1 234 567 89</span>
+                        <span className="d-block lh-1">{t("contact.phone")}</span>
                         <span className="text-muted fs-14 mt-n2">
-                          9:00am to 7:00pm
+                          {t("contact.phoneHours")}
                         </span>
                       </div>
                     </div>
@@ -128,11 +133,9 @@ const Contact = () => {
                         <IconifyIcon icon="tabler:mail" className="fs-22" />
                       </div>
                       <div className="align-self-center ms-3">
-                        <span className="d-block lh-1">
-                          example@example.com
-                        </span>
+                        <span className="d-block lh-1">{t("contact.email")}</span>
                         <span className="text-muted fs-14 mt-n2">
-                          Monday to Saturday
+                          {t("contact.emailDays")}
                         </span>
                       </div>
                     </div>
