@@ -78,9 +78,7 @@ const Hero = () => {
               <span aria-hidden="true">
                 {isSpanish ? (
                   <>
-                    <span className="hero-title-line">
-                      {t("hero.prefix")} {t("hero.suffix")}
-                    </span>
+                    <span className="hero-title-line">{t("hero.suffix")}</span>
                     {animatedRole}
                   </>
                 ) : (
