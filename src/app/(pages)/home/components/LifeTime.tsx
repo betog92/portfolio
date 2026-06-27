@@ -1,6 +1,7 @@
 import jobLight from "@/assets/images/personal/job-light.png";
 import job from "@/assets/images/personal/job.png";
-import udem from "@/assets/images/personal/udem.png";
+import schoolLight from "@/assets/images/personal/school-light.png";
+import school from "@/assets/images/personal/school.png";
 
 import {
   Accordion,
@@ -55,9 +56,15 @@ const LifeTime = () => {
                   <CardBody className="d-flex justify-content-center align-items-center">
                     <div className="mx-auto text-center">
                       <img
-                        src={udem}
-                        alt="Universidad de Monterrey (UDEM)"
-                        className="rounded"
+                        src={school}
+                        alt="school"
+                        className="vector-dark"
+                        height={150}
+                      />
+                      <img
+                        src={schoolLight}
+                        alt="schoolLight"
+                        className="vector-light"
                         height={150}
                       />
                       <h5 className="text-dark fs-22 fw-medium my-2">
