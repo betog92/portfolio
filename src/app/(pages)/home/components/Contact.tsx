@@ -120,10 +120,13 @@ const Contact = () => {
                       <div className="bg-light d-flex justify-content-center align-items-center thumb-lg  rounded">
                         <IconifyIcon icon="tabler:phone" className="fs-22" />
                       </div>
-                      <div className="align-self-center ms-3">
+                      <div
+                        className="align-self-center ms-3"
+                        style={{ minWidth: 0 }}
+                      >
                         <a
                           href={`tel:${t("contact.phone").replace(/\s+/g, "")}`}
-                          className="d-block lh-1 text-dark text-decoration-none"
+                          className="d-block lh-sm text-dark text-decoration-none text-break"
                         >
                           {t("contact.phone")}
                         </a>
@@ -137,10 +140,13 @@ const Contact = () => {
                       <div className="bg-light d-flex justify-content-center align-items-center thumb-lg  rounded">
                         <IconifyIcon icon="tabler:mail" className="fs-22" />
                       </div>
-                      <div className="align-self-center ms-3">
+                      <div
+                        className="align-self-center ms-3"
+                        style={{ minWidth: 0 }}
+                      >
                         <a
                           href={`mailto:${t("contact.email")}`}
-                          className="d-block lh-1 text-dark text-decoration-none"
+                          className="d-block lh-sm text-dark text-decoration-none text-break"
                         >
                           {t("contact.email")}
                         </a>
