@@ -121,7 +121,12 @@ const Contact = () => {
                         <IconifyIcon icon="tabler:phone" className="fs-22" />
                       </div>
                       <div className="align-self-center ms-3">
-                        <span className="d-block lh-1">{t("contact.phone")}</span>
+                        <a
+                          href={`tel:${t("contact.phone").replace(/\s+/g, "")}`}
+                          className="d-block lh-1 text-dark text-decoration-none"
+                        >
+                          {t("contact.phone")}
+                        </a>
                         <span className="text-muted fs-14 mt-n2">
                           {t("contact.phoneHours")}
                         </span>
@@ -133,7 +138,12 @@ const Contact = () => {
                         <IconifyIcon icon="tabler:mail" className="fs-22" />
                       </div>
                       <div className="align-self-center ms-3">
-                        <span className="d-block lh-1">{t("contact.email")}</span>
+                        <a
+                          href={`mailto:${t("contact.email")}`}
+                          className="d-block lh-1 text-dark text-decoration-none"
+                        >
+                          {t("contact.email")}
+                        </a>
                         <span className="text-muted fs-14 mt-n2">
                           {t("contact.emailDays")}
                         </span>
