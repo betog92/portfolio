@@ -123,22 +123,22 @@
       ],
       "exp": [
         {
-          "title": "ABC themes - Web Design IT Company",
-          "years": "2020 - 2021",
-          "description": "- Delivered quality code by applying the best development practices",
-          "place": "A-000 Chambers Street, Suite z-701 New York, NY 10007, United States"
+          "title": "Vector Casa de Bolsa — Mobile Tech Lead",
+          "years": "2020 - 2025",
+          "description": "Led mobile development of Vit by Vector, a financial marketplace (mutual funds, stocks, insurance, retirement). Managed a Scrum team of 6, reviewing 15–20 PRs/week and shipping stable bi-weekly releases. Implemented Face ID, MFA, AES-256 encryption, jailbreak/root detection and an AI chatbot. Previously built VectorApp, reducing operation times by 20%.",
+          "place": "Monterrey, México"
         },
         {
-          "title": "DEF Themes - Creative full stack web design & development",
-          "years": "2016 - 2019",
-          "description": "- Delivered quality code by applying the best development practices",
-          "place": "A-000 Chambers Street, Suite z-701 New York, NY 10007, United States"
+          "title": "Accenture — Web Developer",
+          "years": "2018 - 2019",
+          "description": "Built an internal portal with Angular within a Scrum team and automated mobile testing with Appium and Selenium.",
+          "place": "Monterrey, México"
         },
         {
-          "title": "GHI Themes - Web & App IT Company",
-          "years": "2013 - 2015",
-          "description": "- Delivered quality code by applying the best development practices",
-          "place": "A-000 Chambers Street, Suite z-701 New York, NY 10007, United States"
+          "title": "Alvero Photography Studio — Web Developer",
+          "years": "2014 - 2018",
+          "description": "Built and maintained an e-commerce platform with PayPal integration, applying UX principles that increased conversion rate by 15%.",
+          "place": "Monterrey, México"
         }
       ]
     },
@@ -197,24 +197,24 @@
       "bgText": "Resume",
       "timeline": [
         {
-          "title": "GHI Themes - Web & App IT Company",
-          "year": "2019-22",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo"
+          "title": "Vector Casa de Bolsa — Senior Mobile Developer",
+          "year": "2020-25",
+          "description": "Led mobile development of secure fintech apps in React Native, managing a Scrum team and shipping stable releases."
         },
         {
-          "title": "ABC themes - Web Design IT Company",
+          "title": "Accenture — Web Developer",
+          "year": "2018-19",
+          "description": "Built an internal Angular portal and automated mobile testing with Appium and Selenium."
+        },
+        {
+          "title": "Alvero Photography Studio — Web Developer",
           "year": "2014-18",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo"
+          "description": "Built an e-commerce platform with PayPal integration, improving conversion rate by 15% through UX."
         },
         {
-          "title": "MSc IT Master Degree",
-          "year": "2012-13",
-          "description": "Harvard University is an educational institution that offers graduate, professional, and research programs in the fields of and public health."
-        },
-        {
-          "title": "High / Higher secondary school",
-          "year": "2007-08",
-          "description": "Princeton University is an educational institution that offers graduate, professional, and research programs in the fields of and public health."
+          "title": "B.S. in Computer Science — UDEM",
+          "year": "2013-20",
+          "description": "Computer Science degree focused on software engineering and modern application development."
         }
       ]
     },
@@ -256,24 +256,24 @@
   "resumePage": {
     "timeline": [
       {
-        "title": "GHI Themes - Web & App IT Company",
-        "year": "2019-22",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo"
+        "title": "Vector Casa de Bolsa — Senior Mobile Developer",
+        "year": "2020-25",
+        "description": "Led mobile development of secure fintech apps in React Native, managing a Scrum team and shipping stable releases."
       },
       {
-        "title": "ABC themes - Web Design IT Company",
+        "title": "Accenture — Web Developer",
+        "year": "2018-19",
+        "description": "Built an internal Angular portal and automated mobile testing with Appium and Selenium."
+      },
+      {
+        "title": "Alvero Photography Studio — Web Developer",
         "year": "2014-18",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo"
+        "description": "Built an e-commerce platform with PayPal integration, improving conversion rate by 15% through UX."
       },
       {
-        "title": "MSc IT Master Degree",
-        "year": "2012-13",
-        "description": "Harvard University is an educational institution that offers graduate, professional, and research programs in the fields of and public health."
-      },
-      {
-        "title": "High / Higher secondary school",
-        "year": "2007-08",
-        "description": "Princeton University is an educational institution that offers graduate, professional, and research programs in the fields of and public health."
+        "title": "B.S. in Computer Science — UDEM",
+        "year": "2013-20",
+        "description": "Computer Science degree focused on software engineering and modern application development."
       }
     ]
   },

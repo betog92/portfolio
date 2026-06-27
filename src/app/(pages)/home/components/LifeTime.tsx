@@ -167,15 +167,15 @@ const LifeTime = () => {
                           <p className="text-muted mb-1">{exp[0]?.description}</p>
                           <p className="fw-medium">{exp[0]?.place}</p>
                           <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            Angular
+                            React Native
                           </span>
                           &nbsp;
                           <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            React
+                            TypeScript
                           </span>
                           &nbsp;
                           <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            Python
+                            GraphQL
                           </span>
                         </AccordionBody>
                       </AccordionItem>
@@ -190,15 +190,15 @@ const LifeTime = () => {
                           <p className="text-muted mb-1">{exp[1]?.description}</p>
                           <p className="fw-medium">{exp[1]?.place}</p>
                           <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            Laravel
+                            Angular
                           </span>
                           &nbsp;
                           <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            Bootstrap
+                            Appium
                           </span>
                           &nbsp;
                           <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            javascript
+                            Selenium
                           </span>
                         </AccordionBody>
                       </AccordionItem>
@@ -213,15 +213,15 @@ const LifeTime = () => {
                           <p className="text-muted mb-1">{exp[2]?.description}</p>
                           <p className="fw-medium">{exp[2]?.place}</p>
                           <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            Node.js
+                            PHP
                           </span>
                           &nbsp;
                           <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            Php.net
+                            PayPal
                           </span>
                           &nbsp;
                           <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            Django
+                            JavaScript
                           </span>
                         </AccordionBody>
                       </AccordionItem>

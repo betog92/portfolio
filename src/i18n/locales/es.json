@@ -123,22 +123,22 @@
       ],
       "exp": [
         {
-          "title": "ABC themes - Empresa de TI y diseño web",
-          "years": "2020 - 2021",
-          "description": "- Entregué código de calidad aplicando las mejores prácticas de desarrollo",
-          "place": "A-000 Chambers Street, Suite z-701 Nueva York, NY 10007, Estados Unidos"
+          "title": "Vector Casa de Bolsa — Sub Líder Técnico Móvil",
+          "years": "2020 - 2025",
+          "description": "Lideré el desarrollo móvil de Vit by Vector, un marketplace financiero (fondos, acciones, seguros, planes de retiro). Coordiné un equipo Scrum de 6, revisando 15–20 PRs/semana y entregando releases estables quincenales. Implementé biometría, MFA, cifrado AES-256, detección de jailbreak/root y un chatbot con IA. Antes desarrollé VectorApp, reduciendo los tiempos de operación en 20%.",
+          "place": "Monterrey, México"
         },
         {
-          "title": "DEF Themes - Diseño y desarrollo web full stack creativo",
-          "years": "2016 - 2019",
-          "description": "- Entregué código de calidad aplicando las mejores prácticas de desarrollo",
-          "place": "A-000 Chambers Street, Suite z-701 Nueva York, NY 10007, Estados Unidos"
+          "title": "Accenture — Desarrollador Web",
+          "years": "2018 - 2019",
+          "description": "Desarrollé un portal interno con Angular bajo metodología Scrum y automaticé pruebas móviles con Appium y Selenium.",
+          "place": "Monterrey, México"
         },
         {
-          "title": "GHI Themes - Empresa de TI web y apps",
-          "years": "2013 - 2015",
-          "description": "- Entregué código de calidad aplicando las mejores prácticas de desarrollo",
-          "place": "A-000 Chambers Street, Suite z-701 Nueva York, NY 10007, Estados Unidos"
+          "title": "Alvero Estudio de Fotografía — Desarrollador Web",
+          "years": "2014 - 2018",
+          "description": "Creé y mantuve una plataforma e-commerce con integración de PayPal, aplicando principios de UX que aumentaron la conversión en 15%.",
+          "place": "Monterrey, México"
         }
       ]
     },
@@ -197,24 +197,24 @@
       "bgText": "Currículum",
       "timeline": [
         {
-          "title": "GHI Themes - Empresa de TI web y apps",
-          "year": "2019-22",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo"
+          "title": "Vector Casa de Bolsa — Desarrollador Móvil Senior",
+          "year": "2020-25",
+          "description": "Lideré el desarrollo móvil de apps fintech seguras en React Native, coordinando un equipo Scrum y entregando releases estables."
         },
         {
-          "title": "ABC themes - Empresa de TI y diseño web",
+          "title": "Accenture — Desarrollador Web",
+          "year": "2018-19",
+          "description": "Desarrollé un portal interno en Angular y automaticé pruebas móviles con Appium y Selenium."
+        },
+        {
+          "title": "Alvero Estudio de Fotografía — Desarrollador Web",
           "year": "2014-18",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo"
+          "description": "Creé una plataforma e-commerce con integración de PayPal, mejorando la conversión en 15% con UX."
         },
         {
-          "title": "Maestría en TI (MSc)",
-          "year": "2012-13",
-          "description": "Harvard University es una institución educativa que ofrece programas de posgrado, profesionales y de investigación en distintos campos y en salud pública."
-        },
-        {
-          "title": "Educación media / preparatoria",
-          "year": "2007-08",
-          "description": "Princeton University es una institución educativa que ofrece programas de posgrado, profesionales y de investigación en distintos campos y en salud pública."
+          "title": "Ingeniero en Tecnologías Computacionales — UDEM",
+          "year": "2013-20",
+          "description": "Ingeniería enfocada en desarrollo de software y construcción de aplicaciones modernas."
         }
       ]
     },
@@ -256,24 +256,24 @@
   "resumePage": {
     "timeline": [
       {
-        "title": "GHI Themes - Empresa de TI web y apps",
-        "year": "2019-22",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo"
+        "title": "Vector Casa de Bolsa — Desarrollador Móvil Senior",
+        "year": "2020-25",
+        "description": "Lideré el desarrollo móvil de apps fintech seguras en React Native, coordinando un equipo Scrum y entregando releases estables."
       },
       {
-        "title": "ABC themes - Empresa de TI y diseño web",
+        "title": "Accenture — Desarrollador Web",
+        "year": "2018-19",
+        "description": "Desarrollé un portal interno en Angular y automaticé pruebas móviles con Appium y Selenium."
+      },
+      {
+        "title": "Alvero Estudio de Fotografía — Desarrollador Web",
         "year": "2014-18",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada tellus lorem, et condimentum neque commodo"
+        "description": "Creé una plataforma e-commerce con integración de PayPal, mejorando la conversión en 15% con UX."
       },
       {
-        "title": "Maestría en TI (MSc)",
-        "year": "2012-13",
-        "description": "Harvard University es una institución educativa que ofrece programas de posgrado, profesionales y de investigación en distintos campos y en salud pública."
-      },
-      {
-        "title": "Educación media / preparatoria",
-        "year": "2007-08",
-        "description": "Princeton University es una institución educativa que ofrece programas de posgrado, profesionales y de investigación en distintos campos y en salud pública."
+        "title": "Ingeniero en Tecnologías Computacionales — UDEM",
+        "year": "2013-20",
+        "description": "Ingeniería enfocada en desarrollo de software y construcción de aplicaciones modernas."
       }
     ]
   },
