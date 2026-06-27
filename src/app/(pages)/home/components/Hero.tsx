@@ -9,7 +9,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const basePath = import.meta.env.PROD ? "/portfolio" : "";
 
-const roles = ["React Native", 2000, "Next.js", 2000] as const;
+const roles = ["React Native", 2000, "Next.js", 2000];
 
 // Respeta la preferencia del sistema de reducir animaciones (accesibilidad).
 const useReducedMotion = () => {
@@ -40,7 +40,7 @@ const Hero = () => {
       ) : (
         <TypeAnimation
           className="fw-medium typewrite"
-          sequence={[...roles]}
+          sequence={roles}
           wrapper="span"
           speed={{ type: "keyStrokeDelayInMs", value: 220 }}
           deletionSpeed={{ type: "keyStrokeDelayInMs", value: 110 }}
