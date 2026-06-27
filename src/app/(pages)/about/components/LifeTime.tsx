@@ -23,11 +23,7 @@ const LifeTime = () => {
             </h2>
             <div className="bg-text">
               <h1 className="fw-bold p-0">{t("about.lifetime.bgText")}</h1>
-            </div>
-            <p className="text-gray-700 fs-18 fs-lg mb-4 mb-md-5 lh-lg">
-              {t("common.craftCopy")}
-            </p>
-          </Col>
+            </div>          </Col>
         </Row>
         <Row>
           <Col xs={12}>

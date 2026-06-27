@@ -2,7 +2,6 @@ import ActionBox from "@/components/ActionBox";
 import TopNavbar from "@/components/TopNavbar";
 import BlogDetails from "./components/BlogDetails";
 import Hero from "./components/Hero";
-import Switcher from "@/components/Switcher";
 
 const BlogDetailsPage = () => {
   return (
@@ -54,7 +53,6 @@ const BlogDetailsPage = () => {
           </svg>
         </div>
       </div>
-      <Switcher />
     </>
   );
 };

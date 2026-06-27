@@ -2,7 +2,6 @@ import ActionBox from "@/components/ActionBox";
 import TopNavbar from "@/components/TopNavbar";
 import Hero from "./components/Hero";
 import Resume from "./components/Resume";
-import Switcher from "@/components/Switcher";
 
 const ResumePage = () => {
   return (
@@ -54,7 +53,6 @@ const ResumePage = () => {
           </svg>
         </div>
       </div>
-      <Switcher />
     </>
   );
 };

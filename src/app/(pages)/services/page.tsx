@@ -1,4 +1,3 @@
-import Switcher from "@/components/Switcher";
 import TopNavbar from "@/components/TopNavbar";
 import ActionBox from "../../../components/ActionBox";
 import Hero from "./components/Hero";
@@ -54,7 +53,6 @@ const ServicesPage = () => {
           </svg>
         </div>
       </div>
-      <Switcher />
     </>
   );
 };

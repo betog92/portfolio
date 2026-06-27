@@ -1,4 +1,3 @@
-import Switcher from "@/components/Switcher";
 import TopNavbar from "@/components/TopNavbar";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
@@ -37,7 +36,6 @@ const ContactPage = () => {
           </svg>
         </div>
       </div>
-      <Switcher />
     </>
   );
 };

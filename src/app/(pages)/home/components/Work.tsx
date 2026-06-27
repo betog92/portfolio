@@ -68,11 +68,7 @@ const Work = () => {
             </span>
             <h2 className="fs-2 fw-medium lh-1 text-dark my-3">
               {t("home.work.title")}
-            </h2>
-            <p className="text-gray-700 fs-18 fs-lg mb-4 mb-md-5 lh-lg">
-              {t("common.craftCopy")}
-            </p>
-          </Col>
+            </h2>          </Col>
         </Row>
         <Row>
           <Col xs={12} className="filters-group-wrap">

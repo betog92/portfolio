@@ -1,5 +1,4 @@
 import ActionBox from "@/components/ActionBox";
-import Switcher from "@/components/Switcher";
 import TopNavbar from "@/components/TopNavbar";
 import Blogs from "./components/Blogs";
 import Hero from "./components/Hero";
@@ -54,7 +53,6 @@ const BlogsPage = () => {
           </svg>
         </div>
       </div>
-      <Switcher />
     </>
   );
 };
