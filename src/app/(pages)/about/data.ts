@@ -1,57 +1,48 @@
-import android from "@/assets/images/logos/android.svg";
-import angular from "@/assets/images/logos/Angular.svg";
-import bootstrap from "@/assets/images/logos/bootstrap.svg";
-import laravel from "@/assets/images/logos/laravel.svg";
-import mongodb from "@/assets/images/logos/mongodb.svg";
-import nodejs from "@/assets/images/logos/nodejs-icon.svg";
-import react from "@/assets/images/logos/react.svg";
-import vue from "@/assets/images/logos/vue.svg";
-
 type PersonalDataType = {
   name: string;
   experience: string;
-  image: string;
+  icon: string;
 };
 
 export const personalData: PersonalDataType[] = [
   {
-    name: "Android",
-    experience: "2 Year",
-    image: android,
+    name: "React Native",
+    experience: "5+ Years",
+    icon: "logos:react",
   },
   {
-    name: "Angular",
-    experience: "1 Year",
-    image: angular,
+    name: "TypeScript",
+    experience: "5+ Years",
+    icon: "logos:typescript-icon",
   },
   {
-    name: "Bootstrap",
-    experience: "3 Year",
-    image: bootstrap,
+    name: "Redux Toolkit",
+    experience: "5 Years",
+    icon: "logos:redux",
   },
   {
-    name: "Vue",
-    experience: "2 Year",
-    image: vue,
+    name: "GraphQL",
+    experience: "3 Years",
+    icon: "logos:graphql",
   },
   {
-    name: "React",
-    experience: "8 Months",
-    image: react,
+    name: "Firebase",
+    experience: "4 Years",
+    icon: "logos:firebase",
   },
   {
-    name: "Mongodb",
-    experience: "3 Months",
-    image: mongodb,
+    name: "Apollo Client",
+    experience: "3 Years",
+    icon: "logos:apollostack",
   },
   {
-    name: "Laravel",
-    experience: "2 Year",
-    image: laravel,
+    name: "Jest",
+    experience: "4 Years",
+    icon: "logos:jest",
   },
   {
-    name: "Node.js",
-    experience: "10 Months",
-    image: nodejs,
+    name: "Git",
+    experience: "6+ Years",
+    icon: "logos:git-icon",
   },
 ];

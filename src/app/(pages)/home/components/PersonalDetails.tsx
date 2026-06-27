@@ -87,7 +87,11 @@ const PersonalDetails = () => {
                   >
                     <div className="d-flex align-items-center">
                       <div className="thumb-md d-flex flex-wrap justify-content-center align-items-center">
-                        <img src={item.image} alt="logos" height={34} />
+                        <IconifyIcon
+                          icon={item.icon}
+                          width={34}
+                          height={34}
+                        />
                       </div>
                       <div className="ms-3">
                         <h6 className="mb-0 fw-medium text-gray-700">

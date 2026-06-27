@@ -65,12 +65,12 @@
       "skills": [
         "5+ Years",
         "5+ Years",
-        "1 Year",
-        "2 Years",
-        "3 Years",
         "5 Years",
         "3 Years",
-        "1 Year"
+        "4 Years",
+        "3 Years",
+        "4 Years",
+        "6+ Years"
       ]
     },
     "services": {
@@ -173,7 +173,7 @@
   "about": {
     "personal": {
       "badge": "Personal Details",
-      "intro": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "intro": "Mobile software engineer with 5+ years of experience in React Native and technical leadership, specialized in TypeScript and mobile security for fintech apps. I lead agile teams, raise delivery quality through testing and code reviews, and have contributed 2,100+ commits and PRs across company repositories.",
       "labels": {
         "dob": "Date of birth",
         "languages": "Spoken Languages",
@@ -187,14 +187,14 @@
         "interest": "Padel"
       },
       "skills": [
-        "2 Years",
-        "1 Year",
+        "5+ Years",
+        "5+ Years",
+        "5 Years",
         "3 Years",
-        "2 Years",
-        "8 Months",
-        "3 Months",
-        "2 Years",
-        "10 Months"
+        "4 Years",
+        "3 Years",
+        "4 Years",
+        "6+ Years"
       ]
     },
     "lifetime": {

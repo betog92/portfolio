@@ -1,12 +1,9 @@
-import angular from "@/assets/images/logos/Angular.svg";
 import react from "@/assets/images/logos/react.svg";
-import laravel from "@/assets/images/logos/laravel.svg";
-import nodejs from "@/assets/images/logos/nodejs-icon.svg";
 
 type PersonalDataType = {
   name: string;
   experience: string;
-  image: string;
+  icon: string;
 };
 
 export type ServicesType = {
@@ -37,42 +34,42 @@ export const personalData: PersonalDataType[] = [
   {
     name: "React Native",
     experience: "5+ Years",
-    image: react,
+    icon: "logos:react",
   },
   {
     name: "TypeScript",
     experience: "5+ Years",
-    image: react, // Puedes cambiar por un logo de TypeScript si tienes
-  },
-  {
-    name: "Angular",
-    experience: "1 Years",
-    image: angular,
-  },
-  {
-    name: "GraphQL",
-    experience: "2 Years",
-    image: react, // Puedes cambiar por un logo de GraphQL si tienes
-  },
-  {
-    name: "Firebase",
-    experience: "3 Years",
-    image: react, // Puedes cambiar por un logo de Firebase si tienes
+    icon: "logos:typescript-icon",
   },
   {
     name: "Redux Toolkit",
     experience: "5 Years",
-    image: react, // Puedes cambiar por un logo de Redux si tienes
+    icon: "logos:redux",
   },
   {
-    name: "Node.js",
+    name: "GraphQL",
     experience: "3 Years",
-    image: nodejs,
+    icon: "logos:graphql",
   },
   {
-    name: "Laravel",
-    experience: "1 Year",
-    image: laravel,
+    name: "Firebase",
+    experience: "4 Years",
+    icon: "logos:firebase",
+  },
+  {
+    name: "Apollo Client",
+    experience: "3 Years",
+    icon: "logos:apollostack",
+  },
+  {
+    name: "Jest",
+    experience: "4 Years",
+    icon: "logos:jest",
+  },
+  {
+    name: "Git",
+    experience: "6+ Years",
+    icon: "logos:git-icon",
   },
 ];
 

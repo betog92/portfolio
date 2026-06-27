@@ -65,12 +65,12 @@
       "skills": [
         "5+ años",
         "5+ años",
-        "1 año",
-        "2 años",
-        "3 años",
         "5 años",
         "3 años",
-        "1 año"
+        "4 años",
+        "3 años",
+        "4 años",
+        "6+ años"
       ]
     },
     "services": {
@@ -173,7 +173,7 @@
   "about": {
     "personal": {
       "badge": "Datos personales",
-      "intro": "Es un hecho conocido que el contenido legible de una página distrae al lector cuando observa su composición.",
+      "intro": "Ingeniero de software móvil con más de 5 años de experiencia en React Native y liderazgo técnico, especializado en TypeScript y seguridad móvil para apps fintech. Lidero equipos ágiles, elevo la calidad de las entregas con testing y code reviews, y he contribuido con más de 2,100 commits y PRs en los repositorios de la empresa.",
       "labels": {
         "dob": "Fecha de nacimiento",
         "languages": "Idiomas",
@@ -187,14 +187,14 @@
         "interest": "Pádel"
       },
       "skills": [
-        "2 años",
-        "1 año",
+        "5+ años",
+        "5+ años",
+        "5 años",
         "3 años",
-        "2 años",
-        "8 meses",
-        "3 meses",
-        "2 años",
-        "10 meses"
+        "4 años",
+        "3 años",
+        "4 años",
+        "6+ años"
       ]
     },
     "lifetime": {
