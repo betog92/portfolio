@@ -103,22 +103,22 @@
       "experience": "Experiencia",
       "edu": [
         {
-          "title": "Maestría en TI (MSc)",
-          "years": "2010 - 2012",
-          "description": "Harvard University es una institución educativa que ofrece programas de posgrado, profesionales y de investigación en distintos campos y en salud pública.",
-          "place": "Harvard University, Cambridge, MA, Estados Unidos"
+          "title": "Ingeniero en Tecnologías Computacionales",
+          "years": "2013 - 2020",
+          "description": "Ingeniería enfocada en desarrollo de software, algoritmos y construcción de aplicaciones modernas.",
+          "place": "Universidad de Monterrey (UDEM), San Pedro, México"
         },
         {
-          "title": "Licenciatura BCA (curso completo)",
-          "years": "2007 - 2010",
-          "description": "Columbia University es una institución educativa que ofrece programas de posgrado, profesionales y de investigación en distintos campos y en salud pública.",
-          "place": "Columbia University, Nueva York, NY, Estados Unidos"
+          "title": "AWS Certified Cloud Practitioner (CLF-C02)",
+          "years": "2023",
+          "description": "Certificación fundamental de AWS sobre conceptos de nube, seguridad, arquitectura y costos.",
+          "place": "Udemy"
         },
         {
-          "title": "Educación media / preparatoria",
-          "years": "1999 - 2007",
-          "description": "Princeton University es una institución educativa que ofrece programas de posgrado, profesionales y de investigación en distintos campos y en salud pública.",
-          "place": "Princeton University, Princeton, NJ, Estados Unidos"
+          "title": "React and TypeScript: Build a Portfolio Project",
+          "years": "2022",
+          "description": "Curso práctico para construir aplicaciones con React y TypeScript aplicando buenas prácticas.",
+          "place": "Udemy"
         }
       ],
       "exp": [
