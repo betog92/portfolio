@@ -104,41 +104,47 @@
       "edu": [
         {
           "title": "Ingeniero en Tecnologías Computacionales",
-          "years": "2013 - 2020",
-          "description": "Ingeniería enfocada en desarrollo de software, algoritmos y construcción de aplicaciones modernas.",
-          "place": "Universidad de Monterrey (UDEM), San Pedro, México"
+          "years": "2013–2020",
+          "org": "Universidad de Monterrey (UDEM)",
+          "place": "San Pedro, México",
+          "description": "Ingeniería enfocada en desarrollo de software, algoritmos y construcción de aplicaciones modernas."
         },
         {
           "title": "AWS Certified Cloud Practitioner (CLF-C02)",
           "years": "2023",
-          "description": "Certificación fundamental de AWS sobre conceptos de nube, seguridad, arquitectura y costos.",
-          "place": "Udemy"
+          "org": "Udemy",
+          "place": "En línea",
+          "description": "Certificación fundamental de AWS sobre conceptos de nube, seguridad, arquitectura y costos."
         },
         {
           "title": "React and TypeScript: Build a Portfolio Project",
           "years": "2022",
-          "description": "Curso práctico para construir aplicaciones con React y TypeScript aplicando buenas prácticas.",
-          "place": "Udemy"
+          "org": "Udemy",
+          "place": "En línea",
+          "description": "Curso práctico para construir aplicaciones con React y TypeScript aplicando buenas prácticas."
         }
       ],
       "exp": [
         {
-          "title": "Vector Casa de Bolsa — Sub Líder Técnico Móvil",
-          "years": "2020 - 2025",
-          "description": "Lideré el desarrollo móvil de Vit by Vector, un marketplace financiero (fondos, acciones, seguros, planes de retiro). Coordiné un equipo Scrum de 6, revisando 15–20 PRs/semana y entregando releases estables quincenales. Implementé biometría, MFA, cifrado AES-256, detección de jailbreak/root y un chatbot con IA. Antes desarrollé VectorApp, reduciendo los tiempos de operación en 20%.",
-          "place": "Monterrey, México"
+          "title": "Sub Líder Técnico Móvil",
+          "years": "2020–2025",
+          "org": "Vector Casa de Bolsa",
+          "place": "Monterrey, México",
+          "description": "Lideré el desarrollo móvil de Vit by Vector, un marketplace financiero (fondos, acciones, seguros, planes de retiro). Coordiné un equipo Scrum de 6, revisando 15–20 PRs/semana y entregando releases estables quincenales. Implementé biometría, MFA, cifrado AES-256, detección de jailbreak/root y un chatbot con IA. Antes desarrollé VectorApp, reduciendo los tiempos de operación en 20%."
         },
         {
-          "title": "Accenture — Desarrollador Web",
-          "years": "2018 - 2019",
-          "description": "Desarrollé un portal interno con Angular bajo metodología Scrum y automaticé pruebas móviles con Appium y Selenium.",
-          "place": "Monterrey, México"
+          "title": "Desarrollador Web",
+          "years": "2018–2019",
+          "org": "Accenture",
+          "place": "Monterrey, México",
+          "description": "Desarrollé un portal interno con Angular bajo metodología Scrum y automaticé pruebas móviles con Appium y Selenium."
         },
         {
-          "title": "Alvero Estudio de Fotografía — Desarrollador Web",
-          "years": "2014 - 2018",
-          "description": "Creé y mantuve una plataforma e-commerce con integración de PayPal, aplicando principios de UX que aumentaron la conversión en 15%.",
-          "place": "Monterrey, México"
+          "title": "Desarrollador Web",
+          "years": "2014–2018",
+          "org": "Alvero Estudio de Fotografía",
+          "place": "Monterrey, México",
+          "description": "Creé y mantuve una plataforma e-commerce con integración de PayPal, aplicando principios de UX que aumentaron la conversión en 15%."
         }
       ]
     },

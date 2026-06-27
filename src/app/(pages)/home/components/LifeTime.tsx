@@ -19,6 +19,7 @@ import { useTranslation } from "react-i18next";
 type TimelineEntry = {
   title: string;
   years: string;
+  org: string;
   description: string;
   place: string;
 };
@@ -90,8 +91,13 @@ const LifeTime = () => {
                           </span>
                         </AccordionHeader>
                         <AccordionBody className="accordion-body">
-                          <p className="text-muted mb-3">{edu[0]?.description}</p>
-                          <p className="fw-medium">{edu[0]?.place}</p>
+                          <p className="fw-semibold text-primary mb-1">
+                            {edu[0]?.org}
+                          </p>
+                          <p className="text-muted mb-2">
+                            {edu[0]?.description}
+                          </p>
+                          <p className="text-muted fs-13 mb-0">{edu[0]?.place}</p>
                         </AccordionBody>
                       </AccordionItem>
                       <AccordionItem eventKey="2">
@@ -102,8 +108,13 @@ const LifeTime = () => {
                           </span>
                         </AccordionHeader>
                         <AccordionBody className="accordion-body">
-                          <p className="text-muted mb-3">{edu[1]?.description}</p>
-                          <p className="fw-medium">{edu[1]?.place}</p>
+                          <p className="fw-semibold text-primary mb-1">
+                            {edu[1]?.org}
+                          </p>
+                          <p className="text-muted mb-2">
+                            {edu[1]?.description}
+                          </p>
+                          <p className="text-muted fs-13 mb-0">{edu[1]?.place}</p>
                         </AccordionBody>
                       </AccordionItem>
                       <AccordionItem eventKey="3">
@@ -114,8 +125,13 @@ const LifeTime = () => {
                           </span>
                         </AccordionHeader>
                         <AccordionBody className="accordion-body">
-                          <p className="text-muted mb-3">{edu[2]?.description}</p>
-                          <p className="fw-medium">{edu[2]?.place}</p>
+                          <p className="fw-semibold text-primary mb-1">
+                            {edu[2]?.org}
+                          </p>
+                          <p className="text-muted mb-2">
+                            {edu[2]?.description}
+                          </p>
+                          <p className="text-muted fs-13 mb-0">{edu[2]?.place}</p>
                         </AccordionBody>
                       </AccordionItem>
                     </Accordion>
@@ -164,8 +180,11 @@ const LifeTime = () => {
                           </span>
                         </AccordionHeader>
                         <AccordionBody>
-                          <p className="text-muted mb-1">{exp[0]?.description}</p>
-                          <p className="fw-medium">{exp[0]?.place}</p>
+                          <p className="fw-semibold text-primary mb-1">
+                            {exp[0]?.org}
+                          </p>
+                          <p className="text-muted mb-2">{exp[0]?.description}</p>
+                          <p className="text-muted fs-13 mb-2">{exp[0]?.place}</p>
                           <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
                             React Native
                           </span>
@@ -187,8 +206,11 @@ const LifeTime = () => {
                           </span>
                         </AccordionHeader>
                         <AccordionBody>
-                          <p className="text-muted mb-1">{exp[1]?.description}</p>
-                          <p className="fw-medium">{exp[1]?.place}</p>
+                          <p className="fw-semibold text-primary mb-1">
+                            {exp[1]?.org}
+                          </p>
+                          <p className="text-muted mb-2">{exp[1]?.description}</p>
+                          <p className="text-muted fs-13 mb-2">{exp[1]?.place}</p>
                           <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
                             Angular
                           </span>
@@ -210,8 +232,11 @@ const LifeTime = () => {
                           </span>
                         </AccordionHeader>
                         <AccordionBody>
-                          <p className="text-muted mb-1">{exp[2]?.description}</p>
-                          <p className="fw-medium">{exp[2]?.place}</p>
+                          <p className="fw-semibold text-primary mb-1">
+                            {exp[2]?.org}
+                          </p>
+                          <p className="text-muted mb-2">{exp[2]?.description}</p>
+                          <p className="text-muted fs-13 mb-2">{exp[2]?.place}</p>
                           <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
                             PHP
                           </span>
