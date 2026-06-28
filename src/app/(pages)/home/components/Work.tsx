@@ -1,21 +1,38 @@
-import { Fragment, useState } from "react";
+import { Fragment } from "react";
 import { workData, WorkDataType } from "../data";
 
-import clsx from "clsx";
 import { Card, CardBody, Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
-const WorkCard = ({ image, language, link, title, variant }: WorkDataType) => {
+const WorkCard = ({
+  image,
+  language,
+  link,
+  title,
+  variant,
+  fill,
+}: WorkDataType) => {
   return (
     <Card className="rounded shadow border-0 m-2">
       <CardBody className="p-4 m-2">
         <div className="media mb-3">
-          <div
-            className={`bg-${variant} d-flex justify-content-center align-items-center thumb-xl  rounded`}
-          >
-            <img src={image} alt="image" className="thumb-md" />
-          </div>
+          {fill ? (
+            <div className="thumb-xl rounded overflow-hidden">
+              <img
+                src={image}
+                alt={title}
+                className="d-block w-100 h-100"
+                style={{ objectFit: "cover", objectPosition: "center" }}
+              />
+            </div>
+          ) : (
+            <div
+              className={`bg-${variant} d-flex justify-content-center align-items-center thumb-xl  rounded`}
+            >
+              <img src={image} alt={title} className="thumb-md" />
+            </div>
+          )}
           <div className="media-body ms-3 align-self-center">
             <h5 className="text-dark fs-18 fw-medium m-0">{title}</h5>
             <p className="text-muted mb-0 fs-13">
@@ -44,19 +61,6 @@ const WorkCard = ({ image, language, link, title, variant }: WorkDataType) => {
 
 const Work = () => {
   const { t } = useTranslation();
-  const [gallery, setGallery] = useState(workData);
-  const [category, setCategory] = useState("all");
-
-  const filterImages = (category: string) => {
-    setCategory(category);
-    setTimeout(() => {
-      const galleryAlbums =
-        category === "all"
-          ? workData
-          : workData.filter((album) => album.category?.includes(category));
-      setGallery(galleryAlbums);
-    }, 300);
-  };
 
   return (
     <section className="section" id="projects">
@@ -68,70 +72,15 @@ const Work = () => {
             </span>
             <h2 className="fs-2 fw-medium lh-1 text-dark my-3">
               {t("home.work.title")}
-            </h2>          </Col>
-        </Row>
-        <Row>
-          <Col xs={12} className="filters-group-wrap">
-            <div className="filters-group mb-5">
-              <ul className="mb-0 list-unstyled filter-options filter-tab">
-                <li
-                  className={clsx(
-                    "list-inline-item position-relative text-dark",
-                    { active: category === "all" }
-                  )}
-                  onClick={() => filterImages("all")}
-                  data-group="all"
-                >
-                  {t("common.filters.all")}
-                </li>
-                <li
-                  className={clsx(
-                    "list-inline-item position-relative text-dark",
-                    { active: category === "angular" }
-                  )}
-                  onClick={() => filterImages("angular")}
-                  data-group="angular"
-                >
-                  {t("common.filters.angular")}
-                </li>
-                <li
-                  className={clsx(
-                    "list-inline-item position-relative text-dark",
-                    { active: category === "mongodb" }
-                  )}
-                  onClick={() => filterImages("mongodb")}
-                  data-group="mongodb"
-                >
-                  {t("common.filters.mongodb")}
-                </li>
-                <li
-                  className={clsx(
-                    "list-inline-item position-relative text-dark",
-                    { active: category === "bootstrap" }
-                  )}
-                  onClick={() => filterImages("bootstrap")}
-                  data-group="bootstrap"
-                >
-                  {t("common.filters.bootstrap")}
-                </li>
-              </ul>
-            </div>
+            </h2>
           </Col>
         </Row>
         <Row className=" d-flex  g-1 justify-content-center" id="grid">
-          {gallery.map((item, idx) => {
-            return (
-              <Col
-                lg={4}
-                md={6}
-                key={idx}
-                className="picture-item"
-                data-groups='["angular", "bootstrap"]'
-              >
-                <WorkCard {...item} />
-              </Col>
-            );
-          })}
+          {workData.map((item, idx) => (
+            <Col lg={4} md={6} key={idx} className="picture-item">
+              <WorkCard {...item} />
+            </Col>
+          ))}
         </Row>
       </Container>
     </section>

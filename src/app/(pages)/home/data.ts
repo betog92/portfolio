@@ -1,4 +1,5 @@
 import react from "@/assets/images/logos/react.svg";
+import casaDeChuy from "@/assets/images/logos/casa-de-chuy.webp";
 
 type PersonalDataType = {
   name: string;
@@ -20,6 +21,7 @@ export type WorkDataType = {
   link: string;
   language: string[];
   category?: string[];
+  fill?: boolean;
 };
 
 export const personalData: PersonalDataType[] = [
@@ -112,5 +114,14 @@ export const workData: WorkDataType[] = [
     link: "https://vector.com.mx",
     language: ["React Native", "TypeScript", "Redux Toolkit", "REST APIs"],
     category: ["react-native", "fintech"],
+  },
+  {
+    image: casaDeChuy,
+    variant: "soft-alt-warning",
+    title: "La Casa de Chuy el Rico",
+    link: "https://lacasadechuyelrico.com",
+    language: ["Next.js", "React", "TypeScript", "Supabase"],
+    category: ["nextjs", "web"],
+    fill: true,
   },
 ];
