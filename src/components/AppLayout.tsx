@@ -76,7 +76,7 @@ const AppLayout = ({
                   </h6>
                   <ul className="list-unstyled footer-list">
                     <li>
-                      <Link to="/home">{t("nav.home")}</Link>
+                      <Link to="/">{t("nav.home")}</Link>
                     </li>
                     <li>
                       <Link to="/about">{t("nav.about")}</Link>
@@ -95,9 +95,6 @@ const AppLayout = ({
                       <Link to="/resume">{t("nav.resume")}</Link>
                     </li>
                     <li>
-                      <Link to="/">{t("footer.clientSay")}</Link>
-                    </li>
-                    <li>
                       <Link to="/projects">{t("nav.projects")}</Link>
                     </li>
                   </ul>
@@ -107,9 +104,6 @@ const AppLayout = ({
                     {t("footer.moreInfo")}
                   </h6>
                   <ul className="list-unstyled footer-list">
-                    <li>
-                      <Link to="/blogs">{t("nav.blogs")}</Link>
-                    </li>
                     <li>
                       <Link to="/contact">{t("nav.contact")}</Link>
                     </li>

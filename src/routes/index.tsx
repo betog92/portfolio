@@ -6,9 +6,7 @@ const AboutPage = lazy(() => import("@/app/(pages)/about/page"));
 const ServicesPage = lazy(() => import("@/app/(pages)/services/page"));
 const Resume = lazy(() => import("@/app/(pages)/resume/page"));
 const Projects = lazy(() => import("@/app/(pages)/projects/page"));
-const Blogs = lazy(() => import("@/app/(pages)/blogs/page"));
 const Contact = lazy(() => import("@/app/(pages)/contact/page"));
-const BlogDetail = lazy(() => import("@/app/(pages)/blog-detail/page"));
 
 export type RoutesProps = {
   path: RouteProps["path"];
@@ -44,19 +42,9 @@ const demoPages: RoutesProps[] = [
     element: <Projects />,
   },
   {
-    path: "/blogs",
-    name: "Blogs",
-    element: <Blogs />,
-  },
-  {
     path: "/contact",
     name: "Contact",
     element: <Contact />,
-  },
-  {
-    path: "/blog-detail",
-    name: "Blog-detail",
-    element: <BlogDetail />,
   },
 ];
 

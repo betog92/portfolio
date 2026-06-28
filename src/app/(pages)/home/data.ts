@@ -22,14 +22,6 @@ export type WorkDataType = {
   category?: string[];
 };
 
-export type BlogsType = {
-  image: string;
-  title: string;
-  name: string;
-  date: string;
-  userImg: string;
-};
-
 export const personalData: PersonalDataType[] = [
   {
     name: "React Native",
@@ -121,8 +113,4 @@ export const workData: WorkDataType[] = [
     language: ["React Native", "TypeScript", "Redux Toolkit", "REST APIs"],
     category: ["react-native", "fintech"],
   },
-];
-
-export const blogsData: BlogsType[] = [
-  // Puedes agregar blogs aquí cuando los tengas
 ];

@@ -112,14 +112,6 @@ const TopNavbar = ({ isDark }: { isDark?: boolean }) => {
             </li>
             <li className="nav-item">
               <Link
-                to="/blogs"
-                className={`nav-link ${pathname === "/blogs" ? "active" : ""}`}
-              >
-                {t("nav.blogs")}
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link
                 to="/contact"
                 className={`nav-link ${
                   pathname === "/contact" ? "active" : ""

@@ -15,7 +15,6 @@
     "services": "Servicios",
     "resume": "Currículum",
     "projects": "Proyectos",
-    "blogs": "Blog",
     "contact": "Contacto",
     "hireMe": "¡Contrátame!"
   },
@@ -42,9 +41,7 @@
     "services": "Servicios",
     "resume": "Currículum",
     "projects": "Proyectos",
-    "contact": "Contacto",
-    "blogs": "Blog",
-    "blogDetail": "Detalle del blog"
+    "contact": "Contacto"
   },
   "home": {
     "personal": {
@@ -151,13 +148,6 @@
     "work": {
       "badge": "Trabajo",
       "title": "Mis proyectos"
-    },
-    "slider": {
-      "quote": "Me siento seguro al imponerme cambios. Es mucho más divertido avanzar que mirar atrás. Por eso scelerisque pretium dolor, sit amet vehicula erat pelleque need throw curve balls."
-    },
-    "blogs": {
-      "badge": "Blog",
-      "title": "Últimas noticias e ideas"
     }
   },
   "footer": {
@@ -165,7 +155,6 @@
     "company": "Compañía",
     "information": "Información",
     "moreInfo": "Más información",
-    "clientSay": "Testimonios",
     "terms": "Términos y condiciones",
     "createdWith": "Creado con",
     "by": "por"
@@ -292,14 +281,6 @@
       { "title": "Proyecto eCommerce" }
     ]
   },
-  "blogsData": [
-    { "title": "Cambia el mundo con pequeñas cosas", "name": "Charles Woodall", "date": "14 feb 2022" },
-    { "title": "Con un look limpio, minimalista y profesional", "name": "Jarvis Owen", "date": "12 ene 2022" },
-    { "title": "Con un look limpio, minimalista y profesional", "name": "Jarvis Owen", "date": "12 ene 2022" },
-    { "title": "Cambia el mundo con pequeñas cosas", "name": "Charles Woodall", "date": "14 feb 2022" },
-    { "title": "Con un look limpio, minimalista y profesional", "name": "Jarvis Owen", "date": "12 ene 2022" },
-    { "title": "Con un look limpio, minimalista y profesional", "name": "Jarvis Owen", "date": "12 ene 2022" }
-  ],
   "contact": {
     "title": "¡Ponte en contacto!",
     "subtitle": "Siempre disponible para proyectos freelance si surge el adecuado. No dudes en contactarme.",
@@ -328,26 +309,5 @@
     "phoneHours": "9:00 a 19:00",
     "email": "alberto.ivan92@gmail.com",
     "emailDays": "De lunes a sábado"
-  },
-  "blogDetail": {
-    "date": "26 de marzo de 2022",
-    "title": "Las mejores wallets NFT para guardar y comerciar NFTs",
-    "subtitle": "Contrario a la creencia popular, Lorem Ipsum no es simplemente texto aleatorio.",
-    "tags": { "minting": "Minteo", "nfts": "NFTs", "art": "Arte", "music": "Música" },
-    "body1": "Es un hecho conocido que el contenido legible de una página distrae al lector cuando observa su composición. El propósito de usar Lorem Ipsum es que tiene una distribución de letras más o menos normal, en lugar de usar 'contenido aquí, contenido aquí', haciendo que parezca texto legible. Es un hecho conocido que el contenido legible de una página distrae al lector cuando observa su composición. El propósito de usar Lorem Ipsum es que tiene una distribución de letras más o menos normal, en lugar de usar 'contenido aquí, contenido aquí', haciendo que parezca texto legible.",
-    "quote": "Existen muchas variaciones de los pasajes de Lorem Ipsum disponibles, pero la mayoría ha sufrido alguna alteración.",
-    "quoteAuthor": "Alguien famoso en",
-    "quoteSource": "Título de la fuente",
-    "body2": "Usa un diccionario de más de 200 palabras en latín, combinadas con un puñado de estructuras de oraciones modelo, para generar un Lorem Ipsum que luce razonable.",
-    "latestPosts": "Últimas entradas del blog",
-    "related": [
-      "Es un hecho conocido...",
-      "Existen muchas variaciones...",
-      "Contrario a la creencia popular...",
-      "Finibus Bonorum et Malorum..."
-    ],
-    "authorName": "Donald Gardner",
-    "authorRole": "Analista de criptomonedas",
-    "blogsButton": "Blog"
   }
 }
