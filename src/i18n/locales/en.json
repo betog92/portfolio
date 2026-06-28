@@ -147,7 +147,8 @@
     },
     "work": {
       "badge": "Work",
-      "title": "My Projects"
+      "title": "My Projects",
+      "portfolioTitle": "Personal Portfolio"
     }
   },
   "footer": {

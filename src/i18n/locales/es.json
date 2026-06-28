@@ -147,7 +147,8 @@
     },
     "work": {
       "badge": "Trabajo",
-      "title": "Mis proyectos"
+      "title": "Mis proyectos",
+      "portfolioTitle": "Portafolio Personal"
     }
   },
   "footer": {

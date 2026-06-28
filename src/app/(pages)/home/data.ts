@@ -1,5 +1,6 @@
 import react from "@/assets/images/logos/react.svg";
 import casaDeChuy from "@/assets/images/logos/casa-de-chuy.webp";
+import vite from "@/assets/images/logos/vite.svg";
 
 type PersonalDataType = {
   name: string;
@@ -20,8 +21,8 @@ export type WorkDataType = {
   title: string;
   link: string;
   language: string[];
-  category?: string[];
   fill?: boolean;
+  titleKey?: string;
 };
 
 export const personalData: PersonalDataType[] = [
@@ -105,7 +106,6 @@ export const workData: WorkDataType[] = [
     title: "Vit by Vector",
     link: "https://vit.vector.com.mx",
     language: ["React Native", "TypeScript", "GraphQL", "Firebase"],
-    category: ["react-native", "fintech"],
   },
   {
     image: react,
@@ -113,7 +113,6 @@ export const workData: WorkDataType[] = [
     title: "VectorApp",
     link: "https://vector.com.mx",
     language: ["React Native", "TypeScript", "Redux Toolkit", "REST APIs"],
-    category: ["react-native", "fintech"],
   },
   {
     image: casaDeChuy,
@@ -121,7 +120,14 @@ export const workData: WorkDataType[] = [
     title: "La Casa de Chuy el Rico",
     link: "https://lacasadechuyelrico.com",
     language: ["Next.js", "React", "TypeScript", "Supabase"],
-    category: ["nextjs", "web"],
     fill: true,
+  },
+  {
+    image: vite,
+    variant: "soft-alt-success",
+    title: "Personal Portfolio",
+    titleKey: "home.work.portfolioTitle",
+    link: "https://github.com/betog92/portfolio",
+    language: ["React", "TypeScript", "Vite", "SCSS"],
   },
 ];

@@ -12,7 +12,10 @@ const WorkCard = ({
   title,
   variant,
   fill,
+  titleKey,
 }: WorkDataType) => {
+  const { t } = useTranslation();
+  const displayTitle = titleKey ? t(titleKey) : title;
   return (
     <Card className="rounded shadow border-0 m-2">
       <CardBody className="p-4 m-2">
@@ -21,7 +24,7 @@ const WorkCard = ({
             <div className="thumb-xl rounded overflow-hidden">
               <img
                 src={image}
-                alt={title}
+                alt={displayTitle}
                 className="d-block w-100 h-100"
                 style={{ objectFit: "cover", objectPosition: "center" }}
               />
@@ -30,11 +33,11 @@ const WorkCard = ({
             <div
               className={`bg-${variant} d-flex justify-content-center align-items-center thumb-xl  rounded`}
             >
-              <img src={image} alt={title} className="thumb-md" />
+              <img src={image} alt={displayTitle} className="thumb-md" />
             </div>
           )}
           <div className="media-body ms-3 align-self-center">
-            <h5 className="text-dark fs-18 fw-medium m-0">{title}</h5>
+            <h5 className="text-dark fs-18 fw-medium m-0">{displayTitle}</h5>
             <p className="text-muted mb-0 fs-13">
               {link}{" "}
               <Link to="">
