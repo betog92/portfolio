@@ -296,21 +296,24 @@
       "name": "Name",
       "email": "Email",
       "subject": "Subject",
-      "contact": "Contact",
+      "contact": "Phone",
       "message": "Message",
       "namePlaceholder": "Your name",
       "emailPlaceholder": "Your email",
       "subjectPlaceholder": "Your subject",
-      "contactPlaceholder": "Your contact",
+      "contactPlaceholder": "Your phone",
       "messagePlaceholder": "Your message",
-      "send": "Send message"
+      "send": "Send message",
+      "sending": "Sending...",
+      "success": "Thanks! Your message has been sent. I'll get back to you soon.",
+      "error": "Something went wrong. Please try again or email me directly."
     },
     "errors": {
       "name": "Please enter name",
       "email": "Please enter email",
       "emailInvalid": "Please enter a valid email",
       "subject": "Please enter subject",
-      "contact": "Please enter contact",
+      "contact": "Please enter phone",
       "message": "Please enter message"
     },
     "phone": "+52 81 1660 5611",

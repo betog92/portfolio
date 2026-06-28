@@ -296,21 +296,24 @@
       "name": "Nombre",
       "email": "Correo",
       "subject": "Asunto",
-      "contact": "Contacto",
+      "contact": "Teléfono",
       "message": "Mensaje",
       "namePlaceholder": "Tu nombre",
       "emailPlaceholder": "Tu correo",
       "subjectPlaceholder": "Tu asunto",
-      "contactPlaceholder": "Tu contacto",
+      "contactPlaceholder": "Tu teléfono",
       "messagePlaceholder": "Tu mensaje",
-      "send": "Enviar mensaje"
+      "send": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "¡Gracias! Tu mensaje fue enviado. Te responderé pronto.",
+      "error": "Algo salió mal. Intenta de nuevo o escríbeme directo por correo."
     },
     "errors": {
       "name": "Por favor ingresa tu nombre",
       "email": "Por favor ingresa tu correo",
       "emailInvalid": "Por favor ingresa un correo válido",
       "subject": "Por favor ingresa el asunto",
-      "contact": "Por favor ingresa tu contacto",
+      "contact": "Por favor ingresa tu teléfono",
       "message": "Por favor ingresa tu mensaje"
     },
     "phone": "+52 81 1660 5611",
