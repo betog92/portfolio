@@ -1,9 +1,18 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import { workData, WorkDataType } from "../data";
 
+import clsx from "clsx";
 import { Card, CardBody, Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+
+const filterOptions = [
+  { id: "all", labelKey: "home.work.filters.all" },
+  { id: "react-native", labelKey: "home.work.filters.reactNative" },
+  { id: "react", labelKey: "home.work.filters.react" },
+  { id: "nextjs", labelKey: "home.work.filters.nextjs" },
+  { id: "web", labelKey: "home.work.filters.web" },
+];
 
 const WorkCard = ({
   image,
@@ -64,6 +73,12 @@ const WorkCard = ({
 
 const Work = () => {
   const { t } = useTranslation();
+  const [category, setCategory] = useState("all");
+
+  const gallery =
+    category === "all"
+      ? workData
+      : workData.filter((item) => item.category?.includes(category));
 
   return (
     <section className="section" id="projects">
@@ -78,8 +93,37 @@ const Work = () => {
             </h2>
           </Col>
         </Row>
+        <Row>
+          <Col xs={12} className="filters-group-wrap">
+            <div className="filters-group mb-5">
+              <ul className="mb-0 list-unstyled filter-options filter-tab">
+                {filterOptions.map((option) => (
+                  <li
+                    key={option.id}
+                    role="button"
+                    tabIndex={0}
+                    aria-pressed={category === option.id}
+                    className={clsx(
+                      "list-inline-item position-relative text-dark",
+                      { active: category === option.id }
+                    )}
+                    onClick={() => setCategory(option.id)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        setCategory(option.id);
+                      }
+                    }}
+                  >
+                    {t(option.labelKey)}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </Col>
+        </Row>
         <Row className=" d-flex  g-1 justify-content-center" id="grid">
-          {workData.map((item, idx) => (
+          {gallery.map((item, idx) => (
             <Col lg={4} md={6} key={idx} className="picture-item">
               <WorkCard {...item} />
             </Col>

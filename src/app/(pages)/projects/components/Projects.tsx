@@ -5,6 +5,13 @@ import { Card, CardBody, Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { ProjectData, ProjectType } from "../data";
+
+const filterOptions = [
+  { id: "all", labelKey: "common.filters.all" },
+  { id: "angular", labelKey: "common.filters.angular" },
+  { id: "mongodb", labelKey: "common.filters.mongodb" },
+  { id: "bootstrap", labelKey: "common.filters.bootstrap" },
+];
 const ProjectsCard = ({ image, link, title, variant }: ProjectType) => {
   return (
     <Card className="rounded shadow border-0 m-2">
@@ -44,9 +51,6 @@ const Projects = () => {
       ? localizedProjects
       : localizedProjects.filter((album) => album.category?.includes(category));
 
-  const filterImages = (category: string) => {
-    setCategory(category);
-  };
   return (
     <section className="section">
       <Container>
@@ -54,46 +58,27 @@ const Projects = () => {
           <Col xs={12} className="filters-group-wrap">
             <div className="filters-group mb-5">
               <ul className="mb-0 list-unstyled filter-options filter-tab">
-                <li
-                  className={clsx(
-                    "list-inline-item position-relative text-dark",
-                    { active: category === "all" }
-                  )}
-                  onClick={() => filterImages("all")}
-                  data-group="all"
-                >
-                  {t("common.filters.all")}
-                </li>
-                <li
-                  className={clsx(
-                    "list-inline-item position-relative text-dark",
-                    { active: category === "angular" }
-                  )}
-                  onClick={() => filterImages("angular")}
-                  data-group="angular"
-                >
-                  {t("common.filters.angular")}
-                </li>
-                <li
-                  className={clsx(
-                    "list-inline-item position-relative text-dark",
-                    { active: category === "mongodb" }
-                  )}
-                  onClick={() => filterImages("mongodb")}
-                  data-group="mongodb"
-                >
-                  {t("common.filters.mongodb")}
-                </li>
-                <li
-                  className={clsx(
-                    "list-inline-item position-relative text-dark",
-                    { active: category === "bootstrap" }
-                  )}
-                  onClick={() => filterImages("bootstrap")}
-                  data-group="bootstrap"
-                >
-                  {t("common.filters.bootstrap")}
-                </li>
+                {filterOptions.map((option) => (
+                  <li
+                    key={option.id}
+                    role="button"
+                    tabIndex={0}
+                    aria-pressed={category === option.id}
+                    className={clsx(
+                      "list-inline-item position-relative text-dark",
+                      { active: category === option.id }
+                    )}
+                    onClick={() => setCategory(option.id)}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        setCategory(option.id);
+                      }
+                    }}
+                  >
+                    {t(option.labelKey)}
+                  </li>
+                ))}
               </ul>
             </div>
           </Col>

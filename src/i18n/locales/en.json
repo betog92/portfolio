@@ -148,7 +148,14 @@
     "work": {
       "badge": "Work",
       "title": "My Projects",
-      "portfolioTitle": "Personal Portfolio"
+      "portfolioTitle": "Personal Portfolio",
+      "filters": {
+        "all": "All",
+        "reactNative": "React Native",
+        "react": "React",
+        "nextjs": "Next.js",
+        "web": "Web"
+      }
     }
   },
   "footer": {
