@@ -38,11 +38,24 @@
     }
   }
   .navbar-brand {
+    .logo-text {
+      font-family: $font-logo;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+    .logo-accent {
+      color: $primary;
+    }
     .logo-light {
       display: $d-none;
+      color: $white;
     }
     .logo-dark {
       display: $d-block;
+      color: $dark;
     }
   }
   .nav-btn {

@@ -1,4 +1,3 @@
-import logoLight from "@/assets/images/logo-light.png";
 import logoSm from "@/assets/images/logo-sm.png";
 import IconifyIcon from "@/components/wrappers/IconifyIcon";
 import { currentYear } from "@/context/constants";
@@ -21,9 +20,12 @@ const AppLayout = ({
         <Container>
           <Row>
             <Col lg={5} className="border-e-dashed">
-              <Link to="/">
-                <img src={logoSm} alt="logoSm" height={18} />
-                <img src={logoLight} alt="logoLight" height={16} />
+              <Link to="/" className="footer-brand">
+                <img src={logoSm} alt="" height={18} />
+                &nbsp;
+                <span className="logo-text">
+                  Alberto García<span className="logo-accent">.</span>
+                </span>
               </Link>
               <p className="my-4">{t("footer.intro")}</p>
               <ul className="list-unstyled footer-social mb-0 mt-sm-0 mt-3">

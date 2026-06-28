@@ -1,5 +1,3 @@
-import logoDark from "@/assets/images/logo-dark.png";
-import logoLight from "@/assets/images/logo-light.png";
 import logoSm from "@/assets/images/logo-sm.png";
 import IconifyIcon from "@/components/wrappers/IconifyIcon";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -31,21 +29,14 @@ const TopNavbar = ({ isDark }: { isDark?: boolean }) => {
     >
       <Container>
         <Link to="/" className="navbar-brand">
-          <img src={logoSm} className="logo-sm" alt="logoSm" height={24} />
+          <img src={logoSm} className="logo-sm" alt="" height={24} />
           &nbsp;
-          <img
-            src={logoLight}
-            className="logo-light"
-            alt="logoLight"
-            height={16}
-          />
-          &nbsp;
-          <img
-            src={logoDark}
-            className="logo-dark"
-            alt="logoDark"
-            height={16}
-          />
+          <span className="logo-light logo-text">
+            Alberto García<span className="logo-accent">.</span>
+          </span>
+          <span className="logo-dark logo-text">
+            Alberto García<span className="logo-accent">.</span>
+          </span>
         </Link>
         <Link
           to=""
