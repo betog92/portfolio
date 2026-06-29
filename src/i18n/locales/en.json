@@ -21,13 +21,7 @@
   "common": {
     "craftCopy": "We craft digital, graphic and dimensional thinking, to create category leading brand experiences that have meaning .",
     "readMore": "Read more",
-    "experience": "Experience",
-    "filters": {
-      "all": "All",
-      "angular": "Angular",
-      "mongodb": "Mongodb",
-      "bootstrap": "Bootstrap"
-    }
+    "experience": "Experience"
   },
   "hero": {
     "greeting": "Hi, I'm Alberto García",
@@ -123,6 +117,13 @@
       ],
       "exp": [
         {
+          "title": "Senior Software Engineer",
+          "years": "2026–Present",
+          "org": "St. Jude Children's Research Hospital (via Concentrix)",
+          "place": "Remote (USA)",
+          "description": "Tech lead for the \"I Love St. Jude\" app, a fundraising platform where people donate, join charity events and build community for the children's hospital. Built the project's architecture from scratch in React Native and TypeScript, with Okta authentication and AWS EC2 infrastructure."
+        },
+        {
           "title": "Mobile Tech Lead",
           "years": "2020–2025",
           "org": "Vector Casa de Bolsa",
@@ -200,6 +201,11 @@
       "bgText": "Resume",
       "timeline": [
         {
+          "title": "St. Jude (ALSAC) — Senior Software Engineer",
+          "year": "2026-Pres.",
+          "description": "Tech lead for the \"I Love St. Jude\" fundraising app (via Concentrix). Built the architecture from scratch in React Native and TypeScript with Okta auth and AWS EC2."
+        },
+        {
           "title": "Vector Casa de Bolsa — Senior Mobile Developer",
           "year": "2020-25",
           "description": "Led mobile development of secure fintech apps in React Native, managing a Scrum team and shipping stable releases."
@@ -259,6 +265,11 @@
   "resumePage": {
     "timeline": [
       {
+        "title": "St. Jude (ALSAC) — Senior Software Engineer",
+        "year": "2026-Pres.",
+        "description": "Tech lead for the \"I Love St. Jude\" fundraising app (via Concentrix). Built the architecture from scratch in React Native and TypeScript with Okta auth and AWS EC2."
+      },
+      {
         "title": "Vector Casa de Bolsa — Senior Mobile Developer",
         "year": "2020-25",
         "description": "Led mobile development of secure fintech apps in React Native, managing a Scrum team and shipping stable releases."
@@ -278,15 +289,6 @@
         "year": "2013-20",
         "description": "Computer Science degree focused on software engineering and modern application development."
       }
-    ]
-  },
-  "projectsPage": {
-    "items": [
-      { "title": "Farmer Project" },
-      { "title": "ID Scan Project" },
-      { "title": "Auto Drive Project" },
-      { "title": "Health Application" },
-      { "title": "eCommerce Project" }
     ]
   },
   "contact": {

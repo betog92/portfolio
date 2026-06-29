@@ -4,9 +4,8 @@ import { workData, WorkDataType } from "../data";
 import clsx from "clsx";
 import { Card, CardBody, Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
-const filterOptions = [
+export const filterOptions = [
   { id: "all", labelKey: "home.work.filters.all" },
   { id: "react-native", labelKey: "home.work.filters.reactNative" },
   { id: "react", labelKey: "home.work.filters.react" },
@@ -14,13 +13,15 @@ const filterOptions = [
   { id: "web", labelKey: "home.work.filters.web" },
 ];
 
-const WorkCard = ({
+export const WorkCard = ({
   image,
   language,
   link,
+  linkLabel,
   title,
   variant,
   fill,
+  objectFit = "cover",
   titleKey,
 }: WorkDataType) => {
   const { t } = useTranslation();
@@ -35,7 +36,7 @@ const WorkCard = ({
                 src={image}
                 alt={displayTitle}
                 className="d-block w-100 h-100"
-                style={{ objectFit: "cover", objectPosition: "center" }}
+                style={{ objectFit, objectPosition: "center" }}
               />
             </div>
           ) : (
@@ -47,11 +48,16 @@ const WorkCard = ({
           )}
           <div className="media-body ms-3 align-self-center">
             <h5 className="text-dark fs-18 fw-medium m-0">{displayTitle}</h5>
-            <p className="text-muted mb-0 fs-13">
-              {link}{" "}
-              <Link to="">
+            <p className="mb-0 fs-13">
+              <a
+                href={link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted text-decoration-none"
+              >
+                {linkLabel ?? link}{" "}
                 <i className="ti ti-external-link fs-18 text-primary" />
-              </Link>
+              </a>
             </p>
           </div>
         </div>

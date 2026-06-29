@@ -175,6 +175,16 @@
         display: inline-block;
       }
     }
+    &.light-active {
+      .navbar-brand {
+        .logo-light {
+          display: none;
+        }
+        .logo-dark {
+          display: inline-block;
+        }
+      }
+    }
     .navbar-toggler {
       padding: 0px;
       .navbar-toggle-icon {

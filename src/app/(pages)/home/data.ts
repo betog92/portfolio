@@ -1,6 +1,8 @@
-import react from "@/assets/images/logos/react.svg";
 import casaDeChuy from "@/assets/images/logos/casa-de-chuy.webp";
 import vite from "@/assets/images/logos/vite.svg";
+import stjude from "@/assets/images/logos/stjude.svg";
+import vitByVector from "@/assets/images/logos/vit-by-vector.png";
+import vectorApp from "@/assets/images/logos/vector-app.png";
 
 type PersonalDataType = {
   name: string;
@@ -20,9 +22,11 @@ export type WorkDataType = {
   variant: string;
   title: string;
   link: string;
+  linkLabel?: string;
   language: string[];
   category?: string[];
   fill?: boolean;
+  objectFit?: "cover" | "contain";
   titleKey?: string;
 };
 
@@ -102,20 +106,34 @@ export const servicesData: ServicesType[] = [
 
 export const workData: WorkDataType[] = [
   {
-    image: react,
-    variant: "soft-alt-primary",
-    title: "Vit by Vector",
-    link: "https://vit.vector.com.mx",
-    language: ["React Native", "TypeScript", "GraphQL", "Firebase"],
+    image: stjude,
+    variant: "soft-alt-danger",
+    title: "I Love St. Jude",
+    link: "https://www.stjude.org/support-and-fundraising/i-love-st-jude-app.html",
+    linkLabel: "stjude.org",
+    language: ["React Native", "TypeScript", "Okta", "AWS"],
     category: ["react-native"],
+    fill: true,
+    objectFit: "contain",
   },
   {
-    image: react,
+    image: vitByVector,
+    variant: "soft-alt-primary",
+    title: "Vit by Vector",
+    link: "https://www.vector.com.mx",
+    language: ["React Native", "TypeScript", "GraphQL", "Firebase"],
+    category: ["react-native"],
+    fill: true,
+  },
+  {
+    image: vectorApp,
     variant: "soft-alt-info",
     title: "VectorApp",
-    link: "https://vector.com.mx",
+    link: "https://play.google.com/store/apps/details?id=com.appvectormovil",
+    linkLabel: "Google Play",
     language: ["React Native", "TypeScript", "Redux Toolkit", "REST APIs"],
     category: ["react-native"],
+    fill: true,
   },
   {
     image: casaDeChuy,

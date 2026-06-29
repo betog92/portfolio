@@ -21,13 +21,7 @@
   "common": {
     "craftCopy": "Creamos pensamiento digital, gráfico y dimensional para construir experiencias de marca líderes en su categoría y con significado.",
     "readMore": "Leer más",
-    "experience": "de experiencia",
-    "filters": {
-      "all": "Todos",
-      "angular": "Angular",
-      "mongodb": "Mongodb",
-      "bootstrap": "Bootstrap"
-    }
+    "experience": "de experiencia"
   },
   "hero": {
     "greeting": "Hola, soy Alberto García",
@@ -123,6 +117,13 @@
       ],
       "exp": [
         {
+          "title": "Ingeniero de Software Senior",
+          "years": "2026–Actualidad",
+          "org": "St. Jude Children's Research Hospital (vía Concentrix)",
+          "place": "Remoto (EE. UU.)",
+          "description": "Líder técnico de la app \"I Love St. Jude\", una plataforma de recaudación donde las personas donan, se unen a eventos de caridad y crean comunidad para el hospital infantil. Construí la arquitectura del proyecto desde cero en React Native y TypeScript, con autenticación Okta e infraestructura en AWS EC2."
+        },
+        {
           "title": "Sub Líder Técnico Móvil",
           "years": "2020–2025",
           "org": "Vector Casa de Bolsa",
@@ -200,6 +201,11 @@
       "bgText": "Currículum",
       "timeline": [
         {
+          "title": "St. Jude (ALSAC) — Ingeniero de Software Senior",
+          "year": "2026-Act.",
+          "description": "Líder técnico de la app de recaudación \"I Love St. Jude\" (vía Concentrix). Construí la arquitectura desde cero en React Native y TypeScript con autenticación Okta y AWS EC2."
+        },
+        {
           "title": "Vector Casa de Bolsa — Desarrollador Móvil Senior",
           "year": "2020-25",
           "description": "Lideré el desarrollo móvil de apps fintech seguras en React Native, coordinando un equipo Scrum y entregando releases estables."
@@ -259,6 +265,11 @@
   "resumePage": {
     "timeline": [
       {
+        "title": "St. Jude (ALSAC) — Ingeniero de Software Senior",
+        "year": "2026-Act.",
+        "description": "Líder técnico de la app de recaudación \"I Love St. Jude\" (vía Concentrix). Construí la arquitectura desde cero en React Native y TypeScript con autenticación Okta y AWS EC2."
+      },
+      {
         "title": "Vector Casa de Bolsa — Desarrollador Móvil Senior",
         "year": "2020-25",
         "description": "Lideré el desarrollo móvil de apps fintech seguras en React Native, coordinando un equipo Scrum y entregando releases estables."
@@ -278,15 +289,6 @@
         "year": "2013-20",
         "description": "Ingeniería enfocada en desarrollo de software y construcción de aplicaciones modernas."
       }
-    ]
-  },
-  "projectsPage": {
-    "items": [
-      { "title": "Proyecto Farmer" },
-      { "title": "Proyecto ID Scan" },
-      { "title": "Proyecto Auto Drive" },
-      { "title": "Aplicación de salud" },
-      { "title": "Proyecto eCommerce" }
     ]
   },
   "contact": {
