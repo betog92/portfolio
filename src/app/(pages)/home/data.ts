@@ -33,17 +33,17 @@ export type WorkDataType = {
 export const personalData: PersonalDataType[] = [
   {
     name: "React Native",
-    experience: "5+ Years",
+    experience: "6 Years",
     icon: "logos:react",
   },
   {
     name: "TypeScript",
-    experience: "5+ Years",
+    experience: "6 Years",
     icon: "logos:typescript-icon",
   },
   {
     name: "Redux Toolkit",
-    experience: "5 Years",
+    experience: "6 Years",
     icon: "logos:redux",
   },
   {
@@ -68,7 +68,7 @@ export const personalData: PersonalDataType[] = [
   },
   {
     name: "Git",
-    experience: "6+ Years",
+    experience: "7+ Years",
     icon: "logos:git-icon",
   },
 ];
@@ -79,7 +79,7 @@ export const servicesData: ServicesType[] = [
     variant: "soft-alt-primary",
     title: "Mobile Development",
     description:
-      "Expert in React Native development with 5+ years of experience building scalable, secure mobile applications for fintech and enterprise solutions.",
+      "Expert in React Native development with 6 years of experience building scalable, secure mobile applications for fintech and enterprise solutions.",
   },
   {
     icon: "feather:users",

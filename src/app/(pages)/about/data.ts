@@ -7,17 +7,17 @@ type PersonalDataType = {
 export const personalData: PersonalDataType[] = [
   {
     name: "React Native",
-    experience: "5+ Years",
+    experience: "6 Years",
     icon: "logos:react",
   },
   {
     name: "TypeScript",
-    experience: "5+ Years",
+    experience: "6 Years",
     icon: "logos:typescript-icon",
   },
   {
     name: "Redux Toolkit",
-    experience: "5 Years",
+    experience: "6 Years",
     icon: "logos:redux",
   },
   {
@@ -42,7 +42,7 @@ export const personalData: PersonalDataType[] = [
   },
   {
     name: "Git",
-    experience: "6+ Years",
+    experience: "7+ Years",
     icon: "logos:git-icon",
   },
 ];

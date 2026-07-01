@@ -40,7 +40,7 @@
   "home": {
     "personal": {
       "badge": "Datos personales",
-      "intro": "Ingeniero de software móvil con más de 5 años de experiencia en React Native y liderazgo técnico. Especializado en TypeScript y seguridad móvil para aplicaciones fintech.",
+      "intro": "Ingeniero de software móvil con 6 años de experiencia en React Native y liderazgo técnico. Especializado en TypeScript y seguridad móvil para aplicaciones fintech.",
       "labels": {
         "dob": "Fecha de nacimiento",
         "languages": "Idiomas",
@@ -54,14 +54,14 @@
         "interest": "Pádel"
       },
       "skills": [
-        "5+ años",
-        "5+ años",
-        "5 años",
+        "6 años",
+        "6 años",
+        "6 años",
         "3 años",
         "4 años",
         "3 años",
         "4 años",
-        "6+ años"
+        "7+ años"
       ]
     },
     "services": {
@@ -71,7 +71,7 @@
       "items": [
         {
           "title": "Desarrollo móvil",
-          "description": "Experto en desarrollo con React Native con más de 5 años de experiencia creando aplicaciones móviles escalables y seguras para soluciones fintech y empresariales."
+          "description": "Experto en desarrollo con React Native con 6 años de experiencia creando aplicaciones móviles escalables y seguras para soluciones fintech y empresariales."
         },
         {
           "title": "Liderazgo técnico",
@@ -160,18 +160,16 @@
     }
   },
   "footer": {
-    "intro": "En un mundo ideal este texto no existiría: el cliente reconocería la importancia de tener el contenido web antes de empezar el diseño.",
-    "company": "Compañía",
-    "information": "Información",
-    "moreInfo": "Más información",
-    "terms": "Términos y condiciones",
-    "createdWith": "Creado con",
-    "by": "por"
+    "intro": "¿Tienes una app o un sitio web en mente? Te ayudo a llevarlo de la idea al lanzamiento. Escríbeme y vemos por dónde empezar.",
+    "company": "Navegación",
+    "information": "Portafolio",
+    "moreInfo": "Contacto",
+    "copyright": "Todos los derechos reservados."
   },
   "about": {
     "personal": {
       "badge": "Datos personales",
-      "intro": "Ingeniero de software móvil con más de 5 años de experiencia en React Native y liderazgo técnico, especializado en TypeScript y seguridad móvil para apps fintech. Lidero equipos ágiles, elevo la calidad de las entregas con testing y code reviews, y he contribuido con más de 2,100 commits y PRs en los repositorios de la empresa.",
+      "intro": "Ingeniero de software móvil con 6 años de experiencia en React Native y liderazgo técnico, especializado en TypeScript y seguridad móvil para apps fintech. Lidero equipos ágiles, elevo la calidad de las entregas con testing y code reviews, y he contribuido con más de 2,100 commits y PRs en los repositorios de la empresa.",
       "labels": {
         "dob": "Fecha de nacimiento",
         "languages": "Idiomas",
@@ -185,14 +183,14 @@
         "interest": "Pádel"
       },
       "skills": [
-        "5+ años",
-        "5+ años",
-        "5 años",
+        "6 años",
+        "6 años",
+        "6 años",
         "3 años",
         "4 años",
         "3 años",
         "4 años",
-        "6+ años"
+        "7+ años"
       ]
     },
     "lifetime": {

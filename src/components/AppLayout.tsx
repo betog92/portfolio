@@ -30,43 +30,28 @@ const AppLayout = ({
               <p className="my-4">{t("footer.intro")}</p>
               <ul className="list-unstyled footer-social mb-0 mt-sm-0 mt-3">
                 <li className="list-inline-item">
-                  <Link to="">
-                    {" "}
+                  <a
+                    href="https://www.linkedin.com/in/albertoigm/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                  >
                     <IconifyIcon
-                      icon="feather:facebook"
+                      icon="feather:linkedin"
                       className="icon-xs"
-                    />{" "}
-                  </Link>
+                    />
+                  </a>
                   &nbsp;
                 </li>
                 <li className="list-inline-item">
-                  <Link to="">
-                    {" "}
-                    <IconifyIcon
-                      icon="feather:twitter"
-                      className="icon-xs"
-                    />{" "}
-                  </Link>
-                  &nbsp;
-                </li>
-                <li className="list-inline-item">
-                  <Link to="">
-                    {" "}
-                    <IconifyIcon
-                      icon="feather:github"
-                      className="icon-xs"
-                    />{" "}
-                  </Link>
-                  &nbsp;
-                </li>
-                <li className="list-inline-item">
-                  <Link to="">
-                    {" "}
-                    <IconifyIcon
-                      icon="feather:instagram"
-                      className="icon-xs"
-                    />{" "}
-                  </Link>
+                  <a
+                    href="https://github.com/betog92"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                  >
+                    <IconifyIcon icon="feather:github" className="icon-xs" />
+                  </a>
                 </li>
               </ul>
             </Col>
@@ -109,9 +94,6 @@ const AppLayout = ({
                     <li>
                       <Link to="/contact">{t("nav.contact")}</Link>
                     </li>
-                    <li>
-                      <Link to="/">{t("footer.terms")}</Link>
-                    </li>
                   </ul>
                 </Col>
               </Row>
@@ -122,23 +104,10 @@ const AppLayout = ({
       <div className="footer-alt">
         <Container>
           <Row>
-            <Col sm={6}>
-              <p>
-                {" "}
-                © {currentYear} Selfown. {t("footer.createdWith")}{" "}
-                <IconifyIcon icon="la:heart-solid" className="text-danger" />{" "}
-                {t("footer.by")} Mannatthemes
+            <Col>
+              <p className="mb-0">
+                © {currentYear} Alberto García. {t("footer.copyright")}
               </p>
-            </Col>
-            <Col sm={6} className="text-sm-end">
-              <ul className="list-inline mb-0">
-                <li className="list-inline-item">
-                  <a href="#">
-                    - {t("footer.terms")}
-                    <sup className="text-danger">*</sup>
-                  </a>
-                </li>
-              </ul>
             </Col>
           </Row>
         </Container>
