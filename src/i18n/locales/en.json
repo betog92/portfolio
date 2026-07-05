@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Alberto García | React Native & Next.js Engineer"
+    "title": "Alberto García | Mobile Apps, Websites & Custom Systems · Monterrey"
   },
   "language": {
     "label": "Language",
@@ -19,7 +19,6 @@
     "hireMe": "Hire Me!"
   },
   "common": {
-    "craftCopy": "We craft digital, graphic and dimensional thinking, to create category leading brand experiences that have meaning .",
     "readMore": "Read more",
     "experience": "Experience"
   },
@@ -27,7 +26,8 @@
     "greeting": "Hi, I'm Alberto García",
     "prefix": "I'm a",
     "suffix": "Engineer",
-    "seoTitle": "I'm a Senior React Native & Next.js Engineer",
+    "roles": ["React Native", "Next.js", "Web", "Full Stack"],
+    "seoTitle": "I'm a Senior React Native, Next.js and Full Stack Web Engineer",
     "downloadCv": "Download CV"
   },
   "banner": {
@@ -40,7 +40,7 @@
   "home": {
     "personal": {
       "badge": "Personal Details",
-      "intro": "Mobile software engineer with 6 years of experience in React Native and technical leadership. Specialized in TypeScript and mobile security for fintech applications.",
+      "intro": "Software engineer with 6 years of experience building mobile apps, websites and custom systems. Currently tech lead of the \"I Love St. Jude\" fundraising app, and creator of booking and online-payment sites for businesses like La Casa de Chuy el Rico.",
       "labels": {
         "dob": "Date of birth",
         "languages": "Spoken Languages",
@@ -49,18 +49,21 @@
       },
       "values": {
         "dob": "28 April 1992",
-        "languages": "English (B2++), Spanish (C2)",
+        "languages": "English (B2–C1), Spanish (Native)",
         "nationality": "México",
         "interest": "Padel"
       },
       "skills": [
         "6 Years",
         "6 Years",
+        "3 Years",
         "6 Years",
         "3 Years",
         "4 Years",
         "3 Years",
         "4 Years",
+        "2 Years",
+        "2 Years",
         "7+ Years"
       ]
     },
@@ -74,16 +77,16 @@
           "description": "Expert in React Native development with 6 years of experience building scalable, secure mobile applications for fintech and enterprise solutions."
         },
         {
+          "title": "Web & Custom Systems",
+          "description": "Websites and business systems with Next.js — bookings, online payments and admin dashboards, from idea to production launch."
+        },
+        {
           "title": "Technical Leadership",
           "description": "Led teams of 6+ developers, managing code reviews, PR processes, and ensuring quality delivery through agile methodologies and best practices."
         },
         {
           "title": "Mobile Security",
           "description": "Specialized in implementing biometric authentication, MFA, encryption, and security measures for fintech applications."
-        },
-        {
-          "title": "Performance Optimization",
-          "description": "Optimized application flows and reduced operation times by 20%, improving user experience and application efficiency."
         }
       ]
     },
@@ -121,28 +124,40 @@
           "years": "2026–Present",
           "org": "St. Jude Children's Research Hospital (via Concentrix)",
           "place": "Remote (USA)",
-          "description": "Tech lead for the \"I Love St. Jude\" app, a fundraising platform where people donate, join charity events and build community for the children's hospital. Built the project's architecture from scratch in React Native and TypeScript, with Okta authentication and AWS EC2 infrastructure."
+          "description": "Tech lead for the \"I Love St. Jude\" app, a fundraising platform where people donate, join charity events and build community for the children's hospital. Built the project's architecture from scratch in React Native and TypeScript, with Okta authentication and AWS EC2 infrastructure.",
+          "tags": ["React Native", "TypeScript", "Okta", "AWS"]
         },
         {
-          "title": "Mobile Tech Lead",
+          "title": "Full Stack Developer — Freelance Project",
+          "years": "2025–2026",
+          "org": "La Casa de Chuy el Rico",
+          "place": "Monterrey, México",
+          "description": "Built lacasadechuyelrico.com end-to-end as a personal project: a booking site for a photography venue in Monterrey specializing in quinceañera and wedding photo sessions. Hourly reservations with date selection, online payments through Conekta and instant confirmation. Built with Next.js, TypeScript and Supabase, deployed on Vercel with cron jobs and a custom domain — reaching 600+ users per week.",
+          "tags": ["Next.js", "Supabase", "Conekta", "Vercel"]
+        },
+        {
+          "title": "Senior Mobile Developer → Mobile Tech Lead",
           "years": "2020–2025",
           "org": "Vector Casa de Bolsa",
           "place": "Monterrey, México",
-          "description": "Led mobile development of Vit by Vector, a financial marketplace (mutual funds, stocks, insurance, retirement). Managed a Scrum team of 6, reviewing 15–20 PRs/week and shipping stable bi-weekly releases. Implemented Face ID, MFA, AES-256 encryption, jailbreak/root detection and an AI chatbot. Previously built VectorApp, reducing operation times by 20%."
+          "description": "Led mobile development of Vit by Vector, a financial marketplace (mutual funds, stocks, insurance, retirement). Managed a Scrum team of 6, reviewing 15–20 PRs/week and shipping stable bi-weekly releases. Implemented Face ID, MFA, AES-256 encryption, jailbreak/root detection and an AI chatbot. Previously built VectorApp, reducing operation times by 20%.",
+          "tags": ["React Native", "TypeScript", "GraphQL"]
         },
         {
           "title": "Web Developer",
           "years": "2018–2019",
           "org": "Accenture",
           "place": "Monterrey, México",
-          "description": "Built an internal portal with Angular within a Scrum team and automated mobile testing with Appium and Selenium."
+          "description": "Built an internal portal with Angular within a Scrum team and automated mobile testing with Appium and Selenium.",
+          "tags": ["Angular", "Appium", "Selenium"]
         },
         {
-          "title": "Web Developer",
+          "title": "Web Developer — Freelance",
           "years": "2014–2018",
           "org": "Alvero Photography Studio",
           "place": "Monterrey, México",
-          "description": "Built and maintained an e-commerce platform with PayPal integration, applying UX principles that increased conversion rate by 15%."
+          "description": "My first freelance client: built and maintained their e-commerce platform with PayPal integration, applying UX principles that increased conversion rate by 15%.",
+          "tags": ["PHP", "PayPal", "JavaScript"]
         }
       ]
     },
@@ -169,7 +184,7 @@
   "about": {
     "personal": {
       "badge": "Personal Details",
-      "intro": "Mobile software engineer with 6 years of experience in React Native and technical leadership, specialized in TypeScript and mobile security for fintech apps. I lead agile teams, raise delivery quality through testing and code reviews, and have contributed 2,100+ commits and PRs across company repositories.",
+      "intro": "Software engineer with 6 years of experience across mobile and web: React Native apps, websites and custom systems built with Next.js. I currently lead the \"I Love St. Jude\" fundraising app, and as a freelancer I build complete products — like La Casa de Chuy el Rico, a booking site with online payments and 600+ weekly users. I lead agile teams, raise delivery quality through testing and code reviews, and have contributed 2,100+ commits and PRs.",
       "labels": {
         "dob": "Date of birth",
         "languages": "Spoken Languages",
@@ -178,18 +193,21 @@
       },
       "values": {
         "dob": "28 April 1992",
-        "languages": "English (B2++), Spanish (C2)",
+        "languages": "English (B2–C1), Spanish (Native)",
         "nationality": "México",
         "interest": "Padel"
       },
       "skills": [
         "6 Years",
         "6 Years",
+        "3 Years",
         "6 Years",
         "3 Years",
         "4 Years",
         "3 Years",
         "4 Years",
+        "2 Years",
+        "2 Years",
         "7+ Years"
       ]
     },
@@ -204,9 +222,14 @@
           "description": "Tech lead for the \"I Love St. Jude\" fundraising app (via Concentrix). Built the architecture from scratch in React Native and TypeScript with Okta auth and AWS EC2."
         },
         {
-          "title": "Vector Casa de Bolsa — Senior Mobile Developer",
+          "title": "La Casa de Chuy el Rico — Freelance Full Stack",
+          "year": "2025-26",
+          "description": "Built a booking site for a photography venue in Monterrey: hourly reservations and Conekta online payments with Next.js, TypeScript and Supabase — 600+ weekly users."
+        },
+        {
+          "title": "Vector Casa de Bolsa — Senior Mobile Dev → Tech Lead",
           "year": "2020-25",
-          "description": "Led mobile development of secure fintech apps in React Native, managing a Scrum team and shipping stable releases."
+          "description": "Grew from Senior Mobile Developer to Tech Lead of secure fintech apps in React Native, managing a Scrum team and shipping stable releases."
         },
         {
           "title": "Accenture — Web Developer",
@@ -214,9 +237,9 @@
           "description": "Built an internal Angular portal and automated mobile testing with Appium and Selenium."
         },
         {
-          "title": "Alvero Photography Studio — Web Developer",
+          "title": "Alvero Photography Studio — Freelance Web",
           "year": "2014-18",
-          "description": "Built an e-commerce platform with PayPal integration, improving conversion rate by 15% through UX."
+          "description": "My first freelance client: an e-commerce platform with PayPal integration, improving conversion rate by 15% through UX."
         },
         {
           "title": "B.S. in Computer Science — UDEM",
@@ -226,8 +249,8 @@
       ]
     },
     "actionBox": {
-      "title": "I Am Available For Freelancer.",
-      "subtitle": "Browse hundreds of job offers and find the bestsuitable position.",
+      "title": "Available for freelance projects.",
+      "subtitle": "Have a mobile app or website in mind? Let's take it from idea to launch — drop me a line.",
       "emailPlaceholder": "Email Address",
       "sendButton": "Send Message"
     }
@@ -235,28 +258,28 @@
   "servicesPage": {
     "items": [
       {
-        "title": "Awesome Support",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content platform."
+        "title": "Mobile Development",
+        "description": "Scalable, secure mobile apps built with React Native and TypeScript — from fintech platforms to the official St. Jude Children's Research Hospital fundraising app."
       },
       {
-        "title": "Dynamic Growth",
-        "description": "Credibly brand standards compliant users without extensible services. Anibh euismod tincidunt."
+        "title": "Web Development",
+        "description": "Modern, fast websites and web apps with Next.js and React, taken from idea to production launch."
       },
       {
-        "title": "Branding Identity",
-        "description": "Separated they live in Bookmarksgrove right at the coast of the Semantics, and large."
+        "title": "Technical Leadership",
+        "description": "Leading agile teams of 6+ developers: code reviews, PR processes, and quality delivery with stable release cycles."
       },
       {
-        "title": "App Development",
-        "description": "Some quick example text to build on the card title and make up the bulk of the card's content platform."
+        "title": "Mobile Security",
+        "description": "Biometric authentication, MFA, AES-256 encryption, and jailbreak/root detection for apps that handle sensitive data."
       },
       {
-        "title": "Business Stratagy",
-        "description": "Credibly brand standards compliant users without extensible services. Anibh euismod tincidunt."
+        "title": "Performance Optimization",
+        "description": "Profiling and optimizing app flows — I've cut operation times by 20% while improving the overall user experience."
       },
       {
-        "title": "Web Design",
-        "description": "Separated they live in Bookmarksgrove right at the coast of the Semantics, and large."
+        "title": "End-to-End Products",
+        "description": "Complete digital products with booking, online payments, and instant confirmation — like lacasadechuyelrico.com, built from scratch."
       }
     ]
   },
@@ -268,9 +291,14 @@
         "description": "Tech lead for the \"I Love St. Jude\" fundraising app (via Concentrix). Built the architecture from scratch in React Native and TypeScript with Okta auth and AWS EC2."
       },
       {
-        "title": "Vector Casa de Bolsa — Senior Mobile Developer",
+        "title": "La Casa de Chuy el Rico — Freelance Full Stack",
+        "year": "2025-26",
+        "description": "Built a booking site for a photography venue in Monterrey: hourly reservations and Conekta online payments with Next.js, TypeScript and Supabase — 600+ weekly users."
+      },
+      {
+        "title": "Vector Casa de Bolsa — Senior Mobile Dev → Tech Lead",
         "year": "2020-25",
-        "description": "Led mobile development of secure fintech apps in React Native, managing a Scrum team and shipping stable releases."
+        "description": "Grew from Senior Mobile Developer to Tech Lead of secure fintech apps in React Native, managing a Scrum team and shipping stable releases."
       },
       {
         "title": "Accenture — Web Developer",
@@ -278,9 +306,9 @@
         "description": "Built an internal Angular portal and automated mobile testing with Appium and Selenium."
       },
       {
-        "title": "Alvero Photography Studio — Web Developer",
+        "title": "Alvero Photography Studio — Freelance Web",
         "year": "2014-18",
-        "description": "Built an e-commerce platform with PayPal integration, improving conversion rate by 15% through UX."
+        "description": "My first freelance client: an e-commerce platform with PayPal integration, improving conversion rate by 15% through UX."
       },
       {
         "title": "B.S. in Computer Science — UDEM",
@@ -291,7 +319,7 @@
   },
   "contact": {
     "title": "Get in touch !",
-    "subtitle": "Always available for freelancing if the right project comes along, Feel free to contact me.",
+    "subtitle": "Need a website, a custom system or an app for your business? Tell me your idea and I'll show you how to make it happen — in Monterrey or remote.",
     "form": {
       "name": "Name",
       "email": "Email",
@@ -319,6 +347,9 @@
     "phone": "+52 81 1660 5611",
     "phoneHours": "9:00am to 7:00pm",
     "email": "alberto.ivan92@gmail.com",
-    "emailDays": "Monday to Saturday"
+    "emailDays": "Monday to Saturday",
+    "whatsapp": "WhatsApp",
+    "whatsappNote": "Fast reply",
+    "whatsappMessage": "Hi Alberto, I saw your portfolio and would like to talk about a project."
   }
 }

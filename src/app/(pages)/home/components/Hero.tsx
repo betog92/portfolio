@@ -9,8 +9,6 @@ import { TypeAnimation } from "react-type-animation";
 
 const basePath = import.meta.env.PROD ? "/portfolio" : "";
 
-const roles = ["React Native", 2000, "Next.js", 2000];
-
 // Respeta la preferencia del sistema de reducir animaciones (accesibilidad).
 const useReducedMotion = () => {
   const [reduced, setReduced] = useState(false);
@@ -33,14 +31,18 @@ const Hero = () => {
 
   const isSpanish = (i18n.resolvedLanguage ?? "en").startsWith("es");
 
+  const roles = t("hero.roles", { returnObjects: true }) as string[];
+  const sequence = roles.flatMap((role) => [role, 2000]);
+
   const animatedRole = (
     <mark>
       {reducedMotion ? (
-        <span className="fw-medium typewrite">React Native</span>
+        <span className="fw-medium typewrite">{roles[0]}</span>
       ) : (
         <TypeAnimation
+          key={i18n.resolvedLanguage}
           className="fw-medium typewrite"
-          sequence={roles}
+          sequence={sequence}
           wrapper="span"
           speed={{ type: "keyStrokeDelayInMs", value: 220 }}
           deletionSpeed={{ type: "keyStrokeDelayInMs", value: 110 }}

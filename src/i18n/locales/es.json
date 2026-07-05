@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Alberto García | Desarrollador Senior React Native & Next.js"
+    "title": "Alberto García | Apps móviles, páginas web y sistemas · Monterrey"
   },
   "language": {
     "label": "Idioma",
@@ -19,7 +19,6 @@
     "hireMe": "¡Contrátame!"
   },
   "common": {
-    "craftCopy": "Creamos pensamiento digital, gráfico y dimensional para construir experiencias de marca líderes en su categoría y con significado.",
     "readMore": "Leer más",
     "experience": "de experiencia"
   },
@@ -27,7 +26,8 @@
     "greeting": "Hola, soy Alberto García",
     "prefix": "Soy",
     "suffix": "Desarrollador Senior en",
-    "seoTitle": "Desarrollador Senior en React Native y Next.js",
+    "roles": ["React Native", "Next.js", "páginas web", "sistemas a la medida"],
+    "seoTitle": "Desarrollador Senior en React Native, Next.js, páginas web y sistemas a la medida",
     "downloadCv": "Descargar CV"
   },
   "banner": {
@@ -40,7 +40,7 @@
   "home": {
     "personal": {
       "badge": "Datos personales",
-      "intro": "Ingeniero de software móvil con 6 años de experiencia en React Native y liderazgo técnico. Especializado en TypeScript y seguridad móvil para aplicaciones fintech.",
+      "intro": "Ingeniero de software con 6 años de experiencia construyendo apps móviles, páginas web y sistemas a la medida. Actualmente líder técnico de la app de recaudación \"I Love St. Jude\", y creador de sitios con reservas y pagos en línea para negocios como La Casa de Chuy el Rico.",
       "labels": {
         "dob": "Fecha de nacimiento",
         "languages": "Idiomas",
@@ -49,18 +49,21 @@
       },
       "values": {
         "dob": "28 de abril de 1992",
-        "languages": "Inglés (B2++), Español (C2)",
+        "languages": "Inglés (B2–C1), Español (nativo)",
         "nationality": "México",
         "interest": "Pádel"
       },
       "skills": [
         "6 años",
         "6 años",
+        "3 años",
         "6 años",
         "3 años",
         "4 años",
         "3 años",
         "4 años",
+        "2 años",
+        "2 años",
         "7+ años"
       ]
     },
@@ -74,16 +77,16 @@
           "description": "Experto en desarrollo con React Native con 6 años de experiencia creando aplicaciones móviles escalables y seguras para soluciones fintech y empresariales."
         },
         {
+          "title": "Web y sistemas a la medida",
+          "description": "Páginas web y sistemas para negocios con Next.js — reservas, pagos en línea y paneles administrativos, de la idea al lanzamiento en producción."
+        },
+        {
           "title": "Liderazgo técnico",
           "description": "Lideré equipos de más de 6 desarrolladores, gestionando revisiones de código, procesos de PR y asegurando entregas de calidad con metodologías ágiles y buenas prácticas."
         },
         {
           "title": "Seguridad móvil",
           "description": "Especializado en autenticación biométrica, MFA, cifrado y medidas de seguridad para aplicaciones fintech."
-        },
-        {
-          "title": "Optimización de rendimiento",
-          "description": "Optimicé flujos de la aplicación y reduje los tiempos de operación en un 20%, mejorando la experiencia de usuario y la eficiencia de la app."
         }
       ]
     },
@@ -121,28 +124,40 @@
           "years": "2026–Actualidad",
           "org": "St. Jude Children's Research Hospital (vía Concentrix)",
           "place": "Remoto (EE. UU.)",
-          "description": "Líder técnico de la app \"I Love St. Jude\", una plataforma de recaudación donde las personas donan, se unen a eventos de caridad y crean comunidad para el hospital infantil. Construí la arquitectura del proyecto desde cero en React Native y TypeScript, con autenticación Okta e infraestructura en AWS EC2."
+          "description": "Líder técnico de la app \"I Love St. Jude\", una plataforma de recaudación donde las personas donan, se unen a eventos de caridad y crean comunidad para el hospital infantil. Construí la arquitectura del proyecto desde cero en React Native y TypeScript, con autenticación Okta e infraestructura en AWS EC2.",
+          "tags": ["React Native", "TypeScript", "Okta", "AWS"]
         },
         {
-          "title": "Líder Técnico Móvil",
+          "title": "Desarrollador Full Stack — Proyecto Freelance",
+          "years": "2025–2026",
+          "org": "La Casa de Chuy el Rico",
+          "place": "Monterrey, México",
+          "description": "Construí lacasadechuyelrico.com de punta a punta como proyecto personal: un sitio de reservas para una locación fotográfica en Monterrey especializada en sesiones de XV años y boda. Reservas por hora con selección de fecha, pagos en línea con Conekta y confirmación instantánea. Hecho con Next.js, TypeScript y Supabase, desplegado en Vercel con cron jobs y dominio propio — más de 600 usuarios por semana.",
+          "tags": ["Next.js", "Supabase", "Conekta", "Vercel"]
+        },
+        {
+          "title": "Desarrollador Móvil Senior → Líder Técnico Móvil",
           "years": "2020–2025",
           "org": "Vector Casa de Bolsa",
           "place": "Monterrey, México",
-          "description": "Lideré el desarrollo móvil de Vit by Vector, un marketplace financiero (fondos, acciones, seguros, planes de retiro). Coordiné un equipo Scrum de 6, revisando 15–20 PRs/semana y entregando releases estables quincenales. Implementé biometría, MFA, cifrado AES-256, detección de jailbreak/root y un chatbot con IA. Antes desarrollé VectorApp, reduciendo los tiempos de operación en 20%."
+          "description": "Lideré el desarrollo móvil de Vit by Vector, un marketplace financiero (fondos, acciones, seguros, planes de retiro). Coordiné un equipo Scrum de 6, revisando 15–20 PRs/semana y entregando releases estables quincenales. Implementé biometría, MFA, cifrado AES-256, detección de jailbreak/root y un chatbot con IA. Antes desarrollé VectorApp, reduciendo los tiempos de operación en 20%.",
+          "tags": ["React Native", "TypeScript", "GraphQL"]
         },
         {
           "title": "Desarrollador Web",
           "years": "2018–2019",
           "org": "Accenture",
           "place": "Monterrey, México",
-          "description": "Desarrollé un portal interno con Angular bajo metodología Scrum y automaticé pruebas móviles con Appium y Selenium."
+          "description": "Desarrollé un portal interno con Angular bajo metodología Scrum y automaticé pruebas móviles con Appium y Selenium.",
+          "tags": ["Angular", "Appium", "Selenium"]
         },
         {
-          "title": "Desarrollador Web",
+          "title": "Desarrollador Web — Freelance",
           "years": "2014–2018",
           "org": "Alvero Estudio de Fotografía",
           "place": "Monterrey, México",
-          "description": "Creé y mantuve una plataforma e-commerce con integración de PayPal, aplicando principios de UX que aumentaron la conversión en 15%."
+          "description": "Mi primer cliente freelance: creé y mantuve su plataforma e-commerce con integración de PayPal, aplicando principios de UX que aumentaron la conversión en 15%.",
+          "tags": ["PHP", "PayPal", "JavaScript"]
         }
       ]
     },
@@ -169,7 +184,7 @@
   "about": {
     "personal": {
       "badge": "Datos personales",
-      "intro": "Ingeniero de software móvil con 6 años de experiencia en React Native y liderazgo técnico, especializado en TypeScript y seguridad móvil para apps fintech. Lidero equipos ágiles, elevo la calidad de las entregas con testing y code reviews, y he contribuido con más de 2,100 commits y PRs en los repositorios de la empresa.",
+      "intro": "Ingeniero de software con 6 años de experiencia en desarrollo móvil y web: apps en React Native, páginas web y sistemas a la medida con Next.js. Actualmente lidero la app de recaudación \"I Love St. Jude\", y como freelance construyo productos completos — como La Casa de Chuy el Rico, un sitio de reservas con pagos en línea y más de 600 usuarios semanales. Lidero equipos ágiles, elevo la calidad con testing y code reviews, y he contribuido con más de 2,100 commits y PRs.",
       "labels": {
         "dob": "Fecha de nacimiento",
         "languages": "Idiomas",
@@ -178,18 +193,21 @@
       },
       "values": {
         "dob": "28 de abril de 1992",
-        "languages": "Inglés (B2++), Español (C2)",
+        "languages": "Inglés (B2–C1), Español (nativo)",
         "nationality": "México",
         "interest": "Pádel"
       },
       "skills": [
         "6 años",
         "6 años",
+        "3 años",
         "6 años",
         "3 años",
         "4 años",
         "3 años",
         "4 años",
+        "2 años",
+        "2 años",
         "7+ años"
       ]
     },
@@ -204,9 +222,14 @@
           "description": "Líder técnico de la app de recaudación \"I Love St. Jude\" (vía Concentrix). Construí la arquitectura desde cero en React Native y TypeScript con autenticación Okta y AWS EC2."
         },
         {
-          "title": "Vector Casa de Bolsa — Desarrollador Móvil Senior",
+          "title": "La Casa de Chuy el Rico — Full Stack Freelance",
+          "year": "2025-26",
+          "description": "Construí un sitio de reservas para una locación fotográfica en Monterrey: reservas por hora y pagos en línea con Conekta, hecho con Next.js, TypeScript y Supabase — más de 600 usuarios semanales."
+        },
+        {
+          "title": "Vector Casa de Bolsa — Dev Móvil Senior → Líder Técnico",
           "year": "2020-25",
-          "description": "Lideré el desarrollo móvil de apps fintech seguras en React Native, coordinando un equipo Scrum y entregando releases estables."
+          "description": "Crecí de Desarrollador Móvil Senior a Líder Técnico de apps fintech seguras en React Native, coordinando un equipo Scrum y entregando releases estables."
         },
         {
           "title": "Accenture — Desarrollador Web",
@@ -214,9 +237,9 @@
           "description": "Desarrollé un portal interno en Angular y automaticé pruebas móviles con Appium y Selenium."
         },
         {
-          "title": "Alvero Estudio de Fotografía — Desarrollador Web",
+          "title": "Alvero Estudio de Fotografía — Freelance Web",
           "year": "2014-18",
-          "description": "Creé una plataforma e-commerce con integración de PayPal, mejorando la conversión en 15% con UX."
+          "description": "Mi primer cliente freelance: plataforma e-commerce con integración de PayPal, mejorando la conversión en 15% con UX."
         },
         {
           "title": "Ingeniero en Tecnologías Computacionales — UDEM",
@@ -226,8 +249,8 @@
       ]
     },
     "actionBox": {
-      "title": "Estoy disponible para trabajar como freelancer.",
-      "subtitle": "Explora cientos de ofertas de trabajo y encuentra la posición más adecuada.",
+      "title": "Disponible para proyectos freelance.",
+      "subtitle": "¿Tienes una app o un sitio web en mente? Lo llevamos de la idea al lanzamiento — escríbeme.",
       "emailPlaceholder": "Correo electrónico",
       "sendButton": "Enviar mensaje"
     }
@@ -235,28 +258,28 @@
   "servicesPage": {
     "items": [
       {
-        "title": "Soporte excelente",
-        "description": "Un texto de ejemplo para complementar el título de la tarjeta y formar el grueso del contenido de la plataforma."
+        "title": "Desarrollo móvil",
+        "description": "Apps móviles escalables y seguras con React Native y TypeScript — desde plataformas fintech hasta la app oficial de recaudación de St. Jude Children's Research Hospital."
       },
       {
-        "title": "Crecimiento dinámico",
-        "description": "Usuarios que cumplen de forma creíble con los estándares de marca sin servicios extensibles. Anibh euismod tincidunt."
+        "title": "Desarrollo web",
+        "description": "Sitios y aplicaciones web modernas y rápidas con Next.js y React, llevadas de la idea al lanzamiento en producción."
       },
       {
-        "title": "Identidad de marca",
-        "description": "Separados viven en Bookmarksgrove, justo en la costa de la Semántica, y grande."
+        "title": "Liderazgo técnico",
+        "description": "Liderazgo de equipos ágiles de 6+ desarrolladores: code reviews, procesos de PR y entregas de calidad con releases estables."
       },
       {
-        "title": "Desarrollo de apps",
-        "description": "Un texto de ejemplo para complementar el título de la tarjeta y formar el grueso del contenido de la plataforma."
+        "title": "Seguridad móvil",
+        "description": "Autenticación biométrica, MFA, cifrado AES-256 y detección de jailbreak/root para apps que manejan datos sensibles."
       },
       {
-        "title": "Estrategia de negocio",
-        "description": "Usuarios que cumplen de forma creíble con los estándares de marca sin servicios extensibles. Anibh euismod tincidunt."
+        "title": "Optimización de rendimiento",
+        "description": "Análisis y optimización de flujos — he reducido tiempos de operación en 20% mejorando la experiencia de usuario."
       },
       {
-        "title": "Diseño web",
-        "description": "Separados viven en Bookmarksgrove, justo en la costa de la Semántica, y grande."
+        "title": "Productos end-to-end",
+        "description": "Productos digitales completos con reservas, pagos en línea y confirmación instantánea — como lacasadechuyelrico.com, construido desde cero."
       }
     ]
   },
@@ -268,9 +291,14 @@
         "description": "Líder técnico de la app de recaudación \"I Love St. Jude\" (vía Concentrix). Construí la arquitectura desde cero en React Native y TypeScript con autenticación Okta y AWS EC2."
       },
       {
-        "title": "Vector Casa de Bolsa — Desarrollador Móvil Senior",
+        "title": "La Casa de Chuy el Rico — Full Stack Freelance",
+        "year": "2025-26",
+        "description": "Construí un sitio de reservas para una locación fotográfica en Monterrey: reservas por hora y pagos en línea con Conekta, hecho con Next.js, TypeScript y Supabase — más de 600 usuarios semanales."
+      },
+      {
+        "title": "Vector Casa de Bolsa — Dev Móvil Senior → Líder Técnico",
         "year": "2020-25",
-        "description": "Lideré el desarrollo móvil de apps fintech seguras en React Native, coordinando un equipo Scrum y entregando releases estables."
+        "description": "Crecí de Desarrollador Móvil Senior a Líder Técnico de apps fintech seguras en React Native, coordinando un equipo Scrum y entregando releases estables."
       },
       {
         "title": "Accenture — Desarrollador Web",
@@ -278,9 +306,9 @@
         "description": "Desarrollé un portal interno en Angular y automaticé pruebas móviles con Appium y Selenium."
       },
       {
-        "title": "Alvero Estudio de Fotografía — Desarrollador Web",
+        "title": "Alvero Estudio de Fotografía — Freelance Web",
         "year": "2014-18",
-        "description": "Creé una plataforma e-commerce con integración de PayPal, mejorando la conversión en 15% con UX."
+        "description": "Mi primer cliente freelance: plataforma e-commerce con integración de PayPal, mejorando la conversión en 15% con UX."
       },
       {
         "title": "Ingeniero en Tecnologías Computacionales — UDEM",
@@ -291,7 +319,7 @@
   },
   "contact": {
     "title": "¡Ponte en contacto!",
-    "subtitle": "Siempre disponible para proyectos freelance si surge el adecuado. No dudes en contactarme.",
+    "subtitle": "¿Necesitas una página web, un sistema o una app para tu negocio? Cuéntame tu idea y te digo cómo la hacemos realidad — en Monterrey o remoto.",
     "form": {
       "name": "Nombre",
       "email": "Correo",
@@ -319,6 +347,9 @@
     "phone": "+52 81 1660 5611",
     "phoneHours": "9:00 a 19:00",
     "email": "alberto.ivan92@gmail.com",
-    "emailDays": "De lunes a sábado"
+    "emailDays": "De lunes a sábado",
+    "whatsapp": "WhatsApp",
+    "whatsappNote": "Respuesta rápida",
+    "whatsappMessage": "Hola Alberto, vi tu portafolio y me gustaría platicar sobre un proyecto."
   }
 }

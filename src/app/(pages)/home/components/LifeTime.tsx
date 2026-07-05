@@ -22,6 +22,7 @@ type TimelineEntry = {
   org: string;
   description: string;
   place: string;
+  tags?: string[];
 };
 
 const LifeTime = () => {
@@ -75,61 +76,27 @@ const LifeTime = () => {
                 <Card className="rounded bg-white  h-100 border-0">
                   <CardBody className="p-0">
                     <Accordion
-                      defaultActiveKey={"1"}
+                      defaultActiveKey={"0"}
                       className="accordion-flush"
                       id="Education_accordion"
                     >
-                      <AccordionItem eventKey="1">
-                        <AccordionHeader as={"h2"} id="prime">
-                          {edu[0]?.title}
-                          <span className="fw-medium text-primary ms-auto fs-14">
-                            {edu[0]?.years}
-                          </span>
-                        </AccordionHeader>
-                        <AccordionBody className="accordion-body">
-                          <p className="fw-semibold text-primary mb-1">
-                            {edu[0]?.org}
-                          </p>
-                          <p className="text-muted mb-2">
-                            {edu[0]?.description}
-                          </p>
-                          <p className="text-muted fs-13 mb-0">{edu[0]?.place}</p>
-                        </AccordionBody>
-                      </AccordionItem>
-                      <AccordionItem eventKey="2">
-                        <AccordionHeader as={"h2"} id="second">
-                          {edu[1]?.title}
-                          <span className="fw-medium text-primary ms-auto fs-14">
-                            {edu[1]?.years}
-                          </span>
-                        </AccordionHeader>
-                        <AccordionBody className="accordion-body">
-                          <p className="fw-semibold text-primary mb-1">
-                            {edu[1]?.org}
-                          </p>
-                          <p className="text-muted mb-2">
-                            {edu[1]?.description}
-                          </p>
-                          <p className="text-muted fs-13 mb-0">{edu[1]?.place}</p>
-                        </AccordionBody>
-                      </AccordionItem>
-                      <AccordionItem eventKey="3">
-                        <AccordionHeader as={"h2"} id="higher">
-                          {edu[2]?.title}
-                          <span className="fw-medium text-primary ms-auto fs-14">
-                            {edu[2]?.years}
-                          </span>
-                        </AccordionHeader>
-                        <AccordionBody className="accordion-body">
-                          <p className="fw-semibold text-primary mb-1">
-                            {edu[2]?.org}
-                          </p>
-                          <p className="text-muted mb-2">
-                            {edu[2]?.description}
-                          </p>
-                          <p className="text-muted fs-13 mb-0">{edu[2]?.place}</p>
-                        </AccordionBody>
-                      </AccordionItem>
+                      {edu.map((item, idx) => (
+                        <AccordionItem eventKey={String(idx)} key={idx}>
+                          <AccordionHeader as={"h2"}>
+                            {item.title}
+                            <span className="fw-medium text-primary ms-auto fs-14">
+                              {item.years}
+                            </span>
+                          </AccordionHeader>
+                          <AccordionBody className="accordion-body">
+                            <p className="fw-semibold text-primary mb-1">
+                              {item.org}
+                            </p>
+                            <p className="text-muted mb-2">{item.description}</p>
+                            <p className="text-muted fs-13 mb-0">{item.place}</p>
+                          </AccordionBody>
+                        </AccordionItem>
+                      ))}
                     </Accordion>
                   </CardBody>
                 </Card>
@@ -164,88 +131,35 @@ const LifeTime = () => {
                 <Card className="rounded bg-white  h-100 border-0">
                   <CardBody className="p-0">
                     <Accordion
-                      defaultActiveKey={"1"}
+                      defaultActiveKey={"0"}
                       className="accordion-flush"
                       id="Experience_accordion"
                     >
-                      <AccordionItem eventKey="1">
-                        <AccordionHeader id="first-co">
-                          {exp[0]?.title}
-                          <span className="fw-medium text-primary ms-auto fs-14">
-                            {exp[0]?.years}
-                          </span>
-                        </AccordionHeader>
-                        <AccordionBody>
-                          <p className="fw-semibold text-primary mb-1">
-                            {exp[0]?.org}
-                          </p>
-                          <p className="text-muted mb-2">{exp[0]?.description}</p>
-                          <p className="text-muted fs-13 mb-2">{exp[0]?.place}</p>
-                          <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            React Native
-                          </span>
-                          &nbsp;
-                          <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            TypeScript
-                          </span>
-                          &nbsp;
-                          <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            GraphQL
-                          </span>
-                        </AccordionBody>
-                      </AccordionItem>
-                      <AccordionItem eventKey="2">
-                        <AccordionHeader id="second-co">
-                          {exp[1]?.title}
-                          <span className="fw-medium text-primary ms-auto fs-14">
-                            {exp[1]?.years}
-                          </span>
-                        </AccordionHeader>
-                        <AccordionBody>
-                          <p className="fw-semibold text-primary mb-1">
-                            {exp[1]?.org}
-                          </p>
-                          <p className="text-muted mb-2">{exp[1]?.description}</p>
-                          <p className="text-muted fs-13 mb-2">{exp[1]?.place}</p>
-                          <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            Angular
-                          </span>
-                          &nbsp;
-                          <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            Appium
-                          </span>
-                          &nbsp;
-                          <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            Selenium
-                          </span>
-                        </AccordionBody>
-                      </AccordionItem>
-                      <AccordionItem eventKey="3">
-                        <AccordionHeader id="third-co">
-                          {exp[2]?.title}
-                          <span className="fw-medium text-primary ms-auto fs-14">
-                            {exp[2]?.years}
-                          </span>
-                        </AccordionHeader>
-                        <AccordionBody>
-                          <p className="fw-semibold text-primary mb-1">
-                            {exp[2]?.org}
-                          </p>
-                          <p className="text-muted mb-2">{exp[2]?.description}</p>
-                          <p className="text-muted fs-13 mb-2">{exp[2]?.place}</p>
-                          <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            PHP
-                          </span>
-                          &nbsp;
-                          <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            PayPal
-                          </span>
-                          &nbsp;
-                          <span className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2">
-                            JavaScript
-                          </span>
-                        </AccordionBody>
-                      </AccordionItem>
+                      {exp.map((item, idx) => (
+                        <AccordionItem eventKey={String(idx)} key={idx}>
+                          <AccordionHeader>
+                            {item.title}
+                            <span className="fw-medium text-primary ms-auto fs-14">
+                              {item.years}
+                            </span>
+                          </AccordionHeader>
+                          <AccordionBody>
+                            <p className="fw-semibold text-primary mb-1">
+                              {item.org}
+                            </p>
+                            <p className="text-muted mb-2">{item.description}</p>
+                            <p className="text-muted fs-13 mb-2">{item.place}</p>
+                            {item.tags?.map((tag) => (
+                              <span
+                                key={tag}
+                                className="badge badge-lg rounded bg-soft-alt-info fw-normal fs-13 text-uppercase mt-2 me-2"
+                              >
+                                {tag}
+                              </span>
+                            ))}
+                          </AccordionBody>
+                        </AccordionItem>
+                      ))}
                     </Accordion>
                   </CardBody>
                 </Card>

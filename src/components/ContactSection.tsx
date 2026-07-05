@@ -165,6 +165,31 @@ const ContactSection = ({ className = "section", id }: ContactSectionProps) => {
                         </span>
                       </div>
                     </div>
+                    <hr className="hr-dashed my-3" />
+                    <div className="d-flex">
+                      <div className="bg-light d-flex justify-content-center align-items-center thumb-lg  rounded">
+                        <IconifyIcon
+                          icon="tabler:brand-whatsapp"
+                          className="fs-22"
+                        />
+                      </div>
+                      <div
+                        className="align-self-center ms-3"
+                        style={{ minWidth: 0 }}
+                      >
+                        <a
+                          href={`https://wa.me/528116605611?text=${encodeURIComponent(t("contact.whatsappMessage"))}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="d-block lh-sm text-dark text-decoration-none text-break"
+                        >
+                          {t("contact.whatsapp")}
+                        </a>
+                        <span className="text-muted fs-14 mt-n2">
+                          {t("contact.whatsappNote")}
+                        </span>
+                      </div>
+                    </div>
                   </Col>
                 </Row>
               </CardBody>

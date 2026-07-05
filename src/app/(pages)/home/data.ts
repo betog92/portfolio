@@ -42,6 +42,11 @@ export const personalData: PersonalDataType[] = [
     icon: "logos:typescript-icon",
   },
   {
+    name: "Next.js",
+    experience: "3 Years",
+    icon: "logos:nextjs-icon",
+  },
+  {
     name: "Redux Toolkit",
     experience: "6 Years",
     icon: "logos:redux",
@@ -67,6 +72,16 @@ export const personalData: PersonalDataType[] = [
     icon: "logos:jest",
   },
   {
+    name: "Supabase",
+    experience: "2 Years",
+    icon: "logos:supabase-icon",
+  },
+  {
+    name: "Vercel",
+    experience: "2 Years",
+    icon: "logos:vercel-icon",
+  },
+  {
     name: "Git",
     experience: "7+ Years",
     icon: "logos:git-icon",
@@ -82,6 +97,13 @@ export const servicesData: ServicesType[] = [
       "Expert in React Native development with 6 years of experience building scalable, secure mobile applications for fintech and enterprise solutions.",
   },
   {
+    icon: "feather:globe",
+    variant: "soft-alt-orange",
+    title: "Web & Custom Systems",
+    description:
+      "Websites and business systems with Next.js — bookings, online payments and admin dashboards, from idea to production launch.",
+  },
+  {
     icon: "feather:users",
     variant: "soft-alt-info",
     title: "Technical Leadership",
@@ -94,13 +116,6 @@ export const servicesData: ServicesType[] = [
     title: "Mobile Security",
     description:
       "Specialized in implementing biometric authentication, MFA, encryption, and security measures for fintech applications.",
-  },
-  {
-    icon: "feather:zap",
-    variant: "soft-alt-orange",
-    title: "Performance Optimization",
-    description:
-      "Optimized application flows and reduced operation times by 20%, improving user experience and application efficiency.",
   },
 ];
 
@@ -140,7 +155,7 @@ export const workData: WorkDataType[] = [
     variant: "soft-alt-warning",
     title: "La Casa de Chuy el Rico",
     link: "https://lacasadechuyelrico.com",
-    language: ["Next.js", "React", "TypeScript", "Supabase"],
+    language: ["Next.js", "TypeScript", "Supabase", "Vercel"],
     category: ["nextjs", "web"],
     fill: true,
   },
