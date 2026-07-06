@@ -11,6 +11,89 @@
 .hero-one {
   &.main-bg {
     background-color: $hero-main-bg;
+    overflow: hidden;
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+
+    @media (min-width: 992px) {
+      padding-top: 3rem;
+      padding-bottom: 4rem;
+    }
+  }
+
+  .hero-portrait-col {
+    @media (min-width: 992px) {
+      align-self: flex-end;
+      margin-top: 4.5rem;
+    }
+  }
+
+  .hero-portrait {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+
+    img {
+      display: block;
+      width: auto;
+      max-width: 100%;
+      height: auto;
+      max-height: clamp(320px, 62vw, 430px);
+      transform: scale(1.15) translateY(1.75rem);
+      transform-origin: bottom center;
+    }
+  }
+
+  .hero-text-col {
+    @media (max-width: 991.98px) {
+      .hero-title {
+        margin-bottom: 1rem !important;
+      }
+
+      .hero-cta {
+        margin-bottom: 0.5rem !important;
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    &.main-bg {
+      // Espacio para el navbar fixed-top (~64px) + aire visual
+      padding-top: 5.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .hero-portrait-col {
+      margin-top: 0.5rem;
+    }
+
+    .hero-portrait {
+      margin-top: 1rem;
+    }
+
+    .hero-portrait img {
+      max-height: clamp(340px, 66vw, 460px);
+      transform: scale(1.36) translateY(2.5rem);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .hero-portrait {
+      margin-top: 1.5rem;
+      margin-bottom: 0;
+      justify-content: flex-start;
+
+      img {
+        max-height: min(90vh, 840px);
+        margin-left: 1rem;
+        transform: scale(1.26) translateY(5rem);
+        transform-origin: bottom center;
+      }
+    }
   }
 
   .hero-title {
@@ -47,6 +130,23 @@
         display: inline;
       }
     }
+  }
+}
+
+.hero-wave {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  pointer-events: none;
+  line-height: 0;
+
+  .shape {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    left: auto;
   }
 }
 

@@ -65,12 +65,14 @@ const Hero = () => {
     >
       <Container>
         <Row className="align-items-center justify-content-center">
-          <Col lg={5} className="mx-auto mt-5">
-            <img src={personal1} alt="personal" className="img-fluid ml-lg-5" />
+          <Col lg={5} className="mx-auto mt-0 mt-lg-0 hero-portrait-col order-2 order-lg-1">
+            <div className="hero-portrait">
+              <img src={personal1} alt="Alberto García" />
+            </div>
           </Col>
           <Col
             lg={7}
-            className="text-center px-0 px-xl-4 mt-5 mt-lg-0 pt-5 pt-lg-0"
+            className="text-center px-0 px-xl-4 mt-0 pt-0 mt-lg-0 pt-lg-0 hero-text-col order-1 order-lg-2"
           >
             <h5 className="d-inline-block py-1 px-3 rounded text-muted font-secondary">
               {t("hero.greeting")}
@@ -93,7 +95,7 @@ const Hero = () => {
                 )}
               </span>
             </h1>
-            <div className="mb-5 mb-lg-0">
+            <div className="mb-2 mb-lg-0 hero-cta">
               <div className="d-inline-block">
                 <Button
                   variant="primary"
@@ -110,6 +112,20 @@ const Hero = () => {
           </Col>
         </Row>
       </Container>
+      <div className="hero-wave" aria-hidden="true">
+        <div className="shape overflow-hidden text-white">
+          <svg
+            viewBox="0 0 2880 48"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+      </div>
     </section>
   );
 };
