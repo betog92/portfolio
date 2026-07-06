@@ -1,4 +1,4 @@
-import personal2 from "@/assets/images/personal/2.png";
+import personal1 from "@/assets/images/personal/1.png";
 import IconifyIcon from "@/components/wrappers/IconifyIcon";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
@@ -14,12 +14,10 @@ const PersonalDetails = () => {
     <section className="section">
       <Container>
         <Row className="align-items-center">
-          <Col lg={5} className="align-self-center">
-            <img
-              src={personal2}
-              alt="personal2"
-              className="img-fluid ml-lg-5"
-            />
+          <Col lg={5} className="align-self-center about-portrait-col">
+            <div className="about-portrait">
+              <img src={personal1} alt="Alberto García" />
+            </div>
           </Col>
           <Col lg={6} className="ms-auto align-self-center">
             <h5 className="fs-24 text-dark fw-medium mb-3">

@@ -13,11 +13,11 @@
     background-color: $hero-main-bg;
     overflow: hidden;
     padding-top: 2rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 1rem;
 
     @media (min-width: 992px) {
       padding-top: 3rem;
-      padding-bottom: 4rem;
+      padding-bottom: 1.75rem;
     }
   }
 
@@ -64,7 +64,7 @@
     &.main-bg {
       // Espacio para el navbar fixed-top (~64px) + aire visual
       padding-top: 5.5rem;
-      padding-bottom: 1.5rem;
+      padding-bottom: 0.25rem;
     }
 
     .hero-portrait-col {
@@ -77,7 +77,7 @@
 
     .hero-portrait img {
       max-height: clamp(340px, 66vw, 460px);
-      transform: scale(1.36) translateY(2.5rem);
+      transform: scale(1.42) translateY(2.5rem);
     }
   }
 
@@ -90,7 +90,7 @@
       img {
         max-height: min(90vh, 840px);
         margin-left: 1rem;
-        transform: scale(1.26) translateY(5rem);
+        transform: scale(1.32) translateY(5.75rem);
         transform-origin: bottom center;
       }
     }
@@ -176,6 +176,38 @@
   font-weight: 500;
   font-size: 16px;
   color: $gray-600;
+}
+
+.about-portrait-col {
+  @media (min-width: 992px) {
+    padding-left: 1.5rem;
+  }
+}
+
+.about-portrait {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: clamp(320px, 55vw, 420px);
+    transform: scale(1.28) translateY(3.25rem);
+    transform-origin: bottom center;
+  }
+
+  @media (min-width: 992px) {
+    justify-content: flex-start;
+
+    img {
+      max-height: 560px;
+      transform: scale(1.35) translateY(4.25rem);
+      margin-left: 1.5rem;
+    }
+  }
 }
 
 .social {
