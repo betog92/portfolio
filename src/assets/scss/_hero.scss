@@ -61,10 +61,16 @@
       max-height: clamp(320px, 62vw, 430px);
       transform: scale(1.15) translateY(1.75rem);
       transform-origin: bottom center;
+      // El scale crece hacia arriba y cubría el CTA; no necesita clicks.
+      pointer-events: none;
     }
   }
 
   .hero-text-col {
+    // Por encima del retrato escalado para que "Descargar CV" reciba el click.
+    position: relative;
+    z-index: 2;
+
     @media (max-width: 991.98px) {
       .hero-title {
         margin-bottom: 1rem !important;

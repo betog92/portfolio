@@ -102,8 +102,6 @@ const Hero = () => {
                   as="a"
                   href={`${basePath}/Alberto_Garcia_CV.pdf`}
                   download="Alberto_Garcia_CV.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
                 >
                   {t("hero.downloadCv")}
                 </Button>
