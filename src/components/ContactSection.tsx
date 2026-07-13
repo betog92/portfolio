@@ -4,6 +4,7 @@ import testipetImg from "@/assets/images/personal/testi-pet.png";
 import TextAreaFormInput from "@/components/form/TextAreaFormInput";
 import TextFormInput from "@/components/form/TextFormInput";
 import IconifyIcon from "@/components/wrappers/IconifyIcon";
+import { getWhatsAppUrl } from "@/context/constants";
 import { useContactForm } from "@/hooks/useContactForm";
 import { Button, Card, CardBody, Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
@@ -128,26 +129,6 @@ const ContactSection = ({ className = "section", id }: ContactSectionProps) => {
                     />
                     <div className="d-flex">
                       <div className="bg-light d-flex justify-content-center align-items-center thumb-lg  rounded">
-                        <IconifyIcon icon="tabler:phone" className="fs-22" />
-                      </div>
-                      <div
-                        className="align-self-center ms-3"
-                        style={{ minWidth: 0 }}
-                      >
-                        <a
-                          href={`tel:${t("contact.phone").replace(/\s+/g, "")}`}
-                          className="d-block lh-sm text-dark text-decoration-none text-break"
-                        >
-                          {t("contact.phone")}
-                        </a>
-                        <span className="text-muted fs-14 mt-n2">
-                          {t("contact.phoneHours")}
-                        </span>
-                      </div>
-                    </div>
-                    <hr className="hr-dashed my-3" />
-                    <div className="d-flex">
-                      <div className="bg-light d-flex justify-content-center align-items-center thumb-lg  rounded">
                         <IconifyIcon icon="tabler:mail" className="fs-22" />
                       </div>
                       <div
@@ -178,12 +159,13 @@ const ContactSection = ({ className = "section", id }: ContactSectionProps) => {
                         style={{ minWidth: 0 }}
                       >
                         <a
-                          href={`https://wa.me/528116605611?text=${encodeURIComponent(t("contact.whatsappMessage"))}`}
+                          href={getWhatsAppUrl(t("contact.whatsappMessage"))}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="d-block lh-sm text-dark text-decoration-none text-break"
+                          aria-label={`WhatsApp ${t("contact.phone")}`}
                         >
-                          {t("contact.whatsapp")}
+                          {t("contact.phone")}
                         </a>
                         <span className="text-muted fs-14 mt-n2">
                           {t("contact.whatsappNote")}

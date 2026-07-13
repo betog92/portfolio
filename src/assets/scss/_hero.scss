@@ -366,33 +366,36 @@
   background-size: contain;
 }
 
-.cta-search {
-  input {
-    padding: 15px 136px 15px 20px;
-    width: 100%;
-    font-size: 16px;
-    border: 2px solid darken($light, 2%);
-    outline: none !important;
-    border-radius: 8px;
-    background-color: $white;
-    color: $gray-700;
+.cta-whatsapp {
+  display: flex;
+  justify-content: flex-start;
+
+  @media (min-width: 992px) {
+    justify-content: flex-end;
   }
+}
 
-  button {
-    position: absolute;
-    top: 4px;
-    right: 4px;
-    outline: none !important;
-    border-radius: 8px;
-    font-size: 16px;
-    padding: 13px 30px;
+.cta-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  width: 100%;
+  min-height: 56px;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: $white !important;
+  background-color: #25d366;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
 
-    &:active,
-    &:focus,
-    &:hover {
-      transition: none;
-      transform: none;
-    }
+  &:hover,
+  &:focus {
+    color: $white !important;
+    background-color: #1ebe57;
+    box-shadow: 0 4px 14px rgba(37, 211, 102, 0.35);
   }
 }
 

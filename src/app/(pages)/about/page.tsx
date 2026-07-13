@@ -1,5 +1,5 @@
 import TopNavbar from "@/components/TopNavbar";
-import ActionBox from "./components/ActionBox";
+import ActionBox from "@/components/ActionBox";
 import Hero from "./components/Hero";
 import LifeTime from "./components/LifeTime";
 import PersonalDetails from "./components/PersonalDetails";

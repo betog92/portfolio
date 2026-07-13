@@ -251,8 +251,7 @@
     "actionBox": {
       "title": "Disponible para proyectos freelance.",
       "subtitle": "¿Tienes una app o un sitio web en mente? Lo llevamos de la idea al lanzamiento — escríbeme.",
-      "emailPlaceholder": "Correo electrónico",
-      "sendButton": "Enviar mensaje"
+      "whatsappButton": "Escríbeme por WhatsApp"
     }
   },
   "servicesPage": {
@@ -345,10 +344,8 @@
       "message": "Por favor ingresa tu mensaje"
     },
     "phone": "+52 81 1660 5611",
-    "phoneHours": "9:00 a 19:00",
     "email": "alberto.ivan92@gmail.com",
     "emailDays": "De lunes a sábado",
-    "whatsapp": "WhatsApp",
     "whatsappNote": "Respuesta rápida",
     "whatsappMessage": "Hola Alberto, vi tu portafolio y me gustaría platicar sobre un proyecto."
   }

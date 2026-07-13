@@ -251,8 +251,7 @@
     "actionBox": {
       "title": "Available for freelance projects.",
       "subtitle": "Have a mobile app or website in mind? Let's take it from idea to launch — drop me a line.",
-      "emailPlaceholder": "Email Address",
-      "sendButton": "Send Message"
+      "whatsappButton": "Message me on WhatsApp"
     }
   },
   "servicesPage": {
@@ -345,10 +344,8 @@
       "message": "Please enter message"
     },
     "phone": "+52 81 1660 5611",
-    "phoneHours": "9:00am to 7:00pm",
     "email": "alberto.ivan92@gmail.com",
     "emailDays": "Monday to Saturday",
-    "whatsapp": "WhatsApp",
     "whatsappNote": "Fast reply",
     "whatsappMessage": "Hi Alberto, I saw your portfolio and would like to talk about a project."
   }
