@@ -3,11 +3,10 @@ import { useEffect, useState } from "react";
 import personal1 from "@/assets/images/personal/1.png";
 import mainBg from "@/assets/images/personal/main-bg.png";
 
+import { getCvFile, getCvHref } from "@/context/constants";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { TypeAnimation } from "react-type-animation";
-
-const basePath = import.meta.env.PROD ? "/portfolio" : "";
 
 // Respeta la preferencia del sistema de reducir animaciones (accesibilidad).
 const useReducedMotion = () => {
@@ -30,6 +29,8 @@ const Hero = () => {
   const { t, i18n } = useTranslation();
 
   const isSpanish = (i18n.resolvedLanguage ?? "en").startsWith("es");
+  const cvFile = getCvFile(i18n.resolvedLanguage);
+  const cvHref = getCvHref(i18n.resolvedLanguage);
 
   const roles = t("hero.roles", { returnObjects: true }) as string[];
   const sequence = roles.flatMap((role) => [role, 2000]);
@@ -100,8 +101,8 @@ const Hero = () => {
                 <Button
                   variant="primary"
                   as="a"
-                  href={`${basePath}/Alberto_Garcia_CV.pdf`}
-                  download="Alberto_Garcia_CV.pdf"
+                  href={cvHref}
+                  download={cvFile}
                 >
                   {t("hero.downloadCv")}
                 </Button>
