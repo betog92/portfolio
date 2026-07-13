@@ -40,7 +40,7 @@
   "home": {
     "personal": {
       "badge": "Datos personales",
-      "intro": "Ingeniero de software con 6 años de experiencia construyendo apps móviles, páginas web y sistemas a la medida. Actualmente líder técnico de la app de recaudación \"I Love St. Jude\", y creador de sitios con reservas y pagos en línea para negocios como La Casa de Chuy el Rico.",
+      "intro": "Ingeniero de software con 6 años de experiencia construyendo apps móviles, páginas web y sistemas a la medida. Actualmente líder técnico de la app de recaudación \"I Love St. Jude\", y creador de sitios web con reservas y pagos en línea para negocios como La Casa de Chuy el Rico.",
       "labels": {
         "dob": "Fecha de nacimiento",
         "languages": "Idiomas",
@@ -184,7 +184,7 @@
   "about": {
     "personal": {
       "badge": "Datos personales",
-      "intro": "Ingeniero de software con 6 años de experiencia en desarrollo móvil y web: apps en React Native, páginas web y sistemas a la medida con Next.js. Actualmente lidero la app de recaudación \"I Love St. Jude\", y como freelance construyo productos completos — como La Casa de Chuy el Rico, un sitio de reservas con pagos en línea y más de 600 usuarios semanales. Lidero equipos ágiles, elevo la calidad con testing y code reviews, y he contribuido con más de 2,100 commits y PRs.",
+      "intro": "Ingeniero de software con 6 años de experiencia en desarrollo móvil y web: apps en React Native, páginas web y sistemas a la medida con Next.js. Actualmente lidero la app de recaudación \"I Love St. Jude\", y como freelance construyo productos completos — como La Casa de Chuy el Rico, un sitio web de reservas con pagos en línea y más de 600 usuarios semanales. Lidero equipos ágiles, elevo la calidad con testing y code reviews, y he contribuido con más de 2,100 commits y PRs.",
       "labels": {
         "dob": "Fecha de nacimiento",
         "languages": "Idiomas",

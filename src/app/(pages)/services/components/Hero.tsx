@@ -15,9 +15,9 @@ const Hero = () => {
       }}
     >
       <Container>
-        <Row className="align-items-center justify-content-center py-100">
-          <Col lg={7} className="text-center py-5 text-center">
-            <h5 className="head-title py-4" aria-label={t("banner.services")} />
+        <Row className="align-items-center justify-content-center page-banner">
+          <Col lg={7} className="text-center">
+            <h5 className="head-title" aria-label={t("banner.services")} />
           </Col>
         </Row>
       </Container>

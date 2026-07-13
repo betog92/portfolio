@@ -20,7 +20,7 @@ const AboutPage = () => {
   // }, [])
   return (
     <>
-      <TopNavbar />
+      <TopNavbar isDark />
       <Hero />
       <div className="position-relative">
         <div className="shape overflow-hidden text-white">

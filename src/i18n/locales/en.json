@@ -40,7 +40,7 @@
   "home": {
     "personal": {
       "badge": "Personal Details",
-      "intro": "Software engineer with 6 years of experience building mobile apps, websites and custom systems. Currently tech lead of the \"I Love St. Jude\" fundraising app, and creator of booking and online-payment sites for businesses like La Casa de Chuy el Rico.",
+      "intro": "Software engineer with 6 years of experience building mobile apps, websites and custom systems. Currently tech lead of the \"I Love St. Jude\" fundraising app, and creator of websites with bookings and online payments for businesses like La Casa de Chuy el Rico.",
       "labels": {
         "dob": "Date of birth",
         "languages": "Spoken Languages",
@@ -184,7 +184,7 @@
   "about": {
     "personal": {
       "badge": "Personal Details",
-      "intro": "Software engineer with 6 years of experience across mobile and web: React Native apps, websites and custom systems built with Next.js. I currently lead the \"I Love St. Jude\" fundraising app, and as a freelancer I build complete products — like La Casa de Chuy el Rico, a booking site with online payments and 600+ weekly users. I lead agile teams, raise delivery quality through testing and code reviews, and have contributed 2,100+ commits and PRs.",
+      "intro": "Software engineer with 6 years of experience across mobile and web: React Native apps, websites and custom systems built with Next.js. I currently lead the \"I Love St. Jude\" fundraising app, and as a freelancer I build complete products — like La Casa de Chuy el Rico, a booking website with online payments and 600+ weekly users. I lead agile teams, raise delivery quality through testing and code reviews, and have contributed 2,100+ commits and PRs.",
       "labels": {
         "dob": "Date of birth",
         "languages": "Spoken Languages",

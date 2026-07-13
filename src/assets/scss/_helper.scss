@@ -179,6 +179,10 @@
 .section {
   padding: 100px 0px 100px;
   position: relative;
+
+  @media (max-width: 991.98px) {
+    padding: 3rem 0;
+  }
 }
 
 mark {

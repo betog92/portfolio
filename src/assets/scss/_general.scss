@@ -208,19 +208,35 @@ h6 {
 
 .head-title {
   position: relative;
-  font-size: calc(2.5px + 2.5vw);
+  display: block;
+  // El texto vive en ::before/::after absolutos; sin esto el h5 colapsa a 0
+  // y la animación empuja el título bajo el navbar fijo.
+  min-height: 1.2em;
+  line-height: 1.2;
+  font-size: 2.25rem;
   font-weight: 700;
   color: #f5f5f5;
   letter-spacing: 0.02em;
   text-transform: uppercase;
   perspective: 500px;
 
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (min-width: 992px) {
+    font-size: calc(2.5px + 2.5vw);
+  }
+
   &::before,
   &::after {
     content: attr(aria-label);
     position: absolute;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 0.01em 0.01em 0.01em rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
   }
 }
 
