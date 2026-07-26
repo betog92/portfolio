@@ -40,7 +40,7 @@
   "home": {
     "personal": {
       "badge": "Datos personales",
-      "intro": "Ingeniero de software con 6 años de experiencia construyendo apps móviles, páginas web y sistemas a la medida. Actualmente líder técnico de la app de recaudación \"I Love St. Jude\", y creador de sitios web con reservas y pagos en línea para negocios como La Casa de Chuy el Rico.",
+      "intro": "Ingeniero de software con 6 años de experiencia construyendo apps móviles, páginas web y sistemas a la medida. Actualmente líder técnico de la app de recaudación \"I Love St. Jude\", y creador de sitios web con reservas y pagos en línea para negocios como La Casa de Chuy el Rico — más de 600 usuarios por semana.",
       "labels": {
         "dob": "Fecha de nacimiento",
         "languages": "Idiomas",
@@ -57,13 +57,13 @@
         "6 años",
         "6 años",
         "3 años",
-        "6 años",
         "3 años",
-        "4 años",
         "3 años",
-        "4 años",
+        "3 años",
         "2 años",
         "2 años",
+        "2 años",
+        "4 años",
         "7+ años"
       ]
     },
@@ -125,14 +125,14 @@
           "org": "St. Jude Children's Research Hospital (vía Concentrix)",
           "place": "Remoto (EE. UU.)",
           "description": "Líder técnico de la app \"I Love St. Jude\", una plataforma de recaudación donde las personas donan, se unen a eventos de caridad y crean comunidad para el hospital infantil. Construí la arquitectura del proyecto desde cero en React Native y TypeScript, con autenticación Okta e infraestructura en AWS EC2.",
-          "tags": ["React Native", "TypeScript", "Okta", "AWS"]
+          "tags": ["React Native", "TypeScript", "Okta", "TanStack Query"]
         },
         {
-          "title": "Desarrollador Full Stack — Proyecto Freelance",
+          "title": "Desarrollador Full Stack — Freelance",
           "years": "2025–2026",
           "org": "La Casa de Chuy el Rico",
           "place": "Monterrey, México",
-          "description": "Construí lacasadechuyelrico.com de punta a punta como proyecto personal: un sitio de reservas para una locación fotográfica en Monterrey especializada en sesiones de XV años y boda. Reservas por hora con selección de fecha, pagos en línea con Conekta y confirmación instantánea. Hecho con Next.js, TypeScript y Supabase, desplegado en Vercel con cron jobs y dominio propio — más de 600 usuarios por semana.",
+          "description": "Construí lacasadechuyelrico.com de punta a punta para una locación fotográfica en Monterrey especializada en sesiones de XV años y boda: reservas por hora, pagos en línea con Conekta y webhooks, y sincronización en tiempo real (reagendar y reembolsos). Hecho con Next.js, TypeScript y Supabase, desplegado en Vercel con notificaciones Resend y cron jobs — más de 600 usuarios por semana.",
           "tags": ["Next.js", "Supabase", "Conekta", "Vercel"]
         },
         {
@@ -140,7 +140,7 @@
           "years": "2020–2025",
           "org": "Vector Casa de Bolsa",
           "place": "Monterrey, México",
-          "description": "Lideré el desarrollo móvil de Vit by Vector, un marketplace financiero (fondos, acciones, seguros, planes de retiro). Coordiné un equipo Scrum de 6, revisando 15–20 PRs/semana y entregando releases estables quincenales. Implementé biometría, MFA, cifrado AES-256, detección de jailbreak/root y Frida, ofuscación nativa de código y un chatbot con IA. Antes desarrollé VectorApp, reduciendo los tiempos de operación en 20%.",
+          "description": "Lideré el desarrollo móvil de Vit by Vector, un marketplace financiero (fondos, acciones, seguros, planes de retiro). Coordiné un equipo Scrum de 6, revisando 15–20 PRs/semana y entregando releases estables quincenales. Implementé biometría, MFA, cifrado AES-256, detección de jailbreak/root y Frida, ofuscación nativa de código y un chatbot con IA. Antes desarrollé VectorApp — una app de operaciones de inversión con datos de mercado Refinitiv, gráficas propias en Storybook, push notifications y un adaptador en Laravel de SOAP/XML legado a REST/JSON que redujo los tiempos de operación ~20%.",
           "tags": ["React Native", "TypeScript", "GraphQL"]
         },
         {
@@ -184,7 +184,7 @@
   "about": {
     "personal": {
       "badge": "Datos personales",
-      "intro": "Ingeniero de software con 6 años de experiencia en desarrollo móvil y web: apps en React Native, páginas web y sistemas a la medida con Next.js. Actualmente lidero la app de recaudación \"I Love St. Jude\", y como freelance construyo productos completos — como La Casa de Chuy el Rico, un sitio web de reservas con pagos en línea y más de 600 usuarios semanales. Lidero equipos ágiles, elevo la calidad con testing y code reviews, y he contribuido con más de 2,100 commits y PRs.",
+      "intro": "Ingeniero senior de React Native y líder técnico con 6 años construyendo apps en producción en fintech y healthcare. Actualmente lidero la app de recaudación \"I Love St. Jude\", y como freelance entrego productos completos — como La Casa de Chuy el Rico, un sitio de reservas con pagos Conekta y más de 600 usuarios semanales.",
       "labels": {
         "dob": "Fecha de nacimiento",
         "languages": "Idiomas",
@@ -201,13 +201,13 @@
         "6 años",
         "6 años",
         "3 años",
-        "6 años",
         "3 años",
-        "4 años",
         "3 años",
-        "4 años",
+        "3 años",
         "2 años",
         "2 años",
+        "2 años",
+        "4 años",
         "7+ años"
       ]
     },

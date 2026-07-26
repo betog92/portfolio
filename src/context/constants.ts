@@ -14,7 +14,8 @@ export const buyLink = "";
 
 export const basePath = "";
 
-export const DEFAULT_PAGE_TITLE = "Selfown-NextJs | Responsive Personal page";
+export const DEFAULT_PAGE_TITLE =
+  "Alberto García | Mobile Apps, Websites & Custom Systems · Monterrey";
 
 /** WhatsApp number in international format (no + or spaces). */
 export const WHATSAPP_NUMBER = "528116605611";

@@ -21,29 +21,19 @@ export const personalData: PersonalDataType[] = [
     icon: "logos:nextjs-icon",
   },
   {
-    name: "Redux Toolkit",
-    experience: "6 Years",
-    icon: "logos:redux",
-  },
-  {
-    name: "GraphQL",
+    name: "TanStack Query",
     experience: "3 Years",
-    icon: "logos:graphql",
+    icon: "simple-icons:reactquery",
   },
   {
-    name: "Firebase",
-    experience: "4 Years",
-    icon: "logos:firebase",
-  },
-  {
-    name: "Apollo Client",
+    name: "Zustand",
     experience: "3 Years",
-    icon: "logos:apollostack",
+    icon: "devicon:zustand",
   },
   {
-    name: "Jest",
-    experience: "4 Years",
-    icon: "logos:jest",
+    name: "Storybook",
+    experience: "3 Years",
+    icon: "logos:storybook-icon",
   },
   {
     name: "Supabase",
@@ -51,9 +41,19 @@ export const personalData: PersonalDataType[] = [
     icon: "logos:supabase-icon",
   },
   {
-    name: "Vercel",
+    name: "Conekta",
     experience: "2 Years",
-    icon: "logos:vercel-icon",
+    icon: "mdi:credit-card-outline",
+  },
+  {
+    name: "Okta",
+    experience: "2 Years",
+    icon: "simple-icons:okta",
+  },
+  {
+    name: "Firebase",
+    experience: "4 Years",
+    icon: "logos:firebase",
   },
   {
     name: "Git",

@@ -61,17 +61,21 @@ const PersonalDetails = () => {
               </p>
             </div>
             <div className="social mt-5">
-              <Link to="" className="icon github me-1">
-                <IconifyIcon icon="la:github" />
-              </Link>
-              <Link to="" className="icon twitter me-1">
-                <IconifyIcon icon="la:twitter" />
-              </Link>
-              <Link to="" className="icon google me-1">
-                <IconifyIcon icon="la:google" />
-              </Link>
-              <Link to="" className="icon linkedin me-1">
+              <Link
+                to="https://www.linkedin.com/in/albertoigm/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="icon linkedin me-1"
+              >
                 <IconifyIcon icon="la:linkedin-in" />
+              </Link>
+              <Link
+                to="https://github.com/betog92"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="icon github me-1"
+              >
+                <IconifyIcon icon="la:github" />
               </Link>
             </div>
           </Col>

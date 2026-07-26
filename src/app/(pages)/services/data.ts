@@ -5,47 +5,48 @@ export type ServicesType = {
   description: string;
 };
 
+/** Icon/variant shells; titles & descriptions come from i18n (`servicesPage.items`). */
 export const servicesData: ServicesType[] = [
   {
-    icon: "feather:layers",
-    variant: "bg-soft-alt-orange",
-    title: "Awesome Support",
+    icon: "feather:smartphone",
+    variant: "bg-soft-alt-primary",
+    title: "Mobile Development",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content platform.",
+      "Scalable, secure mobile apps built with React Native and TypeScript — from fintech platforms to the official St. Jude Children's Research Hospital fundraising app.",
   },
   {
-    icon: "feather:dollar-sign",
+    icon: "feather:globe",
     variant: "bg-soft-alt-info",
-    title: "Dynamic Growth",
+    title: "Web Development",
     description:
-      "Credibly brand standards compliant users without extensible services. Anibh euismod tincidunt.",
+      "Modern, fast websites and web apps with Next.js and React, taken from idea to production launch.",
   },
   {
-    icon: "feather:check-square",
+    icon: "feather:users",
     variant: "bg-soft-alt-success",
-    title: "Branding Identity",
+    title: "Technical Leadership",
     description:
-      "Separated they live in Bookmarksgrove right at the coast of the Semantics, and large.",
+      "Leading agile teams of 6+ developers: code reviews, PR processes, and quality delivery with stable release cycles.",
   },
   {
-    icon: "feather:layers",
+    icon: "feather:shield",
     variant: "bg-soft-alt-warning",
-    title: "App Development",
+    title: "Mobile Security",
     description:
-      "Some quick example text to build on the card title and make up the bulk of the card's content platform.",
+      "Biometric authentication, MFA, AES-256 encryption, jailbreak/root and Frida detection, and native code obfuscation for apps that handle sensitive data.",
   },
   {
-    icon: "feather:dollar-sign",
+    icon: "feather:zap",
     variant: "bg-soft-alt-pink",
-    title: "Business Stratagy",
+    title: "Performance Optimization",
     description:
-      "Credibly brand standards compliant users without extensible services. Anibh euismod tincidunt.",
+      "Profiling and optimizing app flows — I've cut operation times by 20% while improving the overall user experience.",
   },
   {
-    icon: "feather:check-square",
+    icon: "feather:package",
     variant: "bg-soft-alt-dark",
-    title: "Web Design",
+    title: "End-to-End Products",
     description:
-      "Separated they live in Bookmarksgrove right at the coast of the Semantics, and large.",
+      "Complete digital products with booking, online payments, and instant confirmation — like lacasadechuyelrico.com, built from scratch.",
   },
 ];

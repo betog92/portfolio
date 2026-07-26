@@ -40,7 +40,7 @@
   "home": {
     "personal": {
       "badge": "Personal Details",
-      "intro": "Software engineer with 6 years of experience building mobile apps, websites and custom systems. Currently tech lead of the \"I Love St. Jude\" fundraising app, and creator of websites with bookings and online payments for businesses like La Casa de Chuy el Rico.",
+      "intro": "Software engineer with 6 years of experience building mobile apps, websites and custom systems. Currently tech lead of the \"I Love St. Jude\" fundraising app, and creator of websites with bookings and online payments for businesses like La Casa de Chuy el Rico — reaching 600+ users per week.",
       "labels": {
         "dob": "Date of birth",
         "languages": "Spoken Languages",
@@ -57,13 +57,13 @@
         "6 Years",
         "6 Years",
         "3 Years",
-        "6 Years",
         "3 Years",
-        "4 Years",
         "3 Years",
-        "4 Years",
+        "3 Years",
         "2 Years",
         "2 Years",
+        "2 Years",
+        "4 Years",
         "7+ Years"
       ]
     },
@@ -125,14 +125,14 @@
           "org": "St. Jude Children's Research Hospital (via Concentrix)",
           "place": "Remote (USA)",
           "description": "Tech lead for the \"I Love St. Jude\" app, a fundraising platform where people donate, join charity events and build community for the children's hospital. Built the project's architecture from scratch in React Native and TypeScript, with Okta authentication and AWS EC2 infrastructure.",
-          "tags": ["React Native", "TypeScript", "Okta", "AWS"]
+          "tags": ["React Native", "TypeScript", "Okta", "TanStack Query"]
         },
         {
-          "title": "Full Stack Developer — Freelance Project",
+          "title": "Full Stack Developer — Freelance",
           "years": "2025–2026",
           "org": "La Casa de Chuy el Rico",
           "place": "Monterrey, México",
-          "description": "Built lacasadechuyelrico.com end-to-end as a personal project: a booking site for a photography venue in Monterrey specializing in quinceañera and wedding photo sessions. Hourly reservations with date selection, online payments through Conekta and instant confirmation. Built with Next.js, TypeScript and Supabase, deployed on Vercel with cron jobs and a custom domain — reaching 600+ users per week.",
+          "description": "Built lacasadechuyelrico.com end-to-end for a photography venue in Monterrey specializing in quinceañera and wedding sessions: hourly bookings, Conekta online payments with webhooks, and real-time sync (reschedules and refunds). Built with Next.js, TypeScript and Supabase, deployed on Vercel with Resend notifications and cron jobs — reaching 600+ users per week.",
           "tags": ["Next.js", "Supabase", "Conekta", "Vercel"]
         },
         {
@@ -140,7 +140,7 @@
           "years": "2020–2025",
           "org": "Vector Casa de Bolsa",
           "place": "Monterrey, México",
-          "description": "Led mobile development of Vit by Vector, a financial marketplace (mutual funds, stocks, insurance, retirement). Managed a Scrum team of 6, reviewing 15–20 PRs/week and shipping stable bi-weekly releases. Implemented Face ID, MFA, AES-256 encryption, jailbreak/root and Frida detection, native code obfuscation, and an AI chatbot. Previously built VectorApp, reducing operation times by 20%.",
+          "description": "Led mobile development of Vit by Vector, a financial marketplace (mutual funds, stocks, insurance, retirement). Managed a Scrum team of 6, reviewing 15–20 PRs/week and shipping stable bi-weekly releases. Implemented Face ID, MFA, AES-256 encryption, jailbreak/root and Frida detection, native code obfuscation, and an AI chatbot. Previously built VectorApp — an investment-operations app with Refinitiv market data, custom Storybook charts, push notifications, and a Laravel adapter from legacy SOAP/XML to REST/JSON that reduced operation times by ~20%.",
           "tags": ["React Native", "TypeScript", "GraphQL"]
         },
         {
@@ -184,7 +184,7 @@
   "about": {
     "personal": {
       "badge": "Personal Details",
-      "intro": "Software engineer with 6 years of experience across mobile and web: React Native apps, websites and custom systems built with Next.js. I currently lead the \"I Love St. Jude\" fundraising app, and as a freelancer I build complete products — like La Casa de Chuy el Rico, a booking website with online payments and 600+ weekly users. I lead agile teams, raise delivery quality through testing and code reviews, and have contributed 2,100+ commits and PRs.",
+      "intro": "Senior React Native engineer and tech lead with 6 years building production apps in fintech and healthcare. I currently lead the \"I Love St. Jude\" fundraising app, and as a freelancer I ship full products — like La Casa de Chuy el Rico, a booking site with Conekta payments and 600+ weekly users.",
       "labels": {
         "dob": "Date of birth",
         "languages": "Spoken Languages",
@@ -201,13 +201,13 @@
         "6 Years",
         "6 Years",
         "3 Years",
-        "6 Years",
         "3 Years",
-        "4 Years",
         "3 Years",
-        "4 Years",
+        "3 Years",
         "2 Years",
         "2 Years",
+        "2 Years",
+        "4 Years",
         "7+ Years"
       ]
     },

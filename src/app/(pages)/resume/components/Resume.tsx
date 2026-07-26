@@ -1,7 +1,6 @@
 import { timelineLogos } from "@/data/timelineLogos";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 
 type TimelineItem = { title: string; year: string; description: string };
 
@@ -22,7 +21,7 @@ const Resume = () => {
                     const logo = timelineLogos[idx];
                     return (
                       <div className="timeline" key={idx}>
-                        <Link to="" className="timeline-content">
+                        <div className="timeline-content">
                           <div className="timeline-icon">
                             {logo ? (
                               <img
@@ -39,7 +38,7 @@ const Resume = () => {
                           <div className="timeline-year">
                             <span>{item.year}</span>
                           </div>
-                        </Link>
+                        </div>
                       </div>
                     );
                   })}
