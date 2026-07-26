@@ -1,18 +1,9 @@
-import IconifyIcon from "@/components/wrappers/IconifyIcon";
+import { timelineLogos } from "@/data/timelineLogos";
 import { Col, Container, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 type TimelineItem = { title: string; year: string; description: string };
-
-const timelineIcons = [
-  "tabler:trophy",
-  "tabler:world",
-  "tabler:users",
-  "tabler:building",
-  "tabler:camera",
-  "tabler:school",
-];
 
 const LifeTime = () => {
   const { t } = useTranslation();
@@ -32,33 +23,39 @@ const LifeTime = () => {
             </h2>
             <div className="bg-text">
               <h1 className="fw-bold p-0">{t("about.lifetime.bgText")}</h1>
-            </div>          </Col>
+            </div>
+          </Col>
         </Row>
         <Row>
           <Col xs={12}>
             <Row>
               <Col xs={12}>
                 <div className="main-timeline">
-                  {timeline.map((item, idx) => (
-                    <div className="timeline" key={idx}>
-                      <Link to="" className="timeline-content">
-                        <div className="timeline-icon">
-                          <IconifyIcon
-                            icon={
-                              timelineIcons[idx % timelineIcons.length]
-                            }
-                          />
-                        </div>
-                        <div className="inner-content">
-                          <h3 className="title">{item.title}</h3>
-                          <p className="description">{item.description}</p>
-                        </div>
-                        <div className="timeline-year">
-                          <span>{item.year}</span>
-                        </div>
-                      </Link>
-                    </div>
-                  ))}
+                  {timeline.map((item, idx) => {
+                    const logo = timelineLogos[idx];
+                    return (
+                      <div className="timeline" key={idx}>
+                        <Link to="" className="timeline-content">
+                          <div className="timeline-icon">
+                            {logo ? (
+                              <img
+                                src={logo.src}
+                                alt={logo.alt}
+                                className="timeline-logo"
+                              />
+                            ) : null}
+                          </div>
+                          <div className="inner-content">
+                            <h3 className="title">{item.title}</h3>
+                            <p className="description">{item.description}</p>
+                          </div>
+                          <div className="timeline-year">
+                            <span>{item.year}</span>
+                          </div>
+                        </Link>
+                      </div>
+                    );
+                  })}
                 </div>
               </Col>
             </Row>

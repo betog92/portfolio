@@ -49,7 +49,7 @@
       },
       "values": {
         "dob": "28 April 1992",
-        "languages": "English (B2–C1), Spanish (Native)",
+        "languages": "English (B2 — TOEFL 560), Spanish (Native), French (B1)",
         "nationality": "México",
         "interest": "Padel"
       },
@@ -69,7 +69,7 @@
     },
     "services": {
       "badge": "Services",
-      "title": "Our Services",
+      "title": "My Services",
       "bgText": "Services",
       "items": [
         {
@@ -86,7 +86,7 @@
         },
         {
           "title": "Mobile Security",
-          "description": "Specialized in implementing biometric authentication, MFA, encryption, and security measures for fintech applications."
+          "description": "Specialized in biometric authentication, MFA, encryption, and anti-tampering protections (jailbreak/root and Frida detection) for fintech applications."
         }
       ]
     },
@@ -97,7 +97,7 @@
       "experience": "Experience",
       "edu": [
         {
-          "title": "B.S. in Computer Science",
+          "title": "B.Eng. in Computer Technologies",
           "years": "2013–2020",
           "org": "Universidad de Monterrey (UDEM)",
           "place": "San Pedro, México",
@@ -140,7 +140,7 @@
           "years": "2020–2025",
           "org": "Vector Casa de Bolsa",
           "place": "Monterrey, México",
-          "description": "Led mobile development of Vit by Vector, a financial marketplace (mutual funds, stocks, insurance, retirement). Managed a Scrum team of 6, reviewing 15–20 PRs/week and shipping stable bi-weekly releases. Implemented Face ID, MFA, AES-256 encryption, jailbreak/root detection and an AI chatbot. Previously built VectorApp, reducing operation times by 20%.",
+          "description": "Led mobile development of Vit by Vector, a financial marketplace (mutual funds, stocks, insurance, retirement). Managed a Scrum team of 6, reviewing 15–20 PRs/week and shipping stable bi-weekly releases. Implemented Face ID, MFA, AES-256 encryption, jailbreak/root and Frida detection, native code obfuscation, and an AI chatbot. Previously built VectorApp, reducing operation times by 20%.",
           "tags": ["React Native", "TypeScript", "GraphQL"]
         },
         {
@@ -193,7 +193,7 @@
       },
       "values": {
         "dob": "28 April 1992",
-        "languages": "English (B2–C1), Spanish (Native)",
+        "languages": "English (B2 — TOEFL 560), Spanish (Native), French (B1)",
         "nationality": "México",
         "interest": "Padel"
       },
@@ -229,7 +229,7 @@
         {
           "title": "Vector Casa de Bolsa — Senior Mobile Dev → Tech Lead",
           "year": "2020-25",
-          "description": "Grew from Senior Mobile Developer to Tech Lead of secure fintech apps in React Native, managing a Scrum team and shipping stable releases."
+          "description": "Grew from Senior Mobile Developer to Tech Lead of Vit by Vector, a fintech marketplace in React Native — led a Scrum team of 6 and specialized in mobile security (biometrics, encryption, anti-tampering)."
         },
         {
           "title": "Accenture — Web Developer",
@@ -242,7 +242,7 @@
           "description": "My first freelance client: an e-commerce platform with PayPal integration, improving conversion rate by 15% through UX."
         },
         {
-          "title": "B.S. in Computer Science — UDEM",
+          "title": "B.Eng. in Computer Technologies — UDEM",
           "year": "2013-20",
           "description": "Computer Science degree focused on software engineering and modern application development."
         }
@@ -270,7 +270,7 @@
       },
       {
         "title": "Mobile Security",
-        "description": "Biometric authentication, MFA, AES-256 encryption, and jailbreak/root detection for apps that handle sensitive data."
+        "description": "Biometric authentication, MFA, AES-256 encryption, jailbreak/root and Frida detection, and native code obfuscation for apps that handle sensitive data."
       },
       {
         "title": "Performance Optimization",
@@ -297,7 +297,7 @@
       {
         "title": "Vector Casa de Bolsa — Senior Mobile Dev → Tech Lead",
         "year": "2020-25",
-        "description": "Grew from Senior Mobile Developer to Tech Lead of secure fintech apps in React Native, managing a Scrum team and shipping stable releases."
+        "description": "Grew from Senior Mobile Developer to Tech Lead of Vit by Vector, a fintech marketplace in React Native — led a Scrum team of 6 and specialized in mobile security (biometrics, encryption, anti-tampering)."
       },
       {
         "title": "Accenture — Web Developer",
@@ -310,7 +310,7 @@
         "description": "My first freelance client: an e-commerce platform with PayPal integration, improving conversion rate by 15% through UX."
       },
       {
-        "title": "B.S. in Computer Science — UDEM",
+        "title": "B.Eng. in Computer Technologies — UDEM",
         "year": "2013-20",
         "description": "Computer Science degree focused on software engineering and modern application development."
       }

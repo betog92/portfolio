@@ -5,7 +5,7 @@ import { servicesData, ServicesType } from "../data";
 
 const ServicesCard = ({ icon, description, title, variant }: ServicesType) => {
   return (
-    <Card className="rounded shadow border-0">
+    <Card className="rounded shadow border-0 h-100">
       <CardBody className="p-4 m-2">
         <div
           className={`bg-${variant} d-flex justify-content-center align-items-center thumb-xl  rounded`}
@@ -46,7 +46,7 @@ const Services = () => {
         <Row>
           {servicesData.map((item, idx) => {
             return (
-              <Col lg={4} md={6} key={idx} className="mt-4 pt-2">
+              <Col xl={3} lg={6} md={6} key={idx} className="mt-4 pt-2">
                 <ServicesCard
                   {...item}
                   title={items[idx]?.title ?? item.title}
