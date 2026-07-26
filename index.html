@@ -30,12 +30,14 @@
       #splash-screen.remove {
         animation: fadeout 0.7s forwards;
         z-index: 0;
+        pointer-events: none;
       }
   
       @keyframes fadeout {
         to {
           opacity: 0;
           visibility: hidden;
+          pointer-events: none;
         }
       }
     </style>
