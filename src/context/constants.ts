@@ -24,8 +24,8 @@ export const getWhatsAppUrl = (message: string) =>
 
 /** CV PDFs in /public — served by site language. */
 export const CV_FILES = {
-  en: "Resume_Alberto_Garcia.pdf",
-  es: "Curriculum_Alberto_Garcia.pdf",
+  en: "Resume_Alberto_Garcia_EN.pdf",
+  es: "Curriculum_Alberto_Garcia_ES.pdf",
 } as const;
 
 export const getCvFile = (language?: string) =>
