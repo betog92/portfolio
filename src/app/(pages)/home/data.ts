@@ -1,5 +1,5 @@
 import casaDeChuy from "@/assets/images/logos/casa-de-chuy.webp";
-import vite from "@/assets/images/logos/vite.svg";
+import logoSm from "@/assets/images/logo-sm.png";
 import stjude from "@/assets/images/logos/stjude.svg";
 import vitByVector from "@/assets/images/logos/vit-by-vector.png";
 import vectorApp from "@/assets/images/logos/vector-app.png";
@@ -160,12 +160,14 @@ export const workData: WorkDataType[] = [
     fill: true,
   },
   {
-    image: vite,
+    image: logoSm,
     variant: "soft-alt-success",
     title: "Personal Portfolio",
     titleKey: "home.work.portfolioTitle",
     link: "https://github.com/betog92/portfolio",
     language: ["React", "TypeScript", "Vite", "SCSS"],
     category: ["react", "web"],
+    fill: true,
+    objectFit: "contain",
   },
 ];
